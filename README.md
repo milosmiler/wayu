@@ -1,13 +1,13 @@
 WordPress Base Theme
 =============
-![Los Maquiladores](https://raw.github.com/HacemosCodigo/base-theme/master/images/logo_hc.png)
+
 
 Usar para iniciar un nuevo tema de WordPress
 
 ### Credits
 
-Link: http://www.hacemoscodigo.com/<br />
-Contributors: Los Maquiladores<br />
+Link: http://www.pretechmobile.com/<br />
+Contributors: jairo<br />
 Tags: wordpress, themes<br />
 Tested up to: 3.8<br />
 Stable tag: 1.0<br />
