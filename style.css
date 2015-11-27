@@ -1,0 +1,1117 @@
+/*
+Theme Name: Pretech
+Theme URI: http://pretech.mx
+Author: pretech
+Author URI: http://pretech.mx
+Description: Tema de WordPress Personalizado
+Version: 1.0
+*/
+
+@charset 'utf-8';
+
+/*
+YUI 3.4.1 (build 4118)
+Copyright 2011 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}input,textarea,select{*font-size:100%}legend{color:#000}
+
+
+/*
+YUI 3.4.1 (build 4118)
+Copyright 2011 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+body{font:13px/1.231 arial,helvetica,clean,sans-serif;*font-size:small;*font:x-small}select,input,button,textarea{font:99% arial,helvetica,clean,sans-serif}table{font-size:inherit;font:100%}pre,code,kbd,samp,tt{font-family:monospace;*font-size:108%;line-height:100%}
+
+
+/*
+YUI 3.4.1 (build 4118)
+Copyright 2011 Yahoo! Inc. All rights reserved.
+Licensed under the BSD License.
+http://yuilibrary.com/license/
+*/
+h1{font-size:138.5%}h2{font-size:123.1%}h3{font-size:108%}h1,h2,h3{margin:1em 0}h1,h2,h3,h4,h5,h6,strong{font-weight:bold}abbr,acronym{border-bottom:1px dotted #000;cursor:help}em{font-style:italic}blockquote,ul,ol,dl{margin:1em}ol,ul,dl{margin-left:2em}ol{list-style:decimal outside}ul{list-style:disc outside}dl dd{margin-left:1em}th,td{border:1px solid #000;padding:.5em}th{font-weight:bold;text-align:center}caption{margin-bottom:.5em;text-align:center}p,fieldset,table,pre{margin-bottom:1em}input[type=text],input[type=password],textarea{width:12.25em;*width:11.9em}
+/*HTML5 element display*/
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section{display:block;}
+/*Figures*/
+figure {margin: 0;}
+
+@font-face {
+    font-family: 'hello';
+    src: url('fonts/hellogoodbye-webfont.eot');
+    src: url('fonts/hellogoodbye-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/hellogoodbye-webfont.woff2') format('woff2'),
+         url('fonts/hellogoodbye-webfont.woff') format('woff'),
+         url('fonts/hellogoodbye-webfont.ttf') format('truetype'),
+         url('fonts/hellogoodbye-webfont.svg#hello_goodbyeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Gotham-Book';
+  src: url('fonts/Gotham-Book.eot') format('embedded-opentype');
+  src: url('fonts/Gotham-Book.eot.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Gotham-Book.woff') format('woff'),
+         url('fonts/Gotham-Book.ttf') format('truetype'),
+         url('fonts/Gotham-Book.svg#Gotham_Book') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham-Light';
+  src: url('fonts/Gotham-Light.eot') format('embedded-opentype');
+  src: url('fonts/Gotham-Light.eot.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Gotham-Light.woff') format('woff'),
+         url('fonts/Gotham-Light.ttf') format('truetype'),
+         url('fonts/Gotham-Light.svg#Gotham_Book_Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Gotham-Medium';
+  src: url('fonts/Gotham-Medium.eot') format('embedded-opentype');
+  src: url('fonts/Gotham-Medium.eot') format('embedded-opentype');
+  src: url('fonts/Gotham-Medium.eot.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Gotham-Medium.woff') format('woff'),
+         url('fonts/Gotham-Medium.ttf') format('truetype'),
+         url('fonts/Gotham-Medium.svg#Gotham_Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AmericanTypewriter';
+  src: url('font/AmericanTypewriter.eot') format('embedded-opentype');
+  src: url('fonts/AmericanTypewriter.eot') format('embedded-opentype');
+  src: url('fonts/AmericanTypewriter.eot.eot?#iefix') format('embedded-opentype'),
+         url('fonts/AmericanTypewriter.woff') format('woff'),
+         url('fonts/AmericanTypewriter.ttf') format('truetype'),
+         url('fonts/AmericanTypewriter.svg#Gotham_Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'merriweatherlight_italic';
+    src: url('fonts/merriweather-lightitalic-webfont.eot');
+    src: url('fonts/merriweather-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/merriweather-lightitalic-webfont.woff2') format('woff2'),
+         url('fonts/merriweather-lightitalic-webfont.woff') format('woff'),
+         url('fonts/merriweather-lightitalic-webfont.ttf') format('truetype'),
+         url('fonts/merriweather-lightitalic-webfont.svg#merriweatherlight_italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'fontello';
+  src: url('fonts/fontello.eot');
+  src: url('fonts/fontello.eot?55101094#iefix') format('embedded-opentype'),
+       url('fonts/fontello.woff') format('woff'),
+       url('fonts/fontello.ttf') format('truetype'),
+       url('fonts/fontello.svg#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Utilities */
+.lst_reset, .lst_reset li { margin: 0; padding: 0; list-style: none; }
+.clear { clear:both; height:1px; margin:0; padding:0; font-size: 1px; line-height: 0; }
+* { box-sizing: border-box; }
+
+/* clearfix for modern browsers */
+.clearfix:before,
+.clearfix:after { content:""; display:table; }
+.clearfix:after { clear:both; }
+/* For IE 6/7 (trigger hasLayout) */
+.clearfix { zoom:1; }
+
+
+/*** FONT FACE ***/
+
+
+/*** SIZING WITH REM ***/
+html { font-size: 62.5%; } 
+body { font-size: 14px; font-size: 1.4rem; } /* =14px */
+h1   { font-size: 24px; font-size: 2.4rem; } /* =24px */
+
+.first{ margin-left: 0; padding-left: 0;}
+.last{ margin-right: 0; padding-right: 0;}
+
+.left{ float: left;}
+.right{ float: right;}
+
+.hidden{display: none!important;}
+
+/*** GENERAL ***/
+
+/*
+ * jQuery FlexSlider v1.8
+ * http://flex.madebymufffin.com
+ *
+ * Copyright 2011, Tyler Smith
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+
+
+
+ #contenedor {  
+  width: 85%; 
+  max-width:1400px; 
+  margin: 0 auto;
+}
+ 
+/* Browser Resets */
+.flex-container a:active,
+.flexslider a:active {outline: none;}
+.slides,
+.flex-control-nav,
+.flex-direction-nav {margin: 0; padding: 0; list-style: none;} 
+
+/* FlexSlider Necessary Styles
+*********************************/ 
+.flexslider {width: 100%; margin: 0; padding: 0;}
+.flexslider .slides > li {display: none;} /* Hide the slides before the JS is loaded. Avoids image jumping */
+.flexslider .slides img {max-width: 100%; display: block; height: auto;}
+.flex-pauseplay span {text-transform: capitalize;}
+
+/* Clearfix for the .slides element */
+.slides:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;} 
+html[xmlns] .slides {display: block;} 
+* html .slides {height: 1%;}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+.no-js .slides > li:first-child {display: block;}
+
+.wrapper{
+  max-width: 1170px;
+  height: auto;
+  position: relative;
+  display: block;
+  margin: 0 auto
+}
+.contacto-social{
+  width: 100%;
+  height: auto;
+  background: #9dcdce;
+  border-bottom: 1px solid #fff;
+  overflow: hidden;
+  padding: 10px 0px 10px 0px;
+}
+
+.contacto-social ul.contacto{
+  float: left;
+  margin: 0px;
+  font-family: 'Gotham-Book';
+}
+
+.contacto-social ul.contacto li{
+  display: inline-block;
+  margin-right: 31px;
+  color: #fff;
+}
+
+.contacto-social ul.social{
+  float: right;
+}
+.contacto-social ul.social li{
+  display: inline-block;
+  }
+
+header{
+  width: 100%;
+  height: auto;
+  background: #9dcdce;
+  overflow: hidden;
+}
+
+header h1{
+  float: left;
+    margin: 17px 0px 17px 35px;
+}
+
+header nav{
+  float: right;
+}
+header nav ul{
+  list-style: none;
+  margin-top: 50px;
+}
+header nav ul li{
+  display: inline-block;
+  font-size: 3rem;
+  font-family: 'hello';
+  margin-right: 36px;
+}
+
+header nav ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+aside.calendario-newleter{
+  width: 100%;
+  height: auto;
+  background: #ececec;
+  overflow: hidden;
+  padding-top: 31px;
+  padding-bottom: 31px;
+}
+section.actividades{
+  width: 100%;
+  height: auto;
+}
+section.actividades h2{
+  font-family: 'hello';
+  font-size: 4.4rem;
+  color: #ee9000;
+  text-align: center;
+  position: relative;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+}
+section.actividades h2:after{
+  content: " ";
+  width: 128px;
+  height: 5px;
+  background: #7fc56f;
+  position: absolute;
+  bottom: 0px;
+  left: 44%;
+}
+
+section.actividades p{
+  text-align: center;
+  font-family: 'Gotham-Book';
+  font-size: 2.0rem;
+}
+
+.slider-actividades{
+  width: 100%;
+  height: auto;
+  margin-bottom: 60px;
+}
+
+section.productos-del-mes{
+  width: 100%;
+  height: auto;
+  background: #8cb868;
+   padding-top: 58px;
+
+}
+
+section.productos-del-mes h2{
+  color: #fff;
+  font-size: 4.4rem;
+  font-family:'hello';
+  padding-bottom: 10px;
+  }
+
+  section.blog{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-bottom: 69px;
+  }
+  section.blog h2{
+    text-align: center;
+    font-family: 'hello';
+    font-size: 4.4rem;
+    color: #698bc4;
+    position: relative;
+    padding-bottom: 10px;
+  }
+
+  section.blog h2:after{
+  content: " ";
+  width: 128px;
+  height: 5px;
+  background: #7fc56f;
+  position: absolute;
+  bottom: 0px;
+  left: 44%;
+}
+
+  section.blog p{
+    text-align: center;
+    font-family: 'Gotham-Book';
+    font-size: 2.0rem;
+  }
+
+
+article.post-page{
+  width: 271px;
+  height: auto;
+  overflow: hidden;
+  float: left;
+  margin: 0px 8px 0px 13px;
+}
+
+article.post-page h3{
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: 'Gotham-Medium';
+  padding: 0px 11px;
+  border-bottom: 1px solid #dbdbdb;
+  }
+article.post-page p{
+  font-family: 'Gotham-Book';
+  font-size: 1.4rem;
+  padding: 0px 11px;
+  text-align: left;
+}
+
+section.comunidad{
+  width: 100%;
+  height: auto;
+  padding-top: 87px;
+  clear: both;
+  background: url(images/wayu.jpg);
+  background-size: cover;
+  padding-bottom: 150px;
+}
+
+section.comunidad h2{
+  text-align: center;
+  font-family: 'hello';
+  font-size: 4.4rem;
+  position: relative;
+  color: #fff;
+  padding-bottom: 10px;
+
+  }
+section.comunidad h2:after{
+  content: " ";
+  width: 128px;
+  height: 5px;
+  background: #bc8492;
+  position: absolute;
+  bottom: 0px;
+  left: 44%;
+}
+
+section.comunidad p{
+  font-size: 2.0rem;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  max-width: 770px;
+  margin: 0 auto;
+}
+
+section.colaboradores{
+  width: 100%;
+  height: auto;
+  background: #f7f7f7;
+  padding-top: 94px;
+}
+
+section.colaboradores h2{
+  text-align: center;
+  font-size: 4.4rem;
+  font-family: 'hello';
+  position: relative;
+  padding-bottom: 10px;
+}
+section.colaboradores h2:after{
+  content: " ";
+  width: 128px;
+  height: 5px;
+  background: #9ecdce;
+  position: absolute;
+  bottom: 0px;
+  left: 44%;
+}
+
+
+
+
+
+footer.slider-base{
+  width: 100%;
+  height: 20px;
+  background: #f8f7f7;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.calendario{
+  width: 464px;
+  height: auto;
+  float: left;
+  font-size: 2.4rem;
+  color: #688dc2;
+  font-family: 'Gotham-Light';
+}
+.newleter{
+  width: 562px;
+  height: auto;
+  font-family: 'Gotham-Light';
+  font-size: 2.4rem;
+  color: #bc8492;
+  float: right;
+}
+
+button.btn-calendario{
+   width: 400px;
+  height: auto;
+  float: left;
+  background: #688dc2;
+  color: #fff;
+  font-size: 2.0rem;
+  padding: 9px 0px 9px 0px;
+ text-align: center;
+ border: none;
+ font-family: 'AmericanTypewriter';
+}
+button.btn-enviar{
+  width: 100px;
+  height: 40px;
+  color: #fff;
+  background: #bc8492;
+  border: none;
+  font-size: 1.8rem;
+  font-family: 'AmericanTypewriter';
+}
+input.input-newleter{
+  width: 450px;
+  height: 42px;
+  background: #fff;
+  padding-left: 16px;
+}
+input[placeholder], [placeholder], *[placeholder] {
+   color: #a7a7ad !important;
+   font-size: 1.8rem;
+   font-family: 'AmericanTypewriter';
+   font-weight: lighter;
+}
+
+.fecha-page{
+  color: #a3d498;
+  font-size:1.2rem;
+  float: left;
+  font-family: 'merriweatherlight_italic';
+  margin-left: 50px;
+}
+.comentarios{
+  font-size: 1.3rem;
+  color: #adadad;
+  float: left;
+  font-family: 'merriweatherlight_italic';
+  margin-right: 50px;
+
+}
+.main-single{
+  max-width: 768px;
+  height: auto;
+  float: left;
+}
+.main-single h2{
+  font-family: 'Gotham-Light';
+  font-size: 2.4rem;
+  color: #688dc2;
+  margin-bottom: 29px;
+  }
+  .main-single img{
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .contenido-articulos {
+    font-family: 'Gotham-Book';
+    font-size: 1.4rem;
+    color: #515151;
+    border: 1px solid #dbdbdb;
+    position: relative;
+    padding: 0px 22px 40px 22px;
+    margin-bottom: 83px;
+  }
+footer.footer-single{
+  width: 100%;
+  height: 43px;
+  background: #f8f7f7;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+}
+
+footer.footer-single ul li{
+  float: left;
+  margin-right: 30px;
+  list-style: none;
+  color: #7b9bc8;
+}
+
+.tag a{
+  text-decoration: none;
+  color: #7b9bc8;
+}
+
+
+
+section.main-single-right{
+  width: 355px;
+  height: auto;
+  float: left;
+  margin-left: 32px;
+  margin-top: 40px;
+}
+section.main-single-right h2{
+  font-family: 'Gotham-Book';
+  font-size: 2.4rem;
+  color: #383940;
+}
+section.main-single-right ul{
+  list-style: none;
+}
+
+section.main-single-right ul li{
+  font-size: 1.8rem;
+  font-family: 'Gotham-Book';
+  border-bottom: 1px solid #d3d3d5;
+  padding-bottom: 22px;
+  padding-top: 28px;
+}
+
+.search_form{
+ display: inline-block;
+  margin-bottom: 26px;
+}
+.search_form input {
+    border: 1px solid #eaeaea;
+    background: none;
+    margin: 0;
+    height: 3.9rem;
+    width: 256px;
+    float: left;
+}
+
+.search_form input[type=submit] {
+    width: 99px;
+    height: 39px;
+    display: inline-block;
+    border: 0;
+    margin: 0;
+    background-color: #a7a7ac;
+    color: #fff;
+    font-family: 'Gotham-Book';
+    font-size: 1.8rem;
+}
+.contenedor-post-actuales{
+  width: 370px;
+  height: auto;
+  background: #f8f7f7;
+  padding: 36px 0px 59px 16px;
+  border: 1px solid #f0f0f0;
+}
+.contenedor-post-actuales h2{
+  font-family: "Gotham-Book";
+  font-size: 2.3rem;
+  margin: 0px;
+  }
+  article.post-reciente{
+    width: 341px;
+    height: 141px;
+    border-bottom: 1px solid #d3d3d5;
+    margin-top: 35px;
+  }
+  article.post-reciente h2{
+    font-family: 'Gotham-Medium';
+    font-size: 1.8rem;
+  }
+
+  figure.image-reciente img{
+    width: 141px;
+    height: auto;
+    float: left;
+    margin-right: 19px;
+  margin-bottom: 27px;
+  }
+
+  .fecha-post-actual{
+    font-size: 1.2rem;
+    color: #9fd293;
+    width: 22%;
+    float: left;
+  }
+.footer-datos{
+  font-size: 12px;
+  color: #90abd2;
+}
+.fb-comments,.fb-comments iframe[style] { width: 100% !important;}
+.comentarios-face {width: 100%; overflow:hidden; margin-top: 10px;}
+.comentarios-face .comentarios-container-face{width: 100%; overflow: hidden; background: #688dc2; padding: 5px;}
+.comentarios-face .comentarios-container-face h4{font-size: 22px;  color:#fff; text-align: center; font-family: "hello";}
+.comentarios-container .nube{font-family: 'entypo'; color: #fff; font-size: 40px;}
+
+footer{
+  width: 100%;
+  height: auto;
+  background: #9595a0;
+  overflow: hidden;
+}
+
+article.donde-estamos{
+  width: 370px;
+  height: auto;
+  float: left;
+  padding: 0px 5px;
+  color: #fff;
+  font-size: 1.3rem;
+  font-family: 'Gotham-Light';
+  margin-right: 30px;
+}
+article.donde-estamos h3{
+  color: #fff;
+  font-family: 'hello';
+  font-size: 30px;
+  position: relative;
+  padding-bottom: 8px;
+  margin: 0px 0px 30px 0px;
+
+}
+article.donde-estamos h3:after{
+  width: 170px;
+  height: 2px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background: #ceced0;
+   content: '';
+}
+.mapa-dinamico{
+  width: 353px;
+  height: 220px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+.leyenda-direcion{
+  width: 317px;
+  height: 100px;
+  background: #fff;
+  padding: 7px;
+  position: absolute;
+  bottom: 10px;
+  left: 5%;
+}
+.leyenda-direcion p{
+  border: 1px solid #bfbfc6;
+  padding: 7px 20px;
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Gotham-Light';
+  line-height: 23px;
+  color: #b4b4bc;
+}
+span.color-azul{
+  color: #b7e3e6;
+}
+article.siguenos-en{
+  width: 271px;
+  height: auto;
+  float: left;
+  margin-right: 30px;
+}
+article.siguenos-en h3{
+  color: #fff;
+  font-family: 'hello';
+  font-size: 30px;
+  position: relative;
+  padding-bottom: 8px;
+  margin: 0px 0px 30px 0px;
+  }
+article.siguenos-en h3:after{
+  width: 170px;
+  height: 2px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background: #ceced0;
+   content: '';
+}
+
+article.newletter-footer{
+  width: 458px;
+  height: auto;
+  float: left;
+}
+
+article.newletter-footer h3{
+  color: #fff;
+  font-family: 'hello';
+  font-size: 30px;
+  position: relative;
+  padding-bottom: 8px;
+  margin: 0px 0px 30px 0px;
+}
+
+article.newletter-footer h3:after{
+  width: 170px;
+  height: 2px;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background: #ceced0;
+  content: '';
+}
+p.titulo-input{
+  color: #fff;
+  font-family: 'Gotham-Medium';
+  font-size: 1.8rem;
+  padding-left: 25px;
+}
+input.input-newleter-footer{
+  width: 358px;
+  height: 33px;
+  background: #fff;
+  float: left;
+  padding-left: 5px;
+}
+button.btn-enviar-footer{
+  width: 100px;
+  height: 32px;
+  color:#fff;
+  font-family: 'AmericanTypewriter';
+  background:#9dcdcd;
+  border: none;
+}
+p.slogan{
+  width: 337px;
+  height: auto;
+  color: #fff;
+  font-family: 'Gotham-Book';
+  font-size: 1.4rem;
+  margin-top: 34px;
+  padding-left: 25px;
+}
+
+figure.logo-footer{
+  width: 28%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.logo-footer img{
+  width: 100%;
+}
+.padding-20{
+  padding-left: 20px;
+}
+
+.show-categoria{
+    padding: 1px;
+    color: #fff;
+    background: #bd8592;
+    width: 185px;
+    height: auto;
+    float: right;
+}
+.show-categoria ul{
+  list-style: none;
+}
+.show-categoria ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.7rem;
+    font-family: 'AmericanTypewriter';
+}
+.base-categoria-red-social{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  margin-bottom: 34px;
+}
+iframe{
+  margin: 0 auto;
+  display: block;
+}
+.post-actual-fecha-coment{
+  width: 100%;
+  overflow: hidden;
+}
+.imagen-head img{
+  width:100%;
+  height: auto;
+}
+h2.titulo-blog{
+    float: left;
+    color: #000;
+    font-size: 1.8rem;
+    font-family: 'Gotham-Medium';
+
+}
+
+/* FlexSlider Default Theme
+*********************************/
+.flexslider {
+  background: #fff; 
+  border-left: 4px solid #fff;
+  border-right: 4px solid #fff;
+  position: relative; 
+  -webkit-border-radius: 5px; 
+  -moz-border-radius: 5px; 
+  -o-border-radius: 5px; 
+  border-radius: 5px; 
+  zoom: 1;
+}
+.flexslider .slides {zoom: 1;}
+.flexslider .slides > li {position: relative;}
+/* Suggested container for "Slide" animation setups. Can replace this with your own, if you wish */
+.flex-container {zoom: 1; position: relative;}
+
+/* Caption style */
+/* IE rgba() hack */
+.flex-caption {background:none; -ms-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000);
+filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endColorstr=#4C000000); zoom: 1;}
+.flex-caption {
+    width: 100%;
+    padding: 2%;
+    position: absolute;
+    left: 0;
+    bottom: 35%;
+    color: #fff;
+    font-size: 7.2rem;
+    line-height: 18px;
+    text-align: center;
+    font-family: 'hello';
+}
+
+button.btn-calendario:before{
+  content: '\e800'; 
+  font-size: 1.9rem;
+  font-family: 'fontello';
+  color: #fff;
+}
+
+/* Direction Nav */
+.flex-direction-nav li a {width: 52px; height: 52px; margin: -13px 0 0; display: block; background: url(../images/bg_direction_nav.png) no-repeat 0 0; position: absolute; top: 50%; cursor: pointer; text-indent: -9999px;}
+.flex-direction-nav li .next {background-position: -52px 0; right: -21px;}
+.flex-direction-nav li .prev {left: -20px;}
+.flex-direction-nav li .disabled {opacity: .3; filter:alpha(opacity=30); cursor: default;}
+
+/* Control Nav */
+.flex-control-nav {width: 100%; position: absolute; bottom: -30px; text-align: center;}
+.flex-control-nav li {margin: 0 0 0 5px; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-nav li:first-child {margin: 0;}
+.flex-control-nav li a {width: 13px; height: 13px; display: block; background: url(../images/bg_control_nav.png) no-repeat 0 0; cursor: pointer; text-indent: -9999px;}
+.flex-control-nav li a:hover {background-position: 0 -13px;}
+.flex-control-nav li a.active {background-position: 0 -26px; cursor: default;}
+
+
+/* Demo Slides */
+
+#owl-example .item{
+ margin-left: 15px;
+ margin-right: 15px;
+  color: #FFF;
+  text-align: center;
+  overflow: hidden;
+}
+#owl-example .item p{
+  color: #000;
+  text-align: left;
+  font-family: 'Gotham-Book';
+  font-size: 1.4rem;
+  padding-left: 30px;
+  padding-right: 20px;
+}
+#owl-example .item img{
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+#owl-example .item h3{
+  font-size: 1.8rem;
+  color: #383940;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #000;
+  font-family: 'Gotham-Medium';
+}
+#owl-example .item h4{
+  margin: 5px 0 0;
+  font-size: 18px;
+}
+.item h1{
+  margin: inherit;
+}
+
+
+/* 
+ *  Core Owl Carousel CSS File
+ *  v1.3.3
+ */
+
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+/* display none until init */
+.owl-carousel{
+  display: none;
+  position: relative;
+  width: 100%;
+  -ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper{
+  display: none;
+  position: relative;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer{
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight{
+  -webkit-transition: height 500ms ease-in-out;
+  -moz-transition: height 500ms ease-in-out;
+  -ms-transition: height 500ms ease-in-out;
+  -o-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out;
+}
+  
+.owl-carousel .owl-item{
+  float: left;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div{
+  cursor: pointer;
+}
+.owl-controls {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* mouse grab icon */
+.grabbing { 
+    cursor:url(grabbing.png) 8 8, move;
+}
+
+/* fix */
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item{
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility:    hidden;
+  -ms-backface-visibility:     hidden;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+}
+
+/*
+*   Owl Carousel Owl Demo Theme 
+* v1.3.3
+*/
+
+.owl-theme .owl-controls{
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Styling Next and Prev buttons */
+
+.owl-theme .owl-controls .owl-buttons div{
+  color: #FFF;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;/*IE7 life-saver */
+  margin: 5px;
+  padding: 3px 10px;
+  font-size: 12px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  background: #869791;
+  filter: Alpha(Opacity=50);/*IE7 fix*/
+  opacity: 0.5;
+}
+/* Clickable class fix problem with hover on touch devices */
+/* Use it for non-touch hover action */
+.owl-theme .owl-controls.clickable .owl-buttons div:hover{
+  filter: Alpha(Opacity=100);/*IE7 fix*/
+  opacity: 1;
+  text-decoration: none;
+}
+
+/* Styling Pagination*/
+
+.owl-theme .owl-controls .owl-page{
+  display: inline-block;
+  zoom: 1;
+  *display: inline;/*IE7 life-saver */
+}
+.owl-theme .owl-controls .owl-page span{
+  display: block;
+  width: 15px;
+  height: 5px;
+  margin: 5px 7px;
+  filter: Alpha(Opacity=50);/*IE7 fix*/
+  opacity: 0.5;
+  background: #ee9000;
+}
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span{
+  filter: Alpha(Opacity=100);/*IE7 fix*/
+  opacity: 1;
+}
+
+/* If PaginationNumbers is true */
+
+.owl-theme .owl-controls .owl-page span.owl-numbers{
+  height: auto;
+  width: auto;
+  color: #FFF;
+  padding: 2px 10px;
+  font-size: 12px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+
+/* preloading images */
+.owl-item.loading{
+  min-height: 150px;
+  background: url(AjaxLoader.gif) no-repeat center center
+}
+
+#myCarousel .nav a small {
+    display:block;
+}
+#myCarousel .nav {
+  background:#eee;
+}
+#myCarousel .nav a {
+    border-radius:0px;
+}
+
+
+  
+
+
+
