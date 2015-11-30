@@ -2,6 +2,11 @@
 	<!-- Insert content here -->
 <div class="wrapper">
 	<figure class="imagen-head">
+    <h2>BIENVENIDOS AL BLOG WAYUU</h2>
+    <p>Pero un buen dia, una pequeña lñinea de texto simulado,<br>
+      llamada Lorem Ipsum, decidio aventurarse y salir al vasto <br>
+      mundo de la gramatica.
+    </p>
   		<img src="<?php bloginfo('template_url'); ?>/images/stageBlog.png" alt="cabecera" />
   	</figure>
   <div class="main-single">

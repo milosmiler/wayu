@@ -893,6 +893,26 @@ iframe{
   width:100%;
   height: auto;
 }
+.imagen-head{
+  position: relative;
+}
+.imagen-head h2{
+  position: absolute;
+  top: 11px;
+  left: 200px;
+  font-size: 4.4rem;
+  font-family: 'hello';
+  color: #fff;
+}
+.imagen-head p{
+  font-family: 'AmericanTypewriter';
+  font-size: 2.0rem;
+  color: #fff;
+  position: absolute;
+  top: 139px;
+  left: 200px;
+}
+
 h2.titulo-blog{
     float: left;
     color: #000;
