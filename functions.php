@@ -426,5 +426,14 @@ function pagenavi($before = '', $after = '') {
     }
 }
 
+//Elimina referencias a la version de WordPress
+function quitar_version_wp() {
+	return '';
+}
+	add_filter('the_generator', 'quitar_version_wp');
+
+
+
+
 
 	
