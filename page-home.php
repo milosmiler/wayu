@@ -80,7 +80,7 @@
                   query_posts('showposts=4'); 
                if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
                 <article class="post-page">
-                   <?php the_post_thumbnail('image-blog'); ?>
+                   <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('image-blog'); ?></a> 
                   <h3><?php the_title();?></h3>
                   <p><?php echo wp_trim_words(get_the_excerpt(), 20 );?></p>
                   <footer class="slider-base">

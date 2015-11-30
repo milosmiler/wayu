@@ -49,7 +49,7 @@
                if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
         <article class="post-reciente">
           <figure class="image-reciente">
-            <?php the_post_thumbnail('image-reciente'); ?>
+          <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('image-reciente'); ?></a> 
           </figure>
           <h2><?php the_title(); ?></h2>
           <div class="post-actual-fecha-coment">
