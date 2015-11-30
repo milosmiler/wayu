@@ -17,13 +17,13 @@
           <ul>
           <li><div class="footer-datos">  <?php the_author(); ?> </div></li>
           <li><div class="tag"><?php the_tags( 'Tags: ', ', ', '<br />' ); ?> </div></li>
-          <li><?php the_time('F j') ?></li>
-          <li><fb:comments-count href=<?php the_permalink(); ?>></fb:comments-count> Comentarios</li>
+          <li><div class="calendario-blog"> <?php the_time('F j') ?></div></li>
+          <li><div class="comentario-blog"><fb:comments-count href=<?php the_permalink(); ?>></fb:comments-count> Comentarios</div></li>
           </ul>
         </footer>
       </div>
       <div class='comentarios-face'>
-        <div class='comentarios-container-face'> <h4> <span class='nube'> &#59168;</span> Comentarios</h4> </div>
+        <div class='comentarios-container-face'> <h4> <span class='nube'> </span> Comentarios</h4> </div>
         <div class="fb-comments" data-href="<?php the_permalink();?>" data-width="100%" data-numposts="5" data-colorscheme="light"></div>
     </div>
   </div>

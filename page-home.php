@@ -84,8 +84,8 @@
                   <h3><?php the_title();?></h3>
                   <p><?php echo wp_trim_words(get_the_excerpt(), 20 );?></p>
                   <footer class="slider-base">
-                     <div class="fecha-page"> <?php the_time('M j, Y') ?> </div>
-                      <div class="comentarios"><fb:comments-count href=<?php the_permalink(); ?>></fb:comments-count> Comment</div>
+                     <div class="fecha-page2"> <?php the_time('M j, Y') ?> </div>
+                      <div class="comentarios2"><fb:comments-count href=<?php the_permalink(); ?>></fb:comments-count> Comment</div>
                   </footer>
                 </article>
              <?php  endwhile; ?>

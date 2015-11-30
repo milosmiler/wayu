@@ -19,16 +19,16 @@
 			<div class="contacto-social">
 				<div class="wrapper">
 				<ul class="contacto">
-					<li>044 55 6102 5463</li>
-					<li>contacto@contacto.com</li>
-					<li>preguntas frecuentes</li>
+					<li class="telefono">044 55 6102 5463</li>
+					<li class="sobre-contacto">contacto@contacto.com</li>
+					<li class="preguntas-frecuentes">preguntas frecuentes</li>
 				</ul>
 				<!-- <ul class="social">
-					<li><div class="icon face"> </div><li>
-					<li><div class="icon twitter"> </div><li>
-					<li><div class="icon camara"> </div><li>
-					<li><div class="icon youtube"> </div><li>
-					<li><div class="icon pinters"> </div><li>
+					<li><div class="face"> </div><li>
+					<li><div class=" twitter"> </div><li>
+					<li><div class="camara"> </div><li>
+					<li><div class=" youtube"> </div><li>
+					<li><div class="pinters"> </div><li>
 				</ul> -->
 				</div>
 			</div>

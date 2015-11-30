@@ -220,7 +220,7 @@ html[xmlns] .slides {display: block;}
 
 .contacto-social ul.contacto li{
   display: inline-block;
-  margin-right: 31px;
+  margin-right: 25px;
   color: #fff;
 }
 
@@ -506,7 +506,31 @@ input[placeholder], [placeholder], *[placeholder] {
   font-family: 'merriweatherlight_italic';
   margin-left: 50px;
 }
+
+.fecha-page2 {
+    color: #a3d498;
+    font-size: 1.2rem;
+    float: left;
+    font-family: 'merriweatherlight_italic';
+    margin-left: 17px;
+}
+.comentarios2 {
+    font-size: 1.3rem;
+    color: #adadad;
+    float: left;
+    font-family: 'merriweatherlight_italic';
+    margin-left: 50px;
+}
+
 .fecha-page:before{
+  content: '\e800';
+    font-size: 1.5rem;
+    font-family: 'fontello';
+    color: #ccc;
+    margin-right: 10px;
+  }
+
+.fecha-page2:before{
   content: '\e800';
     font-size: 1.5rem;
     font-family: 'fontello';
@@ -519,15 +543,21 @@ input[placeholder], [placeholder], *[placeholder] {
   color: #adadad;
   float: left;
   font-family: 'merriweatherlight_italic';
-  margin-left: 8px;
+  margin-left: 34px;
 }
 .comentarios:before{
-  content: '\e806';
+  content: '\e80A';
     font-size: 1.5rem;
     font-family: 'fontello';
     color: #ccc;
     margin-right: 10px;
-
+}
+.comentarios2:before{
+  content: '\e80A';
+    font-size: 1.5rem;
+    font-family: 'fontello';
+    color: #ccc;
+    margin-right: 10px;
 }
 .main-single{
   max-width: 768px;
@@ -653,7 +683,7 @@ section.main-single-right ul li{
     height: auto;
     float: left;
     margin-right: 19px;
-  margin-bottom: 27px;
+  margin-bottom: 19px;
   }
 
   .fecha-post-actual{
@@ -911,6 +941,88 @@ button.btn-calendario:before{
   font-family: 'fontello';
   color: #fff;
   margin-right: 15px;
+}
+button.btn-leyendo{
+  background: #688dc1;
+  color: #fff;
+  border: none;
+  width: 162px;
+  height: 35px;
+  margin-bottom: 25px;
+  font-family: 'AmericanTypewriter';
+  font-size: 1.6rem;
+}
+.contacto li.telefono:before{
+  content: '\e809'; 
+  font-size: 2.5rem;
+  font-family: 'fontello';
+  color: #fff;
+  margin-right: 15px;
+}
+.contacto li.sobre-contacto:before{
+  content: '\e803'; 
+  font-size: 2.5rem;
+  font-family: 'fontello';
+  color: #fff;
+  margin-right: 15px;
+}
+.contacto li.preguntas-frecuentes:before{
+  content: '\e809'; 
+  font-size: 2.5rem;
+  font-family: 'fontello';
+  color: #fff;
+  margin-right: 15px;
+}
+.social li.face{
+  content: '\e809'; 
+  font-size: 2.5rem;
+  font-family: 'fontello';
+  color: #fff;
+  margin-right: 15px;
+}
+.footer-datos:before{
+  content: '\e807'; 
+  font-size: 2.2rem;
+  font-family: 'fontello';
+  color: #808080;
+  margin-right: 15px;
+}
+.tag:before{
+  content: '\e804'; 
+  font-size: 2.2rem;
+  font-family: 'fontello';
+  color: #808080;
+  margin-right: 15px;
+}
+
+.calendario-blog:before{
+  content: '\e800'; 
+  font-size: 2.2rem;
+  font-family: 'fontello';
+  color: #808080;
+  margin-right: 15px;
+}
+.calendario-blog:before{
+  content: '\e800'; 
+  font-size: 2.2rem;
+  font-family: 'fontello';
+  color: #808080;
+  margin-right: 15px;
+}
+.comentario-blog:before{
+  content: '\e80A'; 
+  font-size: 2.2rem;
+  font-family: 'fontello';
+  color: #808080;
+  margin-right: 15px;
+}
+span.nube:before{
+  content: '\e80A'; 
+  font-size: 2.7rem;
+  font-family: 'fontello';
+  color: #fff;
+  margin-right: 15px;
+
 }
 
 /* Direction Nav */

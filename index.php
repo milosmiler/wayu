@@ -13,13 +13,14 @@
           			<div class="show-categoria"><?php the_category();?> </div>
         		</div>
         		<?php the_excerpt(); ?>
+            <a href="<?php the_permalink(); ?>"><button class="btn-leyendo">Seguir leyendo</button></a>
         		<footer class="footer-single">
           			<ul>
 	         		 <li><div class="footer-datos">  <?php the_author(); ?> </div></li>
-	          		 <li><div class="tag"><?php the_tags( 'Tags: ', ', ', '<br />' ); ?> </div></li>
-	          		 <li><?php the_time('F j') ?></li>
-	          		 <li><fb:comments-count href=<?php the_permalink(); ?>></fb:comments-count> Comentarios</li>
-                    </ul>
+	          		 <li><div class="tag"><?php the_tags( '', ', ', '<br />' ); ?> </div></li>
+	          		 <li> <div class="calendario-blog"> <?php the_time('F j') ?> </div> </li>
+	          		 <li><div class="comentario-blog"><fb:comments-count href=<?php the_permalink(); ?>></fb:comments-count> Comentarios</div></li>
+                </ul>
         		</footer> 
   			</div>
   	<?php endwhile; else: ?>
@@ -60,7 +61,6 @@
         </article>
         <?php  endwhile; ?>
     </div>
-
   </section>
 	
 <?php get_footer(); ?>
