@@ -23,9 +23,11 @@
                 </ul>
         		</footer> 
   			</div>
+
   	<?php endwhile; else: ?>
 <p><?php _e('Lo siento, no encontre nada para mostrar.'); ?></p>
-<?php endif; ?>        
+<?php endif; ?>  
+ <div class="navigation"><?php if(function_exists('pagenavi')) { pagenavi(); } ?></div>      
 </div> 
 
   <section class="main-single-right">

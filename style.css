@@ -1238,6 +1238,90 @@ span.nube:before{
 #myCarousel .nav a {
     border-radius:0px;
 }
+.pagenavi {
+    margin: 0 0 20px 30px;
+    padding: 5px 1px 5px;
+    float:left;
+    width: 98%;
+}
+.pagenavi a {
+    padding: 5px 6px 4px 6px;
+    margin: 3px;
+    text-decoration: none;
+    border: 1px solid #688dc1;
+    color: #fff;
+    background-color: #688dc1;
+}
+.pagenavi a:hover {
+    border: 1px solid #444;
+    color: #444;
+    background-color: #eee;
+}
+.pagenavi span.pages {
+    padding: 5px 6px 4px 6px;
+    margin: 3px;
+    color: #825a2d;
+    font-weight:bold;
+    border: 1px solid #999;
+    background-color: inherit;
+    display: none;
+}
+.pagenavi span.current {
+    padding: 5px 6px 4px 6px;
+    margin: 3px;
+    font-weight:bold;
+    color: #fff;
+    background-color: #92929d;
+}
+.pagenavi span.expand {
+    padding: 5px 6px 4px 6px;
+    margin: 3px;
+    border: 1px solid #ccc;
+    color: #fff;
+    background-color: #92929d;
+}
+.pagenavi .first, .pagenavi .last {
+    border: 1px solid #aaa;
+}
+.pagenavi .single_page {
+border: 1px dashed #688dc1;
+}
+
+div.pagination {
+    padding: 3px;
+    margin: 3px;
+    text-align:center;
+  }
+  
+  div.pagination a {
+    border: 1px solid #dedfde;
+    margin-right:3px;
+    padding:2px 6px;
+
+    background-position:bottom;
+    text-decoration: none;
+
+    color: #99210B;
+  }
+  div.pagination a:hover, div.pagination a:active {
+    border: 1px solid #000;
+    background-image:none;
+    background-color:#777777;
+    color: #fff;
+  }
+  div.pagination span.current {
+    margin-right:3px;
+    padding:2px 6px;
+    
+    font-weight: bold;
+    color: #99210B;
+  }
+  div.pagination span.disabled {
+    margin-right:3px;
+    padding:2px 6px;
+  
+    color: #adaaad;
+  }
 
 
   
