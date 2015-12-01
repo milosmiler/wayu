@@ -80,18 +80,21 @@
                     <label for="tab-3" class="tab-label-3">Work</label>
                     <div class="clear-shadow"></div>
                     <div class="content">
+                 <?php $producto = new WP_Query( array( 'posts_per_page' => 1, 'category_name' => 'producto_del_mes')); 
+                        if ( $producto->have_posts() ) : while ( $producto->have_posts() ) : $producto->the_post(); ?>
                         <div class="content-1">
                           <figure class="image-producto">
+                            <?php the_post_thumbnail('full-size'); ?>
                           </figure>
-                            <h2 class="nombre-producto">About us</h2> 
-                            <p class="descript-producto"> Oat cake wafer icing chocolate wafer. Lemon drops dessert dessert lemon drops cotton candy tiramisu chupa chups 
-                              chocolate cake dragée. Apple pie oat cake caramels oat cake topping lollipop soufflé tiramisu brownie. Oat cake 
-                              cheesecake topping pudding marshmallow jelly-o tiramisu tootsie roll. Jujubes fruitcake jujubes halvah oat cake sweet 
-                              roll topping croissant. Dragée tootsie roll apple pie cupcake fruitcake chocolate cake liquorice. Dessert sweet 
-                              chocolate bar. Candy chupa chups croissant. Toffee ice cream jujubes. Caramels tootsie roll oat cake. Sweet sesame 
-                              snaps cotton candy gummies muffin. Gummi bears candy muffin.
+                            <h2 class="nombre-producto"><?php the_title();?></h2> 
+                            <p class="descript-producto"> 
+                              <?php echo wp_trim_words(get_the_excerpt(), 22 );?>
                             </p>
                         </div>
+                    <?php endwhile; wp_reset_postdata(); else : ?>
+                          <p><?php _e( 'lo siento' ); ?></p>
+                        <?php endif; ?>
+
                         <div class="content-2">
                           <figure class="image-producto">
                           </figure>
@@ -142,6 +145,7 @@
              <?php  endwhile; ?>
              </div>
             </section>
+
            <div class="wrapper">
             <section class="comunidad">
               <h2>COMUNIDAD WAYUU </h2>

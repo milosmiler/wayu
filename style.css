@@ -311,7 +311,6 @@ section.productos-del-mes{
   height: auto;
   background: #8cb868;
    padding-top: 58px;
-
 }
 
 section.productos-del-mes h2{
@@ -940,6 +939,9 @@ h2.titulo-blog{
 }
 h2.categoria-titulo{
   text-align: center;
+}
+figure.image-producto img{
+  
 }
 figure.image-producto{
   width: 370px;
