@@ -941,12 +941,11 @@ h2.categoria-titulo{
   text-align: center;
 }
 figure.image-producto img{
-  
+  width: 100%;
 }
 figure.image-producto{
   width: 370px;
-  height: 380px;
-  border: 1px solid #fff;
+  height: auto;
   float: left;
   margin-right: 32px;
 }

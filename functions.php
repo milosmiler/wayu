@@ -109,6 +109,7 @@
 		add_image_size( 'post_home', 250, 250, true );
 		add_image_size( 'full-size', '','', true);
 		add_image_size( 'image-reciente', 141,102, true);
+		add_image_size( 'image-producto', 370,380, true);
 
 
 		

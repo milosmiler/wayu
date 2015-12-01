@@ -73,52 +73,61 @@
               <h2> PRODUCTOS DEL MES </h2>
                   <section class="tabs">
                     <input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" />
-                    <label for="tab-1" class="tab-label-1">About</label>
+                    <label for="tab-1" class="tab-label-1">Producto 1</label>
                     <input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" />
-                    <label for="tab-2" class="tab-label-2">Services</label>
+                    <label for="tab-2" class="tab-label-2">producto 2</label>
                     <input id="tab-3" type="radio" name="radio-set" class="tab-selector-3" />
-                    <label for="tab-3" class="tab-label-3">Work</label>
+                    <label for="tab-3" class="tab-label-3">producto 3</label>
                     <div class="clear-shadow"></div>
                     <div class="content">
-                 <?php $producto = new WP_Query( array( 'posts_per_page' => 1, 'category_name' => 'producto_del_mes')); 
+                 <?php $producto = new WP_Query( array( 'posts_per_page' => 1, 'offset' => 1, 'category_name' => 'producto_del_mes')); 
                         if ( $producto->have_posts() ) : while ( $producto->have_posts() ) : $producto->the_post(); ?>
                         <div class="content-1">
                           <figure class="image-producto">
-                            <?php the_post_thumbnail('full-size'); ?>
+                            <?php the_post_thumbnail('image-producto'); ?>
                           </figure>
                             <h2 class="nombre-producto"><?php the_title();?></h2> 
                             <p class="descript-producto"> 
-                              <?php echo wp_trim_words(get_the_excerpt(), 22 );?>
+                              <?php the_excerpt();?>
                             </p>
                         </div>
                     <?php endwhile; wp_reset_postdata(); else : ?>
                           <p><?php _e( 'lo siento' ); ?></p>
                         <?php endif; ?>
 
+
+
+                  <?php $producto = new WP_Query( array( 'posts_per_page' => 1, 'offset' => 2, 'category_name' => 'producto_del_mes')); 
+                        if ( $producto->have_posts() ) : while ( $producto->have_posts() ) : $producto->the_post(); ?>
                         <div class="content-2">
                           <figure class="image-producto">
+                             <?php the_post_thumbnail('image-producto'); ?>
                           </figure>
-                            <h2 class="nombre-producto">About us</h2> 
-                            <p class="descript-producto"> Oat cake wafer icing chocolate wafer. Lemon drops dessert dessert lemon drops cotton candy tiramisu chupa chups 
-                              chocolate cake dragée. Apple pie oat cake caramels oat cake topping lollipop soufflé tiramisu brownie. Oat cake 
-                              cheesecake topping pudding marshmallow jelly-o tiramisu tootsie roll. Jujubes fruitcake jujubes halvah oat cake sweet 
-                              roll topping croissant. Dragée tootsie roll apple pie cupcake fruitcake chocolate cake liquorice. Dessert sweet 
-                              chocolate bar. Candy chupa chups croissant. Toffee ice cream jujubes. Caramels tootsie roll oat cake. Sweet sesame 
-                              snaps cotton candy gummies muffin. Gummi bears candy muffin.
+                            <h2 class="nombre-producto"><?php the_title();?></h2> 
+                            <p class="descript-producto"> 
+                              <?php the_excerpt();?>
                             </p>   
                         </div>
+                  <?php endwhile; wp_reset_postdata(); else : ?>
+                        <p><?php _e( 'lo siento' ); ?></p>
+                      <?php endif; ?>
+
+
+                  <?php $producto = new WP_Query( array( 'posts_per_page' => 1,'offset' => 3, 'category_name' => 'producto_del_mes')); 
+                        if ( $producto->have_posts() ) : while ( $producto->have_posts() ) : $producto->the_post(); ?>
                         <div class="content-3">
                             <figure class="image-producto">
+                               <?php the_post_thumbnail('image-producto'); ?>
                           </figure>
-                            <h2 class="nombre-producto">About us</h2> 
-                            <p class="descript-producto"> Oat cake wafer icing chocolate wafer. Lemon drops dessert dessert lemon drops cotton candy tiramisu chupa chups 
-                              chocolate cake dragée. Apple pie oat cake caramels oat cake topping lollipop soufflé tiramisu brownie. Oat cake 
-                              cheesecake topping pudding marshmallow jelly-o tiramisu tootsie roll. Jujubes fruitcake jujubes halvah oat cake sweet 
-                              roll topping croissant. Dragée tootsie roll apple pie cupcake fruitcake chocolate cake liquorice. Dessert sweet 
-                              chocolate bar. Candy chupa chups croissant. Toffee ice cream jujubes. Caramels tootsie roll oat cake. Sweet sesame 
-                              snaps cotton candy gummies muffin. Gummi bears candy muffin.
+                            <h2 class="nombre-producto"><?php the_title();?></h2> 
+                            <p class="descript-producto"> 
+                              <?php the_excerpt();?>
                             </p>
                         </div>
+                   <?php endwhile; wp_reset_postdata(); else : ?>
+                        <p><?php _e( 'lo siento esta enfermo' ); ?></p>
+                      <?php endif; ?>
+
                     </div>
                   </section>
               </div>
@@ -131,7 +140,7 @@
               <h2> WAYUU BLOG </h2>
               <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. </p>
           <?php $temp_query = $wp_query;
-                  query_posts('showposts=4'); 
+                  query_posts('showposts=4&cat=-5'); 
                if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
                 <article class="post-page">
                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('image-blog'); ?></a> 
