@@ -41,8 +41,9 @@
         </div>
       </div>
       </aside>
-      <div class="wrapper">
+      
             <section class="actividades">
+              <div class="wrapper">
                 <h2>CONOCE NUESTRAS ACTIVIDADES</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
@@ -64,16 +65,66 @@
                         <?php endif; ?>
                   </div>
                 </div>
+              </div>
             </section>
+     
             <section class="productos-del-mes">
+              <div class="wrapper">
               <h2> PRODUCTOS DEL MES </h2>
-
-              
+                  <section class="tabs">
+                    <input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" />
+                    <label for="tab-1" class="tab-label-1">About</label>
+                    <input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" />
+                    <label for="tab-2" class="tab-label-2">Services</label>
+                    <input id="tab-3" type="radio" name="radio-set" class="tab-selector-3" />
+                    <label for="tab-3" class="tab-label-3">Work</label>
+                    <div class="clear-shadow"></div>
+                    <div class="content">
+                        <div class="content-1">
+                          <figure class="image-producto">
+                          </figure>
+                            <h2 class="nombre-producto">About us</h2> 
+                            <p class="descript-producto"> Oat cake wafer icing chocolate wafer. Lemon drops dessert dessert lemon drops cotton candy tiramisu chupa chups 
+                              chocolate cake dragée. Apple pie oat cake caramels oat cake topping lollipop soufflé tiramisu brownie. Oat cake 
+                              cheesecake topping pudding marshmallow jelly-o tiramisu tootsie roll. Jujubes fruitcake jujubes halvah oat cake sweet 
+                              roll topping croissant. Dragée tootsie roll apple pie cupcake fruitcake chocolate cake liquorice. Dessert sweet 
+                              chocolate bar. Candy chupa chups croissant. Toffee ice cream jujubes. Caramels tootsie roll oat cake. Sweet sesame 
+                              snaps cotton candy gummies muffin. Gummi bears candy muffin.
+                            </p>
+                        </div>
+                        <div class="content-2">
+                          <figure class="image-producto">
+                          </figure>
+                            <h2 class="nombre-producto">About us</h2> 
+                            <p class="descript-producto"> Oat cake wafer icing chocolate wafer. Lemon drops dessert dessert lemon drops cotton candy tiramisu chupa chups 
+                              chocolate cake dragée. Apple pie oat cake caramels oat cake topping lollipop soufflé tiramisu brownie. Oat cake 
+                              cheesecake topping pudding marshmallow jelly-o tiramisu tootsie roll. Jujubes fruitcake jujubes halvah oat cake sweet 
+                              roll topping croissant. Dragée tootsie roll apple pie cupcake fruitcake chocolate cake liquorice. Dessert sweet 
+                              chocolate bar. Candy chupa chups croissant. Toffee ice cream jujubes. Caramels tootsie roll oat cake. Sweet sesame 
+                              snaps cotton candy gummies muffin. Gummi bears candy muffin.
+                            </p>   
+                        </div>
+                        <div class="content-3">
+                            <figure class="image-producto">
+                          </figure>
+                            <h2 class="nombre-producto">About us</h2> 
+                            <p class="descript-producto"> Oat cake wafer icing chocolate wafer. Lemon drops dessert dessert lemon drops cotton candy tiramisu chupa chups 
+                              chocolate cake dragée. Apple pie oat cake caramels oat cake topping lollipop soufflé tiramisu brownie. Oat cake 
+                              cheesecake topping pudding marshmallow jelly-o tiramisu tootsie roll. Jujubes fruitcake jujubes halvah oat cake sweet 
+                              roll topping croissant. Dragée tootsie roll apple pie cupcake fruitcake chocolate cake liquorice. Dessert sweet 
+                              chocolate bar. Candy chupa chups croissant. Toffee ice cream jujubes. Caramels tootsie roll oat cake. Sweet sesame 
+                              snaps cotton candy gummies muffin. Gummi bears candy muffin.
+                            </p>
+                        </div>
+                    </div>
+                  </section>
+              </div>
             </section>
 
 
-
+         
             <section class="blog">
+              <div class="wrapper">
               <h2> WAYUU BLOG </h2>
               <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. </p>
           <?php $temp_query = $wp_query;
@@ -89,7 +140,9 @@
                   </footer>
                 </article>
              <?php  endwhile; ?>
+             </div>
             </section>
+           <div class="wrapper">
             <section class="comunidad">
               <h2>COMUNIDAD WAYUU </h2>
 
