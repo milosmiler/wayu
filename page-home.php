@@ -113,7 +113,7 @@
                       <?php endif; ?>
 
 
-                  <?php $producto = new WP_Query( array( 'posts_per_page' => 1,'offset' => 3, 'category_name' => 'producto_del_mes')); 
+                  <?php $producto = new WP_Query( array( 'posts_per_page' => 1, 'offset' => 3, 'category_name' => 'producto_del_mes')); 
                         if ( $producto->have_posts() ) : while ( $producto->have_posts() ) : $producto->the_post(); ?>
                         <div class="content-3">
                             <figure class="image-producto">
