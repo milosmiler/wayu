@@ -1,5 +1,6 @@
-	
+</div><!-- container -->
 	<footer>
+		<div class="wrapper">
 		<article class="donde-estamos">
 			<h3>DONDE ESTAMOS?</h3>
 			<div class="mapa-dinamico">
@@ -22,6 +23,12 @@
 
 		<article class="siguenos-en">
 			<h3> SIGUENOS EN</h3>
+			<h3> Instagram</h3>
+			<script src="http://snapwidget.com/js/snapwidget.js"></script>
+			<iframe src="http://snapwidget.com/in/?h=eW9nYXxpbnw4MHw0fDJ8fG5vfDV8bm9uZXxvblN0YXJ0fG5vfHllcw==&ve=021215" 
+				title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" 
+				frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%;">
+			</iframe>
 		</article>
 		<article class="newletter-footer">
 			<h3> NEWSLETTER</h3>
@@ -37,15 +44,9 @@
 				<a href="<?php echo SITEURL; ?>"><img src="<?php bloginfo('template_url'); ?>/images/wayuu-logoBlanco.png" alt="Wayuuu" /></a>
 			</figure>
 		</article>
-
-
-
-
-
+	</div>
 	</footer>
 		<?php wp_footer(); ?>
-
-		</div><!-- container -->
 	</body>
 
 </html>

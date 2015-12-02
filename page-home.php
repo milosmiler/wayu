@@ -80,7 +80,7 @@
                     <label for="tab-3" class="tab-label-3">producto 3</label>
                     <div class="clear-shadow"></div>
                     <div class="content">
-                 <?php $producto = new WP_Query( array( 'posts_per_page' => 1, 'offset' => 1, 'category_name' => 'producto_del_mes')); 
+                 <?php $producto = new WP_Query( array( 'posts_per_page' => 1, 'category_name' => 'producto_del_mes')); 
                         if ( $producto->have_posts() ) : while ( $producto->have_posts() ) : $producto->the_post(); ?>
                         <div class="content-1">
                           <figure class="image-producto">
@@ -97,7 +97,7 @@
 
 
 
-                  <?php $producto = new WP_Query( array( 'posts_per_page' => 1, 'offset' => 2, 'category_name' => 'producto_del_mes')); 
+                  <?php $producto = new WP_Query( array( 'posts_per_page' => 1, 'offset' => 1, 'category_name' => 'producto_del_mes')); 
                         if ( $producto->have_posts() ) : while ( $producto->have_posts() ) : $producto->the_post(); ?>
                         <div class="content-2">
                           <figure class="image-producto">
@@ -113,7 +113,7 @@
                       <?php endif; ?>
 
 
-                  <?php $producto = new WP_Query( array( 'posts_per_page' => 1, 'offset' => 3, 'category_name' => 'producto_del_mes')); 
+                  <?php $producto = new WP_Query( array( 'posts_per_page' => 1, 'offset' => 2, 'category_name' => 'producto_del_mes')); 
                         if ( $producto->have_posts() ) : while ( $producto->have_posts() ) : $producto->the_post(); ?>
                         <div class="content-3">
                             <figure class="image-producto">
