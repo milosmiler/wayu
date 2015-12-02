@@ -155,7 +155,7 @@
              </div>
             </section>
 
-           <div class="wrapper">
+           
             <section class="comunidad">
               <h2>COMUNIDAD WAYUU </h2>
 
@@ -169,6 +169,7 @@
             <section class="colaboradores">
               <h2>COLABORADORES Y PATROCINADORES </h2>
             </section>
+            <div class="wrapper">
 
 	<?php get_sidebar(); ?>
 	<?php get_footer(); ?>
