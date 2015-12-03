@@ -2,9 +2,15 @@
 	<!-- Insert content here -->
 <div class="wrapper">
 	<figure class="imagen-head">
+    <h2>BIENVENIDOS AL BLOG WAYUU</h2>
+    <p>Pero un buen dia, una pequeña lñinea de texto simulado,<br>
+      llamada Lorem Ipsum, decidio aventurarse y salir al vasto <br>
+      mundo de la gramatica.
+    </p>
   		<img src="<?php bloginfo('template_url'); ?>/images/stageBlog.png" alt="cabecera" />
   	</figure>
   <div class="main-single">
+   <?php query_posts('cat=-5'); ?>
   	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
   		<?php the_post_thumbnail('image-single'); ?>
   			<div class="contenido-articulos">
@@ -13,18 +19,21 @@
           			<div class="show-categoria"><?php the_category();?> </div>
         		</div>
         		<?php the_excerpt(); ?>
+            <a href="<?php the_permalink(); ?>"><button class="btn-leyendo">Seguir leyendo</button></a>
         		<footer class="footer-single">
           			<ul>
 	         		 <li><div class="footer-datos">  <?php the_author(); ?> </div></li>
-	          		 <li><div class="tag"><?php the_tags( 'Tags: ', ', ', '<br />' ); ?> </div></li>
-	          		 <li><?php the_time('F j') ?></li>
-	          		 <li><fb:comments-count href=<?php the_permalink(); ?>></fb:comments-count> Comentarios</li>
-                    </ul>
+	          		 <li><div class="tag"><?php the_tags( '', ', ', '<br />' ); ?> </div></li>
+	          		 <li> <div class="calendario-blog"> <?php the_time('F j') ?> </div> </li>
+	          		 <li><div class="comentario-blog"><fb:comments-count href=<?php the_permalink(); ?>></fb:comments-count> Comentarios</div></li>
+                </ul>
         		</footer> 
   			</div>
+
   	<?php endwhile; else: ?>
 <p><?php _e('Lo siento, no encontre nada para mostrar.'); ?></p>
-<?php endif; ?>        
+<?php endif; ?>  
+ <div class="navigation"><?php if(function_exists('pagenavi')) { pagenavi(); } ?></div>      
 </div> 
 
   <section class="main-single-right">
@@ -48,7 +57,7 @@
                if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
         <article class="post-reciente">
           <figure class="image-reciente">
-            <?php the_post_thumbnail('image-reciente'); ?>
+          <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('image-reciente'); ?></a> 
           </figure>
           <h2><?php the_title(); ?></h2>
           <div class="post-actual-fecha-coment">
@@ -60,7 +69,6 @@
         </article>
         <?php  endwhile; ?>
     </div>
-
   </section>
 	
 <?php get_footer(); ?>
