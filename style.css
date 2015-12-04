@@ -961,6 +961,50 @@ p.descript-producto{
   font-size: 1.4rem;
   color: #000;
 }
+.siguenos-en ul{
+  overflow: hidden;
+  margin: 0px;
+
+}
+.siguenos-en ul li{
+  text-decoration: none;
+  list-style: none;
+  color: #d1d1d2;
+  float: left;
+  cursor: pointer;
+}
+.siguenos-en ul li:hover{
+  color: #c3fdff;
+
+}
+.siguenos-en ul li.face-fo:before{
+  content: '\e805';
+  font-family: 'fontello';
+  font-size:4.8rem;
+}
+.siguenos-en ul li.tw-fo:before{
+  content: '\e80d';
+  font-family: 'fontello';
+  font-size:4.8rem;
+}
+.siguenos-en ul li.ins-fo:before{
+  content: '\e805';
+  font-family: 'fontello';
+  font-size:4.8rem;
+}
+.siguenos-en ul li.you-fo:before{
+  content: '\e80e';
+  font-family: 'fontello';
+  font-size:4.8rem;
+}
+
+.siguenos-en ul li.pinter-fo:before{
+  content: '\e80c';
+  font-family: 'fontello';
+  font-size:4.8rem;
+}
+
+
 
 /* FlexSlider Default Theme
 *********************************/

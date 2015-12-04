@@ -23,6 +23,14 @@
 
 		<article class="siguenos-en">
 			<h3> SIGUENOS EN</h3>
+			<ul>
+				<li class="face-fo"> </li>
+				<li class="tw-fo"></li>
+				<li class="ins-fo"></li>
+				<li class="you-fo"></li>
+				<li class="pinter-fo"></li>
+			</ul>
+
 			<h3> Instagram</h3>
 			<script src="http://snapwidget.com/js/snapwidget.js"></script>
 			<iframe src="http://snapwidget.com/in/?h=eW9nYXxpbnw4MHw0fDJ8fG5vfDV8bm9uZXxvblN0YXJ0fG5vfHllcw==&ve=021215" 
