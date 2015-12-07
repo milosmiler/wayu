@@ -19,17 +19,18 @@
 			<div class="contacto-social">
 				<div class="wrapper">
 				<ul class="contacto">
-					<li class="telefono">044 55 6102 5463</li>
-					<li class="sobre-contacto">contacto@contacto.com</li>
+					<li class="telefono">044 55 52924793</li>
+					<li class="sobre-contacto">hola@wayuume.com</li>
 					<li class="preguntas-frecuentes">preguntas frecuentes</li>
+					<li class="whatsap">52 155 4351 9154</li>
 				</ul>
-				<!-- <ul class="social">
-					<li><div class="face"> </div><li>
-					<li><div class=" twitter"> </div><li>
-					<li><div class="camara"> </div><li>
-					<li><div class=" youtube"> </div><li>
-					<li><div class="pinters"> </div><li>
-				</ul> -->
+				<ul class="social">
+					<a href="https://www.facebook.com/Wayuu-1570265936544314/?fref=ts"><li class="facebook"></li></a>
+					<a href="https://twitter.com/wayuu_"><li class="twitter"></li></a>
+					<a href="https://www.instagram.com/wayuu_/"><li class="camara"></li></a>
+					<a href=""><li class="youtube"></li></a>
+					<a href="https://es.pinterest.com/wayuu_/"><li class="pinters"></li></a>
+				</ul>
 				</div>
 			</div>
 			<header>
@@ -39,10 +40,10 @@
 					</figure>
 					<nav>
 						<ul>
-							<li><a href="">INICIO</a></li>
 							<li><a href="">NOSOTROS</a></li>
-							<li><a href="">FUENTE ENERGIA</a></li>
 							<li><a href="">OFRECEMOS</a></li>
+							<li><a href="">WAYUU CORP</a></li>
+							<li><a href="">WAYU CONSTRUYE</a></li>
 							<li><a href="blog">BLOG</a></li>
 							<li><a href="">TIENDA</a></li>
 						</ul>

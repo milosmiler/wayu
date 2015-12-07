@@ -104,12 +104,13 @@
 	if ( function_exists('add_image_size') ){
 		
 		add_image_size( 'post_pages', 200, 200, true );
-		add_image_size( 'image-blog', 271, 197, true );
+		add_image_size( 'ofrecemos', 360, 160, true );
+		add_image_size( 'image-blog', 271, 160, true );
 		add_image_size( 'image-single', 772, 365, true );
 		add_image_size( 'post_home', 250, 250, true );
 		add_image_size( 'full-size', '','', true);
 		add_image_size( 'image-reciente', 141,102, true);
-		add_image_size( 'image-producto', 370,380, true);
+		add_image_size( 'image-producto', 360,360, true);
 
 
 		

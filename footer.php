@@ -32,11 +32,13 @@
 			</ul>
 
 			<h3> Instagram</h3>
-			<script src="http://snapwidget.com/js/snapwidget.js"></script>
-			<iframe src="http://snapwidget.com/in/?h=eW9nYXxpbnw4MHw0fDJ8fG5vfDV8bm9uZXxvblN0YXJ0fG5vfHllcw==&ve=021215" 
-				title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" 
-				frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%;">
-			</iframe>
+			<!-- SnapWidget -->
+				<script src="http://snapwidget.com/js/snapwidget.js"></script>
+					<iframe src="http://snapwidget.com/in/?u=d2F5dXVffGlufDgwfDR8Mnx8bm98NXxub25lfG9uU3RhcnR8bm98eWVz&ve=071215" 
+						title="Instagram Widget" class="snapwidget-widget" 
+						allowTransparency="true" frameborder="0" scrolling="no" 
+						style="border:none; overflow:hidden; width:100%;">
+					</iframe>
 		</article>
 		<article class="newletter-footer">
 			<h3> NEWSLETTER</h3>

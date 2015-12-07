@@ -35,7 +35,7 @@
           <button class="btn-calendario">Calendario de actividades</button>
         </div>
         <div class="newleter">
-          Recibe consejos, guias y mucho más
+          SI FUERA TU, DE UNA VEZ ME SUSCRIBO AL NEWSLETTER
           <input type="text" class="input-newleter" placeholder="correo electronico">
           <button class="btn-enviar">Enviar</button>
         </div>
@@ -44,7 +44,7 @@
       
             <section class="actividades">
               <div class="wrapper">
-                <h2>CONOCE NUESTRAS ACTIVIDADES</h2>
+                <h2>Ofrecemos</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
                 <div class="slider-actividades">
@@ -52,7 +52,7 @@
                     <?php $eventos = new WP_Query( array( 'posts_per_page' => 4, 'category_name' => 'actividades')); 
                         if ( $eventos->have_posts() ) : while ( $eventos->have_posts() ) : $eventos->the_post(); ?>
                           <div class="item">
-                          <a href="<?php the_permalink(); ?>"> <?php the_post_thumbnail('full-size'); ?></a>
+                          <a href="<?php the_permalink(); ?>"> <?php the_post_thumbnail('ofrecemos'); ?></a>
                             <h3><?php the_title();?></h3>
                             <p> <?php echo wp_trim_words(get_the_excerpt(), 12 );?></p>
                             <footer class="slider-base">
@@ -70,7 +70,7 @@
      
             <section class="productos-del-mes">
               <div class="wrapper">
-              <h2> PRODUCTOS DEL MES </h2>
+              <h2> Suukala, Tienda y Cafeteria </h2>
                   <section class="tabs">
                     <input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" />
                     <label for="tab-1" class="tab-label-1">Producto 1</label>

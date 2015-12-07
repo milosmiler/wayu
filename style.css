@@ -183,7 +183,7 @@ button{ cursor: pointer;}
 *********************************/ 
 .flexslider {width: 100%; margin: 0; padding: 0;}
 .flexslider .slides > li {display: none;} /* Hide the slides before the JS is loaded. Avoids image jumping */
-.flexslider .slides img {max-width: 100%; display: block; height: auto;}
+.flexslider .slides img {width: 100%; display: block; height: auto; margin: 0 auto;}
 .flex-pauseplay span {text-transform: capitalize;}
 
 /* Clearfix for the .slides element */
@@ -226,6 +226,7 @@ html[xmlns] .slides {display: block;}
 
 .contacto-social ul.social{
   float: right;
+  margin: 0px;
 }
 .contacto-social ul.social li{
   display: inline-block;
@@ -309,7 +310,7 @@ section.actividades p{
 section.productos-del-mes{
   width: 100%;
   height: auto;
-  background: #8cb868;
+  background: #5c88da;
    padding-top: 58px;
 }
 
@@ -360,6 +361,9 @@ article.post-page{
   float: left;
   margin: 0px 8px 0px 13px;
   background: #fff;
+}
+article.post-page img{
+ width: 100%;
 }
 
 article.post-page-categoria{
@@ -564,7 +568,7 @@ input[placeholder], [placeholder], *[placeholder] {
   margin-left: 8px; 
 }
 .comentarios:before{
-  content: '\e80A';
+    content: '\e80b';
     font-size: 1.5rem;
     font-family: 'fontello';
     color: #ccc;
@@ -944,7 +948,7 @@ figure.image-producto img{
   width: 100%;
 }
 figure.image-producto{
-  width: 370px;
+  width: 360px;
   height: auto;
   float: left;
   margin-right: 32px;
@@ -978,7 +982,7 @@ p.descript-producto{
 
 }
 .siguenos-en ul li.face-fo:before{
-  content: '\e805';
+  content: '\e80f';
   font-family: 'fontello';
   font-size:4.8rem;
 }
@@ -1073,7 +1077,14 @@ button.btn-leyendo{
   margin-right: 15px;
 }
 .contacto li.preguntas-frecuentes:before{
-  content: '\e809'; 
+  content: '\e806'; 
+  font-size: 2.5rem;
+  font-family: 'fontello';
+  color: #fff;
+  margin-right: 15px;
+}
+.contacto li.whatsap:before{
+  content: '\e810'; 
   font-size: 2.5rem;
   font-family: 'fontello';
   color: #fff;
@@ -1128,6 +1139,46 @@ span.nube:before{
   font-family: 'fontello';
   color: #fff;
   margin-right: 15px;
+}
+
+ul.social li.facebook:before{
+    content: '\e80f';
+    font-size: 2.9rem;
+    font-family: 'fontello';
+    color: #fff;
+    margin-right: 10px;
+}
+
+ul.social li.twitter:before{
+   content: '\e80d';
+    font-size: 2.9rem;
+    font-family: 'fontello';
+    color: #fff;
+    margin-right: 10px;
+}
+ul.social li.camara:before{
+   content: '\e805';
+    font-size: 2.9rem;
+    font-family: 'fontello';
+    color: #fff;
+    margin-right: 10px;
+}
+
+ul.social li.youtube:before{
+  content: '\e80e';
+    font-size: 2.9rem;
+    font-family: 'fontello';
+    color: #fff;
+    margin-right: 10px;
+
+}
+ul.social li.pinters:before{
+  content: '\e80c';
+    font-size: 2.9rem;
+    font-family: 'fontello';
+    color: #fff;
+    margin-right: 10px;
+
 
 }
 
