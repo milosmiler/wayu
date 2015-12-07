@@ -20,10 +20,25 @@
 				<div class="wrapper">
 				<ul class="contacto">
 					<li class="telefono">044 55 52924793</li>
-					<li class="sobre-contacto">hola@wayuume.com</li>
+					<a href="#miModal"><li class="sobre-contacto">hola@wayuume.com</li></a>
 					<li class="preguntas-frecuentes">preguntas frecuentes</li>
 					<li class="whatsap">52 155 4351 9154</li>
 				</ul>
+				<div id="miModal" class="modal">
+  					<div class="modal-contenido">
+    					<a href="#">X</a>
+    					<h2>Mi primer Modal</h2>
+    					<label>Nombre:</label>
+    					<input type="text">
+    					<label>Telefono:</label>
+    					<input type="text">
+    					<label>Email:</label>
+    					<input type="email">
+    					<label>Mensaje:</label>
+    					<textarea></textarea>
+    					<button>Enviar</button>
+  					</div>  
+				</div>
 				<ul class="social">
 					<a href="https://www.facebook.com/Wayuu-1570265936544314/?fref=ts"><li class="facebook"></li></a>
 					<a href="https://twitter.com/wayuu_"><li class="twitter"></li></a>
