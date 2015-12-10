@@ -605,7 +605,7 @@ input[placeholder], [placeholder], *[placeholder] {
 }
 
 .fecha-page:before{
-  content: '\e800';
+  content: '\e806';
     font-size: 1.5rem;
     font-family: 'fontello';
     color: #ccc;
@@ -628,14 +628,14 @@ input[placeholder], [placeholder], *[placeholder] {
   margin-left: 8px; 
 }
 .comentarios:before{
-    content: '\e80b';
+    content: '\e80c';
     font-size: 1.5rem;
     font-family: 'fontello';
     color: #ccc;
     margin-right: 10px;
 }
 .comentarios2:before{
-  content: '\e80A';
+  content: '\e80c';
     font-size: 1.5rem;
     font-family: 'fontello';
     color: #ccc;
@@ -1041,28 +1041,28 @@ p.descript-producto{
 
 }
 .siguenos-en ul li.face-fo:before{
-  content: '\e80f';
+  content: '\e805'; 
   font-family: 'fontello';
   font-size:4.8rem;
 }
 .siguenos-en ul li.tw-fo:before{
-  content: '\e80d';
+  content: '\e802';
   font-family: 'fontello';
   font-size:4.8rem;
 }
 .siguenos-en ul li.ins-fo:before{
-  content: '\e805';
+  content: '\e801';
   font-family: 'fontello';
   font-size:4.8rem;
 }
 .siguenos-en ul li.you-fo:before{
-  content: '\e80e';
+  content: '\e804';
   font-family: 'fontello';
   font-size:4.8rem;
 }
 
 .siguenos-en ul li.pinter-fo:before{
-  content: '\e80c';
+  content: '\e803';
   font-family: 'fontello';
   font-size:4.8rem;
 }
@@ -1105,7 +1105,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
 }
 
 button.btn-calendario:before{
-  content: '\e801'; 
+  content: '\e807';
   font-size: 2.5rem;
   font-family: 'fontello';
   color: #fff;
@@ -1122,28 +1122,28 @@ button.btn-leyendo{
   font-size: 1.6rem;
 }
 .contacto li.telefono:before{
-  content: '\e809'; 
+  content: '\e810';  
   font-size: 2.5rem;
   font-family: 'fontello';
   color: #fff;
   margin-right: 15px;
 }
 .contacto li.sobre-contacto:before{
-  content: '\e803'; 
+  content: '\e80f'; 
   font-size: 2.5rem;
   font-family: 'fontello';
   color: #fff;
   margin-right: 15px;
 }
 .contacto li.preguntas-frecuentes:before{
-  content: '\e806'; 
+  content: '\e80d';
   font-size: 2.5rem;
   font-family: 'fontello';
   color: #fff;
   margin-right: 15px;
 }
 .contacto li.whatsap:before{
-  content: '\e810'; 
+  content: '\e800'; 
   font-size: 2.5rem;
   font-family: 'fontello';
   color: #fff;
@@ -1157,14 +1157,14 @@ button.btn-leyendo{
   margin-right: 15px;
 }
 .footer-datos:before{
-  content: '\e807'; 
+  content: '\e80e'; 
   font-size: 2.2rem;
   font-family: 'fontello';
   color: #808080;
   margin-right: 15px;
 }
 .tag:before{
-  content: '\e804'; 
+  content: '\e80a';
   font-size: 2.2rem;
   font-family: 'fontello';
   color: #808080;
@@ -1179,14 +1179,14 @@ button.btn-leyendo{
   margin-right: 15px;
 }
 .calendario-blog:before{
-  content: '\e800'; 
+  content: '\e806';
   font-size: 2.2rem;
   font-family: 'fontello';
   color: #808080;
   margin-right: 15px;
 }
 .comentario-blog:before{
-  content: '\e80A'; 
+  content: '\e80c';
   font-size: 2.2rem;
   font-family: 'fontello';
   color: #808080;
@@ -1201,7 +1201,7 @@ span.nube:before{
 }
 
 ul.social li.facebook:before{
-    content: '\e80f';
+    content: '\e805';
     font-size: 3.1rem;
     font-family: 'fontello';
     color: #fff;
@@ -1209,14 +1209,14 @@ ul.social li.facebook:before{
 }
 
 ul.social li.twitter:before{
-   content: '\e80d';
+   content: '\e802'; 
     font-size: 3.1rem;
     font-family: 'fontello';
     color: #fff;
     margin-right: 10px;
 }
 ul.social li.camara:before{
-   content: '\e805';
+   content: '\e801'; 
     font-size: 3.1rem;
     font-family: 'fontello';
     color: #fff;
@@ -1224,7 +1224,7 @@ ul.social li.camara:before{
 }
 
 ul.social li.youtube:before{
-  content: '\e80e';
+    content: '\e804';
     font-size: 3.1rem;
     font-family: 'fontello';
     color: #fff;
@@ -1232,7 +1232,7 @@ ul.social li.youtube:before{
 
 }
 ul.social li.pinters:before{
-  content: '\e80c';
+    content: '\e803';
     font-size: 3.1rem;
     font-family: 'fontello';
     color: #fff;
