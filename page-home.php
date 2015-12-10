@@ -35,7 +35,7 @@
           <button class="btn-calendario">Calendario de actividades</button>
         </div>
         <div class="newleter">
-          SI FUERA TU, DE UNA VEZ ME SUSCRIBO AL NEWSLETTER
+          SI FUERA TÚ, DE UNA VEZ ME SUSCRIBO AL NEWSLETTER
           <input type="text" class="input-newleter" placeholder="correo electronico">
           <button class="btn-enviar">Enviar</button>
         </div>
@@ -133,6 +133,46 @@
               </div>
             </section>
 
+            <section class="construye">
+              <div class="wrapper">
+              <h2> WAYUU CONSTRUYE </h2>
+              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. </p>
+          <?php $temp_query = $wp_query;
+                  query_posts('showposts=4&cat=-5'); 
+               if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+                <article class="post-page">
+                   <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('image-blog'); ?></a> 
+                  <h3><?php the_title();?></h3>
+                  <p><?php echo wp_trim_words(get_the_excerpt(), 20 );?></p>
+                  <footer class="slider-base">
+                     <div class="fecha-page2"> <?php the_time('M j, Y') ?> </div>
+                      <div class="comentarios2"><fb:comments-count href=<?php the_permalink(); ?>></fb:comments-count> Comment</div>
+                  </footer>
+                </article>
+             <?php  endwhile; ?>
+             </div>
+            </section>
+
+            <section class="corp">
+              <div class="wrapper">
+              <h2> WAYUU CORP </h2>
+              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. </p>
+          <?php $temp_query = $wp_query;
+                  query_posts('showposts=4&cat=-5'); 
+               if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+                <article class="post-page">
+                   <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('image-blog'); ?></a> 
+                  <h3><?php the_title();?></h3>
+                  <p><?php echo wp_trim_words(get_the_excerpt(), 20 );?></p>
+                  <footer class="slider-base">
+                     <div class="fecha-page2"> <?php the_time('M j, Y') ?> </div>
+                      <div class="comentarios2"><fb:comments-count href=<?php the_permalink(); ?>></fb:comments-count> Comment</div>
+                  </footer>
+                </article>
+             <?php  endwhile; ?>
+             </div>
+            </section>
+
 
          
             <section class="blog">
@@ -159,12 +199,10 @@
             <section class="comunidad">
               <h2>COMUNIDAD WAYUU </h2>
 
-              <p>Pero un buen día, una pequeña línea de texto simulado, llamada Lorem Ipsum, decidió aventurarse y salir al vasto mundo
-               de la gramática. El gran Oxmox le desanconsejó hacerlo, ya que esas tierras estaban llenas de comas malvadas, signos 
-               de interrogación salvajes y puntos y coma traicioneros, pero el texto simulado no se dejó atemorizar. <br><br>
-
-                Pero un buen día, una pequeña línea de texto simulado, 
-                llamada Lorem Ipsum, decidió aventurarse y salir al vasto mundo de la gramática. </p>
+              <p>Wayuu busca establecer sinergias, para fomentar una cultura de ayuda mutua en la que todos los miembros de nuestra comunidad:<br>
+               empresas, maestros, alumnos y empresas aliadas, tengan mayores oportunidades de desarrollo. Entablamos 
+               relaciones ganar-ganar con profesionales y empresas relacionadas con nuestras tres líneas de acción 
+               (mente, cuerpo y conciencia) para fortalecer la oferta de valor de todos. </p>
             </section>
             <section class="colaboradores">
               <h2>COLABORADORES Y PATROCINADORES </h2>
