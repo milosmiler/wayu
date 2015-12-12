@@ -60,7 +60,7 @@
 							<li><a href="">WAYUU CORP</a></li>
 							<li><a href="">WAYU CONSTRUYE</a></li>
 							<li><a href="blog">BLOG</a></li>
-							<li><a href="">TIENDA</a></li>
+							<!-- <li><a href="">TIENDA</a></li> -->
 						</ul>
 					</nav>
 				</div>
