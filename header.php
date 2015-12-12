@@ -19,7 +19,7 @@
 			<div class="contacto-social">
 				<div class="wrapper">
 				<ul class="contacto">
-					<li class="telefono">044 55 52924793</li>
+					<li class="telefono">52924793</li>
 					<a href="#miModal"><li class="sobre-contacto">hola@wayuume.com</li></a>
 					<li class="preguntas-frecuentes">preguntas frecuentes</li>
 					<li class="whatsap">52 155 4351 9154</li>
@@ -43,7 +43,7 @@
 					<a href="https://www.facebook.com/Wayuu-1570265936544314/?fref=ts"><li class="facebook"></li></a>
 					<a href="https://twitter.com/wayuu_"><li class="twitter"></li></a>
 					<a href="https://www.instagram.com/wayuu_/"><li class="camara"></li></a>
-					<a href=""><li class="youtube"></li></a>
+					<!-- <a href=""><li class="youtube"></li></a> -->
 					<a href="https://es.pinterest.com/wayuu_/"><li class="pinters"></li></a>
 				</ul>
 				</div>
