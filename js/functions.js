@@ -66,6 +66,10 @@
 		  fjs.parentNode.insertBefore(js, fjs);
 		}(document, 'script', 'facebook-jssdk'))
 
+		if (localStorage.controlcookie>0){ 
+document.getElementById('cookie1').style.bottom = '-50px';
+}
+
 
 
 
