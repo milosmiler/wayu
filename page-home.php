@@ -42,7 +42,7 @@
       </div>
       </aside>
       
-            <section class="actividades">
+            <section id ="actividades1" class="actividades">
               <div class="wrapper">
                 <h2>Ofrecemos</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -133,7 +133,7 @@
               </div>
             </section>
 
-            <section class="construye">
+            <section id="wayu-contruye" class="construye">
               <div class="wrapper">
               <h2> WAYUU CONSTRUYE </h2>
               <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. </p>
@@ -153,7 +153,7 @@
              </div>
             </section>
 
-            <section class="corp">
+            <section id="wayu-corp" class="corp">
               <div class="wrapper">
               <h2> WAYUU CORP </h2>
               <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. </p>

@@ -18,6 +18,8 @@
 
 
 
+
+
 		/**
 		 * Regresa todos los valores de un formulario como un associative array 
 		 */
@@ -69,6 +71,15 @@
 		if (localStorage.controlcookie>0){ 
 document.getElementById('cookie1').style.bottom = '-50px';
 }
+
+
+$("a").on("click",function(){
+   if(this.hash){
+      //console.log($(this).attr('href'));
+      $("html body").animate({"scrollTop":$($(this).attr('href')).offset().top-82},1400);
+      return false;
+         }
+});
 
 
 
