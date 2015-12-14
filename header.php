@@ -40,11 +40,11 @@
   					</div>  
 				</div>
 				<ul class="social">
-					<a href="https://www.facebook.com/Wayuu-1570265936544314/?fref=ts"><li class="facebook"></li></a>
-					<a href="https://twitter.com/wayuu_"><li class="twitter"></li></a>
-					<a href="https://www.instagram.com/wayuu_/"><li class="camara"></li></a>
+					<a href="https://www.facebook.com/Wayuu-1570265936544314/?fref=ts" target="_blank"><li class="facebook"></li></a>
+					<a href="https://twitter.com/wayuu_" target="_blank"><li class="twitter" ></li></a>
+					<a href="https://www.instagram.com/wayuu_/" target="_blank"><li class="camara"></li></a>
 					<!-- <a href=""><li class="youtube"></li></a> -->
-					<a href="https://es.pinterest.com/wayuu_/"><li class="pinters"></li></a>
+					<a href="https://es.pinterest.com/wayuu_/" target="_blank"><li class="pinters"></li></a>
 				</ul>
 				</div>
 			</div>

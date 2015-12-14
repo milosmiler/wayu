@@ -24,11 +24,11 @@
 		<article class="siguenos-en">
 			<h3> SÍGUENOS EN</h3>
 			<ul>
-				<li class="face-fo"> </li>
-				<li class="tw-fo"></li>
-				<li class="ins-fo"></li>
-				<li class="you-fo"></li>
-				<li class="pinter-fo"></li>
+				<a href="https://www.facebook.com/Wayuu-1570265936544314/?fref=ts" target="_blank"><li class="face-fo"> </li></a>
+				<a href="https://twitter.com/wayuu_" target="_blank"><li class="tw-fo"></li></a>
+				<a href="https://www.instagram.com/wayuu_/" target="_blank"><li class="ins-fo"></li></a>
+				<!-- <a href=""><li class="you-fo"></li></a> -->
+				<a href="https://es.pinterest.com/wayuu_/" target="_blank"><li class="pinter-fo"></li></a>
 			</ul>
 
 			<h3> Instagram</h3>
