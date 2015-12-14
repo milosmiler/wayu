@@ -48,22 +48,53 @@
 			wp_insert_term( 'Conciencia', 'category', array('slug' => 'conciencia'));
 		}
 
+
 		if ( ! term_exists( 'producto_del_mes', 'category' ) ){
 			wp_insert_term( 'Producto del mes', 'category', array('slug' => 'producto_del_mes'));
 		}
-		if ( ! term_exists( 'actividades', 'category' ) ){
-			wp_insert_term( 'Actividades', 'category', array('slug' => 'actividades'));
-		}
-		$actividades = term_exists( 'actividades', 'category' );
 
-		if ( ! term_exists( 'cursos_y_talleres', 'category' ) ){
-			wp_insert_term( 'Cursos y Talleres', 'category', array('slug' => 'cursos_y_talleres', 'parent'=> $actividades['term_id'] ) );
+		if ( ! term_exists( 'ofrecemos', 'category' ) ){
+			wp_insert_term( 'Ofrecemos', 'category', array('slug' => 'ofrecemos'));
+		}
+		$ofrecemos = term_exists( 'ofrecemos', 'category' );
+
+		if ( ! term_exists( 'talleres', 'category' ) ){
+			wp_insert_term( 'Talleres', 'category', array('slug' => 'talleres', 'parent'=> $ofrecemos['term_id'] ) );
+		}
+		if ( ! term_exists( 'cursos', 'category' ) ){
+			wp_insert_term( 'Cursos', 'category', array('slug' => 'cursos', 'parent'=> $ofrecemos['term_id'] ) );
+		}
+		if ( ! term_exists( 'terapias', 'category' ) ){
+			wp_insert_term( 'Terapias', 'category', array('slug' => 'terapias', 'parent'=> $ofrecemos['term_id'] ) );
+		}
+		if ( ! term_exists( 'meditaciones', 'category' ) ){
+			wp_insert_term( 'Meditaciones', 'category', array('slug' => 'meditaciones', 'parent'=> $ofrecemos['term_id'] ) );
 		}
 		if ( ! term_exists( 'conferencias', 'category' ) ){
-			wp_insert_term( 'Conferencias', 'category', array('slug' => 'conferencias', 'parent'=> $actividades['term_id'] ) );
+			wp_insert_term( 'Conferencias', 'category', array('slug' => 'conferencias', 'parent'=> $ofrecemos['term_id'] ) );
 		}
-		if ( ! term_exists( 'coaching_empresarial', 'category' ) ){
-			wp_insert_term( 'Coaching Empresarial', 'category', array('slug' => 'coaching_empresarial', 'parent'=> $actividades['term_id'] ) );
+		if ( ! term_exists( 'renta', 'category' ) ){
+			wp_insert_term( 'Renta', 'category', array('slug' => 'renta', 'parent'=> $ofrecemos['term_id'] ) );
+		}
+		if ( ! term_exists( 'cafeteria', 'category' ) ){
+			wp_insert_term( 'Cafeteria', 'category', array('slug' => 'cafeteria', 'parent'=> $ofrecemos['term_id'] ) );
+		}
+
+
+		if ( ! term_exists( 'wayu_corp', 'category' ) ){
+			wp_insert_term( 'Wayu Corp', 'category', array('slug' => 'wayu_corp'));
+		}
+		$wayu_corp = term_exists( 'wayu_corp', 'category' );
+
+		if ( ! term_exists( 'coaching_individual', 'category' ) ){
+			wp_insert_term( 'Coaching Individual', 'category', array('slug' => 'coaching_individual', 'parent'=> $wayu_corp['term_id'] ) );
+		}
+
+		if ( ! term_exists( 'coaching_grupal', 'category' ) ){
+			wp_insert_term( 'Coaching Grupal', 'category', array('slug' => 'coaching_grupal', 'parent'=> $wayu_corp['term_id'] ) );
+		}
+		if ( ! term_exists( 'desarrollo_de_habilidades', 'category' ) ){
+			wp_insert_term( 'Desarrollo de Habilidades', 'category', array('slug' => 'desarrollo_de_habilidades', 'parent'=> $wayu_corp['term_id'] ) );
 		}
 
 		/* // SUB TERMS CREATION

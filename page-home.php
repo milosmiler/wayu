@@ -49,7 +49,7 @@
 
                 <div class="slider-actividades">
                   <div id="owl-example" class="owl-carousel">
-                    <?php $eventos = new WP_Query( array( 'posts_per_page' => 4, 'category_name' => 'actividades')); 
+                    <?php $eventos = new WP_Query( array( 'posts_per_page' => 4, 'category_name' => 'ofrecemos')); 
                         if ( $eventos->have_posts() ) : while ( $eventos->have_posts() ) : $eventos->the_post(); ?>
                           <div class="item">
                           <a href="<?php the_permalink(); ?>"> <?php the_post_thumbnail('ofrecemos'); ?></a>
@@ -157,9 +157,9 @@
               <div class="wrapper">
               <h2> WAYUU CORP </h2>
               <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. </p>
-          <?php $temp_query = $wp_query;
-                  query_posts('showposts=4&cat=-5'); 
-               if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+
+            <?php $corp = new WP_Query( array( 'posts_per_page' => 4, 'category_name' => 'wayu_corp')); 
+                        if ( $corp->have_posts() ) : while ( $corp->have_posts() ) : $corp->the_post(); ?>
                 <article class="post-page">
                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('image-blog'); ?></a> 
                   <h3><?php the_title();?></h3>
@@ -169,7 +169,9 @@
                       <div class="comentarios2"><fb:comments-count href=<?php the_permalink(); ?>></fb:comments-count> Comment</div>
                   </footer>
                 </article>
-             <?php  endwhile; ?>
+             <?php endwhile; wp_reset_postdata(); else : ?>
+                          <p><?php _e( 'lo siento' ); ?></p>
+                        <?php endif; ?>
              </div>
             </section>
 
