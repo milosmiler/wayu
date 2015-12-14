@@ -53,6 +53,7 @@
 			<figure class="logo-footer">
 				<a href="<?php echo SITEURL; ?>"><img src="<?php bloginfo('template_url'); ?>/images/wayuu-logoBlanco.png" alt="Wayuuu" /></a>
 			</figure>
+			<a class="privacidad" href="<?php echo site_url('/aviso/'); ?>">Aviso de privacidad</a>
 		</article>
 	</div>
 

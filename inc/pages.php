@@ -28,6 +28,36 @@
 			);
 			wp_insert_post( $page, true );
 		}
+		if( ! get_page_by_path('nosotros') ){
+			$page = array(
+				'post_author' => 1,
+				'post_status' => 'publish',
+				'post_title'  => 'nosotros',
+				'post_name'   => 'nosotros',
+				'post_type'   => 'page'
+			);
+			wp_insert_post( $page, true );
+		}
+		if( ! get_page_by_path('preguntas') ){
+			$page = array(
+				'post_author' => 1,
+				'post_status' => 'publish',
+				'post_title'  => 'preguntas',
+				'post_name'   => 'preguntas',
+				'post_type'   => 'page'
+			);
+			wp_insert_post( $page, true );
+		}
+		if( ! get_page_by_path('aviso') ){
+			$page = array(
+				'post_author' => 1,
+				'post_status' => 'publish',
+				'post_title'  => 'aviso',
+				'post_name'   => 'aviso',
+				'post_type'   => 'page'
+			);
+			wp_insert_post( $page, true );
+		}
 
 
 	});

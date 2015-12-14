@@ -151,6 +151,13 @@ h1   { font-size: 24px; font-size: 2.4rem; } /* =24px */
 
 .hidden{display: none!important;}
 button{ cursor: pointer;}
+a.privacidad{
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  display: block;
+
+}
 
 /*** GENERAL ***/
 

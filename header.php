@@ -21,7 +21,7 @@
 				<ul class="contacto">
 					<li class="telefono">52924793</li>
 					<a href="#miModal"><li class="sobre-contacto">hola@wayuume.com</li></a>
-					<li class="preguntas-frecuentes">preguntas frecuentes</li>
+					<a href="<?php echo site_url('/preguntas/'); ?>"><li class="preguntas-frecuentes">preguntas frecuentes</li></a>
 					<li class="whatsap">52 155 4351 9154</li>
 				</ul>
 				<div id="miModal" class="modal">
@@ -55,7 +55,7 @@
 					</figure>
 					<nav>
 						<ul>
-							<li><a href="">NOSOTROS</a></li>
+							<li><a href="<?php echo site_url('/nosotros/'); ?>">NOSOTROS</a></li>
 							<li><a href="">OFRECEMOS</a></li>
 							<li><a href="">WAYUU CORP</a></li>
 							<li><a href="">WAYU CONSTRUYE</a></li>
