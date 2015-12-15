@@ -161,7 +161,10 @@
             <?php $corp = new WP_Query( array( 'posts_per_page' => 4, 'category_name' => 'wayu_corp')); 
                         if ( $corp->have_posts() ) : while ( $corp->have_posts() ) : $corp->the_post(); ?>
                 <article class="post-page">
+                  <figure class="imagen-post-page">
                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('image-blog'); ?></a> 
+                   <div class="contenedor-categoria"> <?php the_category(); ?> </div>
+                 </figure>
                   <h3><?php the_title();?></h3>
                   <p><?php echo wp_trim_words(get_the_excerpt(), 20 );?></p>
                   <footer class="slider-base">
