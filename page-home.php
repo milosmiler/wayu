@@ -28,30 +28,30 @@
   </div>
 
     
-      <aside class="calendario-newleter">
-        <div class="wrapper">
-        <div class="calendario">
-          Consulta horario de clases y eventos
-          <button class="btn-calendario">Calendario de actividades</button>
-        </div>
-        <div class="newleter">
-          SI FUERA TÚ, DE UNA VEZ ME SUSCRIBO AL NEWSLETTER
-          <input type="text" class="input-newleter" placeholder="correo electronico">
-          <button class="btn-enviar">Enviar</button>
-        </div>
+  <aside class="calendario-newleter">
+    <div class="wrapper">
+      <div class="calendario">
+        Consulta horario de clases y eventos
+        <button class="btn-calendario">Calendario de actividades</button>
       </div>
-      </aside>
+      <div class="newleter">
+        SI FUERA TÚ, DE UNA VEZ ME SUSCRIBO AL NEWSLETTER
+        <input type="text" class="input-newleter" placeholder="correo electronico">
+        <button class="btn-enviar">Enviar</button>
+      </div>
+    </div>
+  </aside>
       
-            <section id ="actividades1" class="actividades">
-              <div class="wrapper">
-                <h2>Ofrecemos</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  <section id ="actividades1" class="actividades">
+      <div class="wrapper">
+          <h2>Ofrecemos</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 
-                <div class="slider-actividades">
-                  <div id="owl-example" class="owl-carousel">
-                    <?php $eventos = new WP_Query( array( 'posts_per_page' => 4, 'category_name' => 'ofrecemos')); 
-                        if ( $eventos->have_posts() ) : while ( $eventos->have_posts() ) : $eventos->the_post(); ?>
-                          <div class="item">
+          <div class="slider-actividades">
+              <div id="owl-example" class="owl-carousel">
+                  <?php $eventos = new WP_Query( array( 'posts_per_page' => 4, 'category_name' => 'ofrecemos')); 
+                      if ( $eventos->have_posts() ) : while ( $eventos->have_posts() ) : $eventos->the_post(); ?>
+                        <div class="item">
                           <a href="<?php the_permalink(); ?>"> <?php the_post_thumbnail('ofrecemos'); ?></a>
                             <h3><?php the_title();?></h3>
                             <p> <?php echo wp_trim_words(get_the_excerpt(), 12 );?></p>
@@ -59,14 +59,14 @@
                               <div class="fecha-page"> <?php the_time('M j, Y') ?> </div>
                               <div class="comentarios"><fb:comments-count href=<?php the_permalink(); ?>></fb:comments-count> Comment </div>
                             </footer>
-                          </div>
+                        </div>
                         <?php endwhile; wp_reset_postdata(); else : ?>
                           <p><?php _e( 'lo siento' ); ?></p>
                         <?php endif; ?>
-                  </div>
-                </div>
               </div>
-            </section>
+          </div>
+      </div>
+  </section>
      
             <section class="productos-del-mes">
               <div class="wrapper">
@@ -138,7 +138,7 @@
               <h2> WAYUU CONSTRUYE </h2>
               <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. </p>
           <?php $temp_query = $wp_query;
-                  query_posts('showposts=4&cat=-5'); 
+                  query_posts('showposts=4&cat=-35'); 
                if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
                 <article class="post-page">
                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('image-blog'); ?></a> 
@@ -182,10 +182,11 @@
               <h2> WAYUU BLOG </h2>
               <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. </p>
           <?php $temp_query = $wp_query;
-                  query_posts('showposts=4&cat=-5'); 
+                  query_posts('showposts=4&cat=-35'); 
                if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
                 <article class="post-page">
-                   <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('image-blog'); ?></a> 
+                   <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('image-blog'); ?></a>
+                   <div class="contenedor-categoria"> <?php the_category(); ?> </div>
                   <h3><?php the_title();?></h3>
                   <p><?php echo wp_trim_words(get_the_excerpt(), 20 );?></p>
                   <footer class="slider-base">
