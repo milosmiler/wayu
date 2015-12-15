@@ -431,7 +431,14 @@ article.post-page{
   background: #fff;
   position: relative;
 }
-article.post-page img{
+
+article.post-page figure.imagen-post-page{
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+figure.imagen-post-page img{
  width: 100%;
 }
 
@@ -1083,6 +1090,9 @@ p.descript-producto{
     padding: 1px;
     margin: 0 auto;
     position: absolute;
+    bottom: -12px;
+    left: 25%;
+    text-align: center;
 }
 .contenedor-categoria ul{
   list-style: none;
