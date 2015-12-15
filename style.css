@@ -1084,14 +1084,13 @@ p.descript-producto{
 }
 
 .contenedor-categoria{
-    width: 50%;
+    width: 65%;
     height: auto;
-    background:#a6ca89;
-    padding: 1px;
+    background: #a6ca89;
     margin: 0 auto;
     position: absolute;
     bottom: -12px;
-    left: 25%;
+    left: 21%;
     text-align: center;
 }
 .contenedor-categoria ul{

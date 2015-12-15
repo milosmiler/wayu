@@ -185,7 +185,7 @@
               <h2> WAYUU BLOG </h2>
               <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. </p>
           <?php $temp_query = $wp_query;
-                  query_posts('showposts=4&cat=-35'); 
+                  query_posts('showposts=4&cat=-26'); 
                if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
                 <article class="post-page">
                   <figure class="imagen-post-page">
