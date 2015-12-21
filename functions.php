@@ -466,6 +466,13 @@ function custom_css_editor_before_init( $settings ) {
                 'font-size' => '16px',
                 'textTransform' => 'uppercase'
             )
+        ),
+        array(
+            'title' => 'Color Azul',
+            'inline' => 'span',
+            'styles' => array(
+                'color' => '#698bc4'
+            )
         )
     );
 
