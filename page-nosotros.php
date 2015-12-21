@@ -1,8 +1,11 @@
 	<?php get_header(); ?>
   <?php get_header(); the_post();?>
 	<!-- Insert content here -->
-            <div class="wrapper">
+	<section class="wayu-nosotros">
+          <div class="contendor-nosotros">
               <?php the_content();?>
-            </div>
+          </div>
+            
+    </section>
 
 	<?php get_footer(); ?>

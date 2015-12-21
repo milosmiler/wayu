@@ -45,7 +45,8 @@
   <section id ="actividades1" class="actividades">
       <div class="wrapper">
           <h2>Ofrecemos</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Wayuu es una experiencia de crecimiento integral. Por eso, la calidad de todos los elementos que forman un aprendizaje que transforma: el ambiente, 
+              la comida, la calidad de los maestros, el acompañamiento y la organización. Nuestra vocación es el servicio a los demás.</p>
 
           <div class="slider-actividades">
               <div id="owl-example" class="owl-carousel">
@@ -135,7 +136,7 @@
 
             <section id="wayu-contruye" class="construye">
               <div class="wrapper">
-              <h2> WAYUU CONSTRUYE </h2>
+              <h2> WAYUU SOLIDARIO </h2>
               <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. </p>
           <?php $temp_query = $wp_query;
                   query_posts('showposts=4&cat=-35'); 
@@ -156,7 +157,11 @@
             <section id="wayu-corp" class="corp">
               <div class="wrapper">
               <h2> WAYUU CORP </h2>
-              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. </p>
+              <p>Nuestra área corporativa ofrece cursos y talleres de capacitación y desarrollo de  habilidades y herramientas profesionales.
+               Tenemos instructores certificados y con registro ante la Secretaría de Educación y la Secretaría del Trabajo.<br>
+                En lo referente a coaching individual y de equipos, contamos con coaches certificados en diferentes metodologías.<br>
+                A través de una entrevista podemos acercarnos a conocer el corazón de tu empresa o tu 
+                equipo y ofrecerte un portafolio de opciones y acciones a tu medida.</p>
 
             <?php $corp = new WP_Query( array( 'posts_per_page' => 4, 'category_name' => 'wayu_corp')); 
                         if ( $corp->have_posts() ) : while ( $corp->have_posts() ) : $corp->the_post(); ?>
@@ -183,7 +188,8 @@
             <section class="blog">
               <div class="wrapper">
               <h2> WAYUU BLOG </h2>
-              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. </p>
+              <p> En nuestro blog te ofrecemos una mirada a los temas que te apasionan de tu desarrollo personal. <br>
+                No dejes de comentarlo, en Wayuu sabemos que cada persona es un maestro y tus ideas son muy importantes para nosotros. </p>
           <?php $temp_query = $wp_query;
                   query_posts('showposts=4&cat=-35'); 
                if ( have_posts() ) while ( have_posts() ) : the_post(); ?>

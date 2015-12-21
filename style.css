@@ -318,7 +318,7 @@ section.actividades p{
 section.productos-del-mes{
   width: 100%;
   height: auto;
-  background: #de8601;
+  background: rgba(222, 134, 1, 0.8);
    padding-top: 58px;
 }
 
@@ -335,7 +335,7 @@ section.productos-del-mes h2{
     height: auto;
     overflow: hidden;
         padding-bottom: 69px;
-    background: #5C88DA;
+    background:rgba(92, 136, 218, 0.8);
   }
 
   section.corp h2{
@@ -533,9 +533,6 @@ section.colaboradores h2:after{
   bottom: 0px;
   left: 44%;
 }
-
-
-
 
 
 footer.slider-base{
@@ -1299,6 +1296,36 @@ ul.social li.pinters:before{
   z-index: 9999;
 }
 
+
+section.wayu-nosotros{
+  width: 100%;
+  padding-top: 115px;
+  padding-bottom: 100px;
+  height: auto;
+  overflow: hidden;
+  background: url(./images/fondoser.png);
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Gotham-Book';
+}
+
+figure.imagen-aviso{
+  width: 100%;
+  height: auto;
+  margin-bottom: 47px;
+}
+
+figure.imagen-aviso img{
+  width: 100%;
+}
+
+.contendor-nosotros{
+  display: block;
+  margin: 0 auto;
+  max-width: 915px;
+  height: auto;
+
+}
 /* Direction Nav */
 .flex-direction-nav li a {width: 52px; height: 52px; margin: -13px 0 0; display: block; background: url(../images/bg_direction_nav.png) no-repeat 0 0; position: absolute; top: 50%; cursor: pointer; text-indent: -9999px;}
 .flex-direction-nav li .next {background-position: -52px 0; right: -21px;}
@@ -1884,7 +1911,6 @@ border-top-left-radius: 15px;
 -moz-box-shadow:    3px -3px 1px rgba(50, 50, 50, 0.56);
 box-shadow:         3px -3px 1px rgba(50, 50, 50, 0.56);
 }
-
 
 
 
