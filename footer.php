@@ -58,7 +58,7 @@
 	</div>
 
 			<div class="cookiesms" id="cookie1">
-Esta web utiliza cookies, puedes ver nuestra  <a href="tu-url-donde-explicas-la-politica-de-cookies">la política de cookies, aquí</a> 
+Esta web utiliza cookies, puedes ver nuestra  <a href="cookies">la política de cookies, aquí</a> 
 Si continuas navegando estás aceptándola
 <button onclick="controlcookies()">Aceptar</button>
 <div  class="cookies2" onmouseover="document.getElementById('cookie1').style.bottom = '0px';">Política de cookies + </div>

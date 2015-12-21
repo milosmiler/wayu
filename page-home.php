@@ -191,7 +191,7 @@
               <p> En nuestro blog te ofrecemos una mirada a los temas que te apasionan de tu desarrollo personal. <br>
                 No dejes de comentarlo, en Wayuu sabemos que cada persona es un maestro y tus ideas son muy importantes para nosotros. </p>
           <?php $temp_query = $wp_query;
-                  query_posts('showposts=4&cat=-35'); 
+                  query_posts('showposts=4&cat=-26'); 
                if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
                 <article class="post-page">
                   <figure class="imagen-post-page">
