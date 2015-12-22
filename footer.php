@@ -10,8 +10,8 @@
 
 				<div class="leyenda-direcion">
 				<p>
-					Prolongacion Paseos de la reforma 215,
-					Col. Bosques de las lomas Delegacion
+					Prolongacion Paseo de la reforma 215,
+					Col. Paseo de las lomas Delegacion
 					Cuajimalpa. Mexico D.F.
 				</p>
 			</div>
