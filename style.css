@@ -125,7 +125,7 @@ figure {margin: 0;}
 /* Utilities */
 .lst_reset, .lst_reset li { margin: 0; padding: 0; list-style: none; }
 .clear { clear:both; height:1px; margin:0; padding:0; font-size: 1px; line-height: 0; }
-* { box-sizing: border-box; }
+* { box-sizing: border-box; color: #383940 }
 
 /* clearfix for modern browsers */
 .clearfix:before,
@@ -161,19 +161,6 @@ a.privacidad{
 }
 
 /*** GENERAL ***/
-
-/*
- * jQuery FlexSlider v1.8
- * http://flex.madebymufffin.com
- *
- * Copyright 2011, Tyler Smith
- * Free to use under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- */
-
-
-
-
  #contenedor {  
   width: 85%; 
   max-width:1400px; 
@@ -230,6 +217,10 @@ html[xmlns] .slides {display: block;}
   display: inline-block;
   margin-right: 25px;
   color: #fff;
+}
+
+.contacto-social ul.contacto li a{
+  text-decoration: none;
 }
 
 .contacto-social ul.social{
@@ -329,7 +320,6 @@ section.productos-del-mes h2{
   padding-bottom: 10px;
   }
 
-  
   section.corp{
     width: 100%;
     height: auto;
@@ -362,15 +352,38 @@ section.corp p{
     font-family: 'Gotham-Book';
     font-size: 2.0rem;
   }
-
-  section.construye h2{
+section.construye h2{
     text-align: center;
     font-family: 'hello';
     font-size: 4.4rem;
     color: #ccc;
     position: relative;
     padding-bottom: 10px;
-  }
+}
+
+section.main-single-right{
+  width: 355px;
+  height: auto;
+  float: left;
+  margin-left: 32px;
+  margin-top: 40px;
+}
+section.main-single-right h2{
+  font-family: 'Gotham-Book';
+  font-size: 2.4rem;
+  color: #383940;
+}
+section.main-single-right ul{
+  list-style: none;
+}
+
+section.main-single-right ul li{
+  font-size: 1.8rem;
+  font-family: 'Gotham-Book';
+  border-bottom: 1px solid #d3d3d5;
+  padding-bottom: 22px;
+  padding-top: 28px;
+}
 
   section.construye h2:after{
   content: " ";
@@ -420,58 +433,6 @@ section.blog{
     font-family: 'Gotham-Book';
     font-size: 2.0rem;
   }
-
-
-article.post-page{
-  width: 271px;
-  height: auto;
-  overflow: hidden;
-  float: left;
-  margin: 0px 8px 0px 13px;
-  background: #fff;
-  position: relative;
-}
-
-article.post-page figure.imagen-post-page{
-  width: 100%;
-  height: auto;
-  position: relative;
-}
-
-figure.imagen-post-page img{
- width: 100%;
-}
-
-article.post-page-categoria{
-  width: 271px;
-  height: auto;
-  overflow: hidden;
-  float: left;
-  margin: 10px 10px 10px 10px;
-}
-
-article.post-page-categoria h3 {
-    text-align: center;
-    font-size: 1.8rem;
-    font-family: 'Gotham-Medium';
-    padding: 0px 11px;
-    border-bottom: 1px solid #dbdbdb;
-}
-
-article.post-page h3{
-  text-align: center;
-  font-size: 1.8rem;
-  font-family: 'Gotham-Medium';
-  padding: 0px 11px;
-  border-bottom: 1px solid #dbdbdb;
-  }
-article.post-page p{
-  font-family: 'Gotham-Book';
-  font-size: 1.4rem;
-  padding: 0px 11px;
-  text-align: left;
-}
-
 section.comunidad{
   width: 100%;
   height: auto;
@@ -534,6 +495,56 @@ section.colaboradores h2:after{
   left: 44%;
 }
 
+
+article.post-page{
+  width: 271px;
+  height: auto;
+  overflow: hidden;
+  float: left;
+  margin: 0px 8px 0px 13px;
+  background: #fff;
+  position: relative;
+}
+
+article.post-page figure.imagen-post-page{
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+figure.imagen-post-page img{
+ width: 100%;
+}
+
+article.post-page-categoria{
+  width: 271px;
+  height: auto;
+  overflow: hidden;
+  float: left;
+  margin: 10px 10px 10px 10px;
+}
+
+article.post-page-categoria h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Gotham-Medium';
+    padding: 0px 11px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+article.post-page h3{
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: 'Gotham-Medium';
+  padding: 0px 11px;
+  border-bottom: 1px solid #dbdbdb;
+  }
+article.post-page p{
+  font-family: 'Gotham-Book';
+  font-size: 1.4rem;
+  padding: 0px 11px;
+  text-align: left;
+}
 
 footer.slider-base{
   width: 100%;
@@ -698,32 +709,6 @@ footer.footer-single ul li{
 .tag a{
   text-decoration: none;
   color: #7b9bc8;
-}
-
-
-
-section.main-single-right{
-  width: 355px;
-  height: auto;
-  float: left;
-  margin-left: 32px;
-  margin-top: 40px;
-}
-section.main-single-right h2{
-  font-family: 'Gotham-Book';
-  font-size: 2.4rem;
-  color: #383940;
-}
-section.main-single-right ul{
-  list-style: none;
-}
-
-section.main-single-right ul li{
-  font-size: 1.8rem;
-  font-family: 'Gotham-Book';
-  border-bottom: 1px solid #d3d3d5;
-  padding-bottom: 22px;
-  padding-top: 28px;
 }
 
 .search_form{
@@ -1098,6 +1083,75 @@ p.descript-producto{
   text-decoration: none;
 }
 
+.modalwindow {
+  position:fixed;
+  width:440px;
+  height:200px;
+  display:none;
+  z-index:9999;
+}
+
+#modal {
+  width:800px;
+  height: 600px;
+  background: #ddd;
+  border-radius: 5px;
+  border:3px solid #fff;
+}
+
+.pleca-azul{
+  width: 100%;
+  height: 64px;
+  background: #678cc1;
+}
+.cuerpo-formulario{
+  width: 770px;
+  height: 510px;
+  margin: 10px auto;
+  padding-top: 52px;
+  background: url(./images/fondo-form.png);
+  background-size: cover;
+}
+
+.cuerpo-formulario p{
+  font-size: 1.8rem;
+  font-family: 'Gotham-Book';
+  margin-bottom: 32px;
+  margin-left: 40px;
+}
+input.formulario-modal{
+  width: 45%;
+  height: 40px;
+  display: block;
+  margin-left: 40px;
+  margin-bottom: 28px;
+  padding-left: 10px;
+}
+textarea{
+  width: 45%;
+  height: 100px;
+  margin-left: 40px;
+  padding-left: 10px;
+}
+
+button.btn-enviar-modal{
+  width: 172px;
+  height: 39px;
+  margin-top: 32px;
+  display: block;
+  margin-left: 40px;
+  background: #bc8492;
+  color: #fff;
+  border: none;
+}
+a.close{
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background: #000;
+}
 
 
 /* FlexSlider Default Theme
@@ -1271,30 +1325,6 @@ ul.social li.pinters:before{
 
 
 }
-.modal-contenido{
-  background-color:aqua;
-  width:300px;
-  padding: 10px 20px;
-  margin: 20% auto;
-  position: relative;
-}
-.modal{
-  background-color: rgba(0,0,0,.8);
-  position:fixed;
-  top:0;
-  right:0;
-  bottom:0;
-  left:0;
-  opacity:0;
-  pointer-events:none;
-  transition: all 1s;
-}
-#miModal:target{
-  opacity:1;
-  pointer-events:auto;
-  z-index: 9999;
-}
-
 
 section.wayu-nosotros{
   width: 100%;

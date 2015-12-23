@@ -20,24 +20,27 @@
 				<div class="wrapper">
 				<ul class="contacto">
 					<li class="telefono">52924793</li>
-					<a href="#miModal"><li class="sobre-contacto">hola@wayuume.com</li></a>
+					<li class="sobre-contacto"> <a href="#modal" name="modal">hola@wayuume.com </a> </li>
 					<a href="<?php echo site_url('/preguntas/'); ?>"><li class="preguntas-frecuentes">preguntas frecuentes</li></a>
 					<li class="whatsap">52 155 4351 9154</li>
 				</ul>
-				<div id="miModal" class="modal">
-  					<div class="modal-contenido">
-    					<a href="#">X</a>
-    					<h2>Mi primer Modal</h2>
-    					<label>Nombre:</label>
-    					<input type="text">
-    					<label>Telefono:</label>
-    					<input type="text">
-    					<label>Email:</label>
-    					<input type="email">
-    					<label>Mensaje:</label>
-    					<textarea></textarea>
-    					<button>Enviar</button>
-  					</div>  
+				<div id="modal" class="modalwindow">
+					<div class="pleca-azul">
+   						<a href="#" class="close">X</a>
+   					</div>
+   					<section class="cuerpo-formulario">
+   						<p> Para nosotros eres muy importante, en breve nos <br>
+							pondremos en contacto contigo.
+   						</p>	
+   						<form>
+   							<input type="text" name="" class="formulario-modal" placeholder="Tu nombre">
+   							<input type="text" name="" class="formulario-modal" placeholder="email">
+   							<input type="text" name="" class="formulario-modal" placeholder="Telefono">
+   							<textarea placeholder="Mensaje">
+   							</textarea>
+   							<button class="btn-enviar-modal">Enviar</button>
+   						</form>
+   					</section>
 				</div>
 				<ul class="social">
 					<a href="https://www.facebook.com/Wayuu-1570265936544314/?fref=ts" target="_blank"><li class="facebook"></li></a>

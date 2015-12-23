@@ -16,10 +16,6 @@
 			return regExp.test(email);
 		};
 
-
-
-
-
 		/**
 		 * Regresa todos los valores de un formulario como un associative array 
 		 */
@@ -34,12 +30,12 @@
 		}
 
 		$("#slider3").responsiveSlides({
-        auto: true,
-        pager: false,
-        nav: true,
-        speed: 500,
-        maxwidth: 800,
-        namespace: "large-btns"
+	        auto: true,
+	        pager: false,
+	        nav: true,
+	        speed: 500,
+	        maxwidth: 800,
+	        namespace: "large-btns"
       });
 
 		$(window).load(function(){
@@ -49,13 +45,13 @@
 		});
 
 		$(document).ready(function($) {
-      $("#owl-example").owlCarousel({
-      	items : 3,
-      	 itemsDesktop : [1199,3],
-      	itemsDesktopSmall : [979,3]
-      });
+      		$("#owl-example").owlCarousel({
+	      		items : 3,
+	      	 	itemsDesktop : [1199,3],
+	      		itemsDesktopSmall : [979,3]
+      		});
 
-    });
+    	});
 		/**
 		 * CODIGO SHARE FACEBOOK
 		 */
@@ -69,21 +65,44 @@
 		}(document, 'script', 'facebook-jssdk'))
 
 		if (localStorage.controlcookie>0){ 
-document.getElementById('cookie1').style.bottom = '-50px';
-}
+			document.getElementById('cookie1').style.bottom = '-50px';
+		}
 
 
 $("a").on("click",function(){
    if(this.hash){
-      //console.log($(this).attr('href'));
       $("html body").animate({"scrollTop":$($(this).attr('href')).offset().top-82},1400);
       return false;
          }
 });
 
 
-
-
+ 
+    //select all the a tag with name equal to modal
+    $('a[name=modal]').click(function(e) {
+        //Cancel the link behavior
+        e.preventDefault();
+        //Get the A tag
+        var id = $(this).attr('href');
+ 
+        //Get the window height and width
+        var winH = $(window).height();
+        var winW = $(window).width();
+ 
+        //Set the popup window to center
+        $(id).css('left', winW/2-$(id).width()/2);
+ 
+        //transition effect
+        $(id).fadeIn(500); 
+ 
+    });
+ 
+    //if close button is clicked
+    $('.modalwindow .close').click(function (e) {
+        //Cancel the link behavior
+        e.preventDefault();
+        $('.modalwindow').fadeOut(500);
+    });             
 
 	});
 })(jQuery);
