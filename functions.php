@@ -102,16 +102,22 @@
 	}
 
 	if ( function_exists('add_image_size') ){
+
+        add_image_size( 'full-size', '','', true);
+        add_image_size( 'ofrecemos', 370, 267, true );
+        add_image_size( 'image-producto', 360,360, true);
+        add_image_size( 'image-blog', 271, 197, true );
+
+
 		
 		add_image_size( 'post_pages', 200, 200, true );
-		add_image_size( 'ofrecemos', 360, 160, true );
-		add_image_size( 'image-blog', 271, 160, true );
+		
+		
 		add_image_size( 'image-single', 772, 365, true );
 		add_image_size( 'post_home', 250, 250, true );
-		add_image_size( 'full-size', '','', true);
+		
 		add_image_size( 'image-reciente', 141,102, true);
-		add_image_size( 'image-producto', 360,360, true);
-
+		
 
 		
 		// cambiar el tamaño del thumbnail
@@ -433,6 +439,66 @@ function quitar_version_wp() {
 	return '';
 }
 	add_filter('the_generator', 'quitar_version_wp');
+
+
+
+add_filter( 'mce_buttons_2', 'custom_css_editor_buttons' );
+ 
+function custom_css_editor_buttons( $buttons ) {
+    array_unshift( $buttons, 'styleselect' );
+    return $buttons;
+}
+
+add_filter( 'tiny_mce_before_init', 'custom_css_editor_before_init' );
+ 
+function custom_css_editor_before_init( $settings ) {
+ 
+    $style_formats = array(
+        array(
+            'title' => 'font san francisco',
+            'inline' => 'span',
+            'styles' => array(
+                'font-family' => 'hello',
+                'font-size' => '64px',
+                'textTransform' => 'uppercase'
+            )
+        ),
+        array(
+            'title' => 'font american',
+            'inline' => 'span',
+            'styles' => array(
+                'font-family' => 'AmericanTypewriter',
+                'margin-top' => '5px',
+                'font-size' => '16px',
+                'textTransform' => 'uppercase'
+            )
+        ),
+        array(
+            'title' => 'Color Azul',
+            'inline' => 'span',
+            'styles' => array(
+                'color' => '#698bc4'
+            )
+        )
+    );
+
+ 
+    $settings['style_formats'] = json_encode( $style_formats );
+ 
+    return $settings;
+ 
+}
+
+/*
+ * Añadimos el css del editor al front-end (Si queremos..)
+ */
+add_action('wp_enqueue_scripts', 'custom_css_editor_enqueue');
+ 
+function custom_css_editor_enqueue() {
+  $StyleUrl = plugin_dir_url(__FILE__).'style.css'; 
+  wp_enqueue_style( 'myCustomStyles', $StyleUrl );
+}
+
 
 
 

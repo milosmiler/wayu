@@ -47,7 +47,90 @@
 		if ( ! term_exists( 'conciencia', 'category' ) ){
 			wp_insert_term( 'Conciencia', 'category', array('slug' => 'conciencia'));
 		}
-
+		if ( ! term_exists( 'espiritualidad', 'category' ) ){
+			wp_insert_term( 'Espiritualidad', 'category', array('slug' => 'espiritualidad'));
+		}
+		if ( ! term_exists( 'coaching', 'category' ) ){
+			wp_insert_term( 'Coaching', 'category', array('slug' => 'coaching'));
+		}
+		if ( ! term_exists( 'superacion', 'category' ) ){
+			wp_insert_term( 'superacion', 'category', array('slug' => 'superacion'));
+		}
+		if ( ! term_exists( 'desarrollo_humano', 'category' ) ){
+			wp_insert_term( 'Desarrollo Humano', 'category', array('slug' => 'desarrollo_humano'));
+		}
+		if ( ! term_exists( 'motivacion', 'category' ) ){
+			wp_insert_term( 'motivación', 'category', array('slug' => 'motivacion'));
+		}
+		if ( ! term_exists( 'aprender', 'category' ) ){
+			wp_insert_term( 'Aprender', 'category', array('slug' => 'aprender'));
+		}
+		if ( ! term_exists( 'psicologia', 'category' ) ){
+			wp_insert_term( 'Psicologia', 'category', array('slug' => 'psicologia'));
+		}
+		if ( ! term_exists( 'meditacion', 'category' ) ){
+			wp_insert_term( 'meditacion', 'category', array('slug' => 'meditacion'));
+		}
+		if ( ! term_exists( 'nuticion', 'category' ) ){
+			wp_insert_term( 'nutricion', 'category', array('slug' => 'nutricion'));
+		}
+		if ( ! term_exists( 'salud', 'category' ) ){
+			wp_insert_term( 'Salud', 'category', array('slug' => 'salud'));
+		}
+		if ( ! term_exists( 'health_coaching', 'category' ) ){
+			wp_insert_term( 'Health Coaching', 'category', array('slug' => 'health_coaching'));
+		}
+		if ( ! term_exists( 'habilidades', 'category' ) ){
+			wp_insert_term( 'Habilidades', 'category', array('slug' => 'habilidades'));
+		}
+		if ( ! term_exists( 'actitud', 'category' ) ){
+			wp_insert_term( 'Actitud', 'category', array('slug' => 'actitud'));
+		}
+		if ( ! term_exists( 'capacidad', 'category' ) ){
+			wp_insert_term( 'Capacidad', 'category', array('slug' => 'capacidad'));
+		}
+		if ( ! term_exists( 'yoga', 'category' ) ){
+			wp_insert_term( 'Yoga', 'category', array('slug' => 'yoga'));
+		}
+		if ( ! term_exists( 'musica', 'category' ) ){
+			wp_insert_term( 'musica', 'category', array('slug' => 'musica'));
+		}
+		if ( ! term_exists( 'ninos', 'category' ) ){
+			wp_insert_term( 'niños', 'category', array('slug' => 'ninos'));
+		}
+		if ( ! term_exists( 'adolecentes', 'category' ) ){
+			wp_insert_term( 'Adolecentes', 'category', array('slug' => 'adolecentes'));
+		}
+		if ( ! term_exists( 'adultos', 'category' ) ){
+			wp_insert_term( 'Adultos', 'category', array('slug' => 'adultos'));
+		}
+		if ( ! term_exists( 'parejas', 'category' ) ){
+			wp_insert_term( 'Parejas', 'category', array('slug' => 'parejas'));
+		}
+		if ( ! term_exists( 'amor', 'category' ) ){
+			wp_insert_term( 'Amor', 'category', array('slug' => 'amor'));
+		}
+		if ( ! term_exists( 'mujeres', 'category' ) ){
+			wp_insert_term( 'Mujeres', 'category', array('slug' => 'mujeres'));
+		}
+		if ( ! term_exists( 'mamas', 'category' ) ){
+			wp_insert_term( 'Mamás', 'category', array('slug' => 'mamas'));
+		}
+		if ( ! term_exists( 'embarazo', 'category' ) ){
+			wp_insert_term( 'Embarazo', 'category', array('slug' => 'embarazo'));
+		}
+		if ( ! term_exists( 'comunidad', 'category' ) ){
+			wp_insert_term( 'Comunidad', 'category', array('slug' => 'comunidad'));
+		}
+		if ( ! term_exists( 'grupo', 'category' ) ){
+			wp_insert_term( 'Grupo', 'category', array('slug' => 'grupo'));
+		}
+		if ( ! term_exists( 'felicidad', 'category' ) ){
+			wp_insert_term( 'Felicidad', 'category', array('slug' => 'felicidad'));
+		}
+		if ( ! term_exists( 'cambio', 'category' ) ){
+			wp_insert_term( 'cambio', 'category', array('slug' => 'cambio'));
+		}
 
 		if ( ! term_exists( 'producto_del_mes', 'category' ) ){
 			wp_insert_term( 'Producto del mes', 'category', array('slug' => 'producto_del_mes'));

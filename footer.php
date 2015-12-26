@@ -1,5 +1,5 @@
 </div><!-- container -->
-	<footer>
+	<footer class="padding-70">
 		<div class="wrapper">
 		<article class="donde-estamos">
 			<h3>¿DÓNDE ESTAMOS?</h3>
@@ -10,8 +10,8 @@
 
 				<div class="leyenda-direcion">
 				<p>
-					Prolongacion Paseos de la reforma 215,
-					Col. Bosques de las lomas Delegacion
+					Prolongacion Paseo de la reforma 215,
+					Col. Paseo de las lomas Delegacion
 					Cuajimalpa. Mexico D.F.
 				</p>
 			</div>
@@ -42,7 +42,7 @@
 		</article>
 		<article class="newletter-footer">
 			<h3> NEWSLETTER</h3>
-			<p class="titulo-input">ESCRIBE TU MAIL AQUÍ PARA RECBIR NUESTRAS NOTICIAS E INVITACIONES</p>
+			<p class="titulo-input">SI FUERA TÚ, DE UNA VEZ ME SUSCRIBO AL NEWSLETTER</p>
 			<input type="text" class="input-newleter-footer" placeholder="correo electronico">
 			<button class="btn-enviar-footer">Enviar</button>
 			<p class="slogan">

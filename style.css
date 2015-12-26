@@ -125,7 +125,7 @@ figure {margin: 0;}
 /* Utilities */
 .lst_reset, .lst_reset li { margin: 0; padding: 0; list-style: none; }
 .clear { clear:both; height:1px; margin:0; padding:0; font-size: 1px; line-height: 0; }
-* { box-sizing: border-box; }
+* { box-sizing: border-box; color: #383940 }
 
 /* clearfix for modern browsers */
 .clearfix:before,
@@ -161,19 +161,6 @@ a.privacidad{
 }
 
 /*** GENERAL ***/
-
-/*
- * jQuery FlexSlider v1.8
- * http://flex.madebymufffin.com
- *
- * Copyright 2011, Tyler Smith
- * Free to use under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- */
-
-
-
-
  #contenedor {  
   width: 85%; 
   max-width:1400px; 
@@ -229,6 +216,11 @@ html[xmlns] .slides {display: block;}
 .contacto-social ul.contacto li{
   display: inline-block;
   margin-right: 25px;
+  color: #fff;
+}
+
+.contacto-social ul.contacto li a{
+  text-decoration: none;
   color: #fff;
 }
 
@@ -318,7 +310,7 @@ section.actividades p{
 section.productos-del-mes{
   width: 100%;
   height: auto;
-  background: #de8601;
+  background: rgba(222, 134, 1, 0.8);
    padding-top: 58px;
 }
 
@@ -329,13 +321,12 @@ section.productos-del-mes h2{
   padding-bottom: 10px;
   }
 
-  
   section.corp{
     width: 100%;
     height: auto;
     overflow: hidden;
         padding-bottom: 69px;
-    background: #5C88DA;
+    background:rgba(92, 136, 218, 0.8);
   }
 
   section.corp h2{
@@ -362,15 +353,38 @@ section.corp p{
     font-family: 'Gotham-Book';
     font-size: 2.0rem;
   }
-
-  section.construye h2{
+section.construye h2{
     text-align: center;
     font-family: 'hello';
     font-size: 4.4rem;
     color: #ccc;
     position: relative;
     padding-bottom: 10px;
-  }
+}
+
+section.main-single-right{
+  width: 355px;
+  height: auto;
+  float: left;
+  margin-left: 32px;
+  margin-top: 40px;
+}
+section.main-single-right h2{
+  font-family: 'Gotham-Book';
+  font-size: 2.4rem;
+  color: #383940;
+}
+section.main-single-right ul{
+  list-style: none;
+}
+
+section.main-single-right ul li{
+  font-size: 1.8rem;
+  font-family: 'Gotham-Book';
+  border-bottom: 1px solid #d3d3d5;
+  padding-bottom: 22px;
+  padding-top: 28px;
+}
 
   section.construye h2:after{
   content: " ";
@@ -420,6 +434,74 @@ section.blog{
     font-family: 'Gotham-Book';
     font-size: 2.0rem;
   }
+section.comunidad{
+  width: 100%;
+  height: auto;
+  padding-top: 87px;
+  clear: both;
+  background: url(images/wayu.jpg);
+  background-size: cover;
+  padding-bottom: 150px;
+}
+
+section.comunidad h2{
+  text-align: center;
+  font-family: 'hello';
+  font-size: 4.4rem;
+  position: relative;
+  color: #fff;
+  padding-bottom: 10px;
+
+  }
+section.comunidad h2:after{
+  content: " ";
+  width: 128px;
+  height: 5px;
+  background: #bc8492;
+  position: absolute;
+  bottom: 0px;
+  left: 44%;
+}
+
+section.construye{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+section.comunidad p{
+  font-size: 2.0rem;
+  text-align: center;
+  line-height: 30px;
+  color: #fff;
+  max-width: 770px;
+  margin: 0 auto;
+}
+
+section.colaboradores{
+  width: 100%;
+  height: auto;
+  background: #f7f7f7;
+  padding-top: 94px;
+}
+
+section.colaboradores h2{
+  text-align: center;
+  font-size: 4.4rem;
+  font-family: 'hello';
+  position: relative;
+  padding-bottom: 10px;
+}
+section.colaboradores h2:after{
+  content: " ";
+  width: 128px;
+  height: 5px;
+  background: #9ecdce;
+  position: absolute;
+  bottom: 0px;
+  left: 44%;
+}
 
 
 article.post-page{
@@ -430,6 +512,7 @@ article.post-page{
   margin: 0px 8px 0px 13px;
   background: #fff;
   position: relative;
+  border: 1px solid #dbdbdb;
 }
 
 article.post-page figure.imagen-post-page{
@@ -472,75 +555,10 @@ article.post-page p{
   text-align: left;
 }
 
-section.comunidad{
-  width: 100%;
-  height: auto;
-  padding-top: 87px;
-  clear: both;
-  background: url(images/wayu.jpg);
-  background-size: cover;
-  padding-bottom: 150px;
-}
-
-section.comunidad h2{
-  text-align: center;
-  font-family: 'hello';
-  font-size: 4.4rem;
-  position: relative;
-  color: #fff;
-  padding-bottom: 10px;
-
-  }
-section.comunidad h2:after{
-  content: " ";
-  width: 128px;
-  height: 5px;
-  background: #bc8492;
-  position: absolute;
-  bottom: 0px;
-  left: 44%;
-}
-
-section.comunidad p{
-  font-size: 2.0rem;
-  text-align: center;
-  line-height: 30px;
-  color: #fff;
-  max-width: 770px;
-  margin: 0 auto;
-}
-
-section.colaboradores{
-  width: 100%;
-  height: auto;
-  background: #f7f7f7;
-  padding-top: 94px;
-}
-
-section.colaboradores h2{
-  text-align: center;
-  font-size: 4.4rem;
-  font-family: 'hello';
-  position: relative;
-  padding-bottom: 10px;
-}
-section.colaboradores h2:after{
-  content: " ";
-  width: 128px;
-  height: 5px;
-  background: #9ecdce;
-  position: absolute;
-  bottom: 0px;
-  left: 44%;
-}
-
-
-
-
-
 footer.slider-base{
   width: 100%;
-  height: 20px;
+  height: 45px;
+  padding-top: 13px;
   background: #f8f7f7;
   border-top: 1px solid #dbdbdb;
   border-bottom: 1px solid #dbdbdb;
@@ -550,7 +568,7 @@ footer.slider-base{
   width: 464px;
   height: auto;
   float: left;
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   color: #688dc2;
   font-family: 'Gotham-Light';
 }
@@ -574,6 +592,8 @@ button.btn-calendario{
  text-align: center;
  border: none;
  font-family: 'AmericanTypewriter';
+ -moz-osx-font-smoothing:grayscale;
+-webkit-font-smoothing:antialiased;
 }
 button.btn-enviar{
   width: 100px;
@@ -595,6 +615,8 @@ input[placeholder], [placeholder], *[placeholder] {
    font-size: 1.8rem;
    font-family: 'AmericanTypewriter';
    font-weight: lighter;
+   -moz-osx-font-smoothing:grayscale;
+    -webkit-font-smoothing:antialiased;
 }
 
 .fecha-page{
@@ -701,32 +723,6 @@ footer.footer-single ul li{
 .tag a{
   text-decoration: none;
   color: #7b9bc8;
-}
-
-
-
-section.main-single-right{
-  width: 355px;
-  height: auto;
-  float: left;
-  margin-left: 32px;
-  margin-top: 40px;
-}
-section.main-single-right h2{
-  font-family: 'Gotham-Book';
-  font-size: 2.4rem;
-  color: #383940;
-}
-section.main-single-right ul{
-  list-style: none;
-}
-
-section.main-single-right ul li{
-  font-size: 1.8rem;
-  font-family: 'Gotham-Book';
-  border-bottom: 1px solid #d3d3d5;
-  padding-bottom: 22px;
-  padding-top: 28px;
 }
 
 .search_form{
@@ -1034,6 +1030,7 @@ figure.image-producto{
   color: #000;
   font-size: 2.4rem;
   margin: 52px 0px 28px 0px;
+  float: left;
 }
 p.descript-producto{
   font-family: 'Gotham-Book';
@@ -1101,6 +1098,80 @@ p.descript-producto{
   text-decoration: none;
 }
 
+.modalwindow {
+  position:fixed;
+  width:440px;
+  height:200px;
+  display:none;
+  z-index:9999;
+}
+
+#modal {
+  width:800px;
+  height: 600px;
+  background: #ddd;
+  border-radius: 5px;
+  border:3px solid #fff;
+}
+
+.pleca-azul{
+  width: 100%;
+  height: 64px;
+  background: #678cc1;
+}
+.cuerpo-formulario{
+  width: 770px;
+  height: 510px;
+  margin: 10px auto;
+  padding-top: 52px;
+  background: url(./images/fondo-form.png);
+  background-size: cover;
+}
+
+.cuerpo-formulario p{
+  font-size: 1.8rem;
+  font-family: 'Gotham-Book';
+  margin-bottom: 32px;
+  margin-left: 40px;
+}
+input.formulario-modal{
+  width: 45%;
+  height: 40px;
+  display: block;
+  margin-left: 40px;
+  margin-bottom: 28px;
+  padding-left: 10px;
+}
+textarea{
+  width: 45%;
+  height: 100px;
+  margin-left: 40px;
+  padding-left: 10px;
+}
+
+button.btn-enviar-modal{
+  width: 172px;
+  height: 39px;
+  margin-top: 32px;
+  display: block;
+  margin-left: 40px;
+  background: #bc8492;
+  color: #fff;
+  border: none;
+}
+a.close{
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background: #000;
+}
+
+.padding-70{
+  padding-top: 70px;
+
+}
 
 
 /* FlexSlider Default Theme
@@ -1274,30 +1345,36 @@ ul.social li.pinters:before{
 
 
 }
-.modal-contenido{
-  background-color:aqua;
-  width:300px;
-  padding: 10px 20px;
-  margin: 20% auto;
-  position: relative;
-}
-.modal{
-  background-color: rgba(0,0,0,.8);
-  position:fixed;
-  top:0;
-  right:0;
-  bottom:0;
-  left:0;
-  opacity:0;
-  pointer-events:none;
-  transition: all 1s;
-}
-#miModal:target{
-  opacity:1;
-  pointer-events:auto;
-  z-index: 9999;
+
+section.wayu-nosotros{
+  width: 100%;
+  padding-top: 115px;
+  padding-bottom: 100px;
+  height: auto;
+  overflow: hidden;
+  background: url(./images/fondoser.png);
+  color: #fff;
+  font-size: 18px;
+  font-family: 'Gotham-Book';
 }
 
+figure.imagen-aviso{
+  width: 100%;
+  height: auto;
+  margin-bottom: 47px;
+}
+
+figure.imagen-aviso img{
+  width: 100%;
+}
+
+.contendor-nosotros{
+  display: block;
+  margin: 0 auto;
+  max-width: 915px;
+  height: auto;
+
+}
 /* Direction Nav */
 .flex-direction-nav li a {width: 52px; height: 52px; margin: -13px 0 0; display: block; background: url(../images/bg_direction_nav.png) no-repeat 0 0; position: absolute; top: 50%; cursor: pointer; text-indent: -9999px;}
 .flex-direction-nav li .next {background-position: -52px 0; right: -21px;}
@@ -1316,8 +1393,8 @@ ul.social li.pinters:before{
 /* Demo Slides */
 
 #owl-example .item{
- margin-left: 15px;
- margin-right: 15px;
+ margin-left: 10px;
+ margin-right: 10px;
   color: #FFF;
   text-align: center;
   overflow: hidden;
@@ -1667,7 +1744,7 @@ div.pagination a {
 }
 
 .tabs input:checked + label {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #fff691;
   z-index: 6;
    /* -webkit-animation: page 0.2s linear;
     -moz-animation: page 0.2s linear;
@@ -1686,7 +1763,7 @@ div.pagination a {
   height: 460px;
   z-index: 5;
   overflow: hidden;
- border-top: 2px solid #fff;
+ border-top: 2px solid #fff691;
 }
 
 .content div {
@@ -1883,7 +1960,6 @@ border-top-left-radius: 15px;
 -moz-box-shadow:    3px -3px 1px rgba(50, 50, 50, 0.56);
 box-shadow:         3px -3px 1px rgba(50, 50, 50, 0.56);
 }
-
 
 
 
