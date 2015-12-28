@@ -35,13 +35,19 @@
           <input type="submit" value="buscar">
         </form>
     </div>
-    <h2>Categorias del blog</h2>
-    <ul>
-      <li>categoria 1</li>
-      <li>categoria 2</li>
-      <li>categoria 3</li>
-      <li>categoria 4</li>
-    </ul>
+      <?php if( in_category('38')){?>
+      <div class="categorias-sidebar">
+
+      <h2>Categorias del blog</h2>
+        <ul>
+          <li>categoria 1</li>
+          <li>categoria 2</li>
+          <li>categoria 3</li>
+          <li>categoria 4</li>
+        </ul>
+      </div>
+     <?php }?>
+
     <div class="contenedor-post-actuales">
       <h2> POSTS RECIENTES </h2>
       <?php $temp_query = $wp_query;
