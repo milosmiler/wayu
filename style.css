@@ -325,15 +325,15 @@ section.productos-del-mes h2{
     width: 100%;
     height: auto;
     overflow: hidden;
-        padding-bottom: 69px;
-    background:rgba(92, 136, 218, 0.8);
+    padding-bottom: 69px;
+    background: #fff;
   }
 
   section.corp h2{
     text-align: center;
     font-family: 'hello';
     font-size: 4.4rem;
-    color: #fff;
+    color: #9dcdcd;
     position: relative;
     padding-bottom: 10px;
   }
@@ -662,6 +662,14 @@ input[placeholder], [placeholder], *[placeholder] {
     margin-left: 50px;
 }
 
+.comentarios3 {
+    font-size: 1.3rem;
+    color: #adadad;
+    float: left;
+    font-family: 'merriweatherlight_italic';
+    margin-left: 124px;
+}
+
 .fecha-page:before{
   content: '\e806';
     font-size: 1.5rem;
@@ -724,6 +732,13 @@ input[placeholder], [placeholder], *[placeholder] {
     padding: 0px 22px 40px 22px;
     margin-bottom: 83px;
   }
+.leyenda-wayu-corp{
+  width: 270px;
+  height: auto;
+  float: left;
+  font-size: 1.4rem;
+
+}
 footer.footer-single{
   width: 100%;
   height: 43px;
@@ -887,6 +902,17 @@ article.donde-estamos h3:after{
 span.color-azul{
   color: #b7e3e6;
 }
+
+span.color-azul-fuerte{
+  color: #678cc1;
+}
+span.color-verde{
+  color: #a6ca89;
+}
+span.color-rosa{
+  color: #bd8492;
+}
+
 article.siguenos-en{
   width: 271px;
   height: auto;
