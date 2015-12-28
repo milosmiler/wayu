@@ -62,7 +62,7 @@
                           <?php else: ?>
                                     <img src="<?php bloginfo('stylesheet_directory'); ?>/images/1200X856.jpg">
                           <?php endif; ?>
-                            <h3><?php the_title();?></h3>
+                            <a href="<?php the_permalink(); ?>"><h3><?php the_title();?></h3></a>
                             <p> <?php echo wp_trim_words(get_the_excerpt(), 12 );?></p>
                             <footer class="slider-base">
                               <div class="fecha-page"> <?php the_time('M j, Y') ?> </div>
