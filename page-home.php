@@ -139,24 +139,34 @@
       </div>
   </section>
 
-            <section id="wayu-contruye" class="construye">
-              <div class="wrapper">
-              <h2> WAYUU SOLIDARIO </h2>
-              <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. </p>
-          <?php $temp_query = $wp_query;
-                  query_posts('showposts=4&cat=-35'); 
-               if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-                <article class="post-page">
-                   <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('image-blog'); ?></a> 
-                  <h3><?php the_title();?></h3>
-                  <p><?php echo wp_trim_words(get_the_excerpt(), 20 );?></p>
-                  <footer class="slider-base">
-                     <div class="fecha-page2"> <?php the_time('M j, Y') ?> </div>
-                      <div class="comentarios2"><fb:comments-count href=<?php the_permalink(); ?>></fb:comments-count> Comment</div>
-                  </footer>
-                </article>
-             <?php  endwhile; ?>
-             </div>
+  <section id="wayu-contruye" class="construye">
+    <div class="wrapper">
+      <h2> WAYUU SOLIDARIO </h2>
+      <p>Asumimos nuestra correspondencia con la sociedad y con México, a través del apoyo en nuestra tienda y nuestras actividades a las asociaciones afines con la vocación de servicio 
+      de Wayuu.
+      </p>
+
+      <?php $producto = new WP_Query( array( 'posts_per_page' => 3, 'category_name' => 'wayu_solidario')); 
+          if ( $producto->have_posts() ) : while ( $producto->have_posts() ) : $producto->the_post(); ?>
+      <article class="post-page-solidario">
+        <figure class="image-solidario">
+          <?php if (has_post_thumbnail()): ?>
+              <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('ofrecemos'); ?></a>
+          <?php else: ?>
+              <img src="<?php bloginfo('stylesheet_directory'); ?>/images/1200X856.jpg">
+          <?php endif; ?>
+        </figure>
+        <h3><?php the_title();?></h3>
+        <p><?php echo wp_trim_words(get_the_excerpt(), 20 );?></p>
+        <footer class="slider-base">
+          <div class="fecha-page2"> <?php the_time('M j, Y') ?> </div>
+          <div class="comentarios2"><fb:comments-count href=<?php the_permalink(); ?>></fb:comments-count> Comment</div>
+        </footer>
+      </article>
+      <?php endwhile; wp_reset_postdata(); else : ?>
+        <p><?php _e( 'lo siento' ); ?></p>
+      <?php endif; ?>
+    </div>
             </section>
 
             <!-- <section id="wayu-corp" class="corp">

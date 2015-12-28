@@ -135,6 +135,9 @@
 		if ( ! term_exists( 'producto_del_mes', 'category' ) ){
 			wp_insert_term( 'Producto del mes', 'category', array('slug' => 'producto_del_mes'));
 		}
+		if ( ! term_exists( 'wayu_solidario', 'category' ) ){
+			wp_insert_term( 'Wayu Solidario', 'category', array('slug' => 'wayu_solidario'));
+		}
 
 		if ( ! term_exists( 'ofrecemos', 'category' ) ){
 			wp_insert_term( 'Ofrecemos', 'category', array('slug' => 'ofrecemos'));
@@ -179,6 +182,7 @@
 		if ( ! term_exists( 'desarrollo_de_habilidades', 'category' ) ){
 			wp_insert_term( 'Desarrollo de Habilidades', 'category', array('slug' => 'desarrollo_de_habilidades', 'parent'=> $wayu_corp['term_id'] ) );
 		}
+
 
 		/* // SUB TERMS CREATION
 		if(term_exists('parent-term', 'category')){

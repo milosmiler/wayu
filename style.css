@@ -515,6 +515,18 @@ article.post-page{
   border: 1px solid #dbdbdb;
 }
 
+article.post-page-solidario{
+  width: 370px;
+  height: auto;
+  overflow: hidden;
+  float: left;
+  margin: 0px 8px 0px 13px;
+  background: #fff;
+  position: relative;
+  border: 1px solid #dbdbdb;
+}
+
+
 article.post-page figure.imagen-post-page{
   width: 100%;
   height: auto;
@@ -542,6 +554,14 @@ article.post-page-categoria h3 {
 }
 
 article.post-page h3{
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: 'Gotham-Medium';
+  padding: 0px 11px;
+  border-bottom: 1px solid #dbdbdb;
+  }
+
+  article.post-page-solidario h3{
   text-align: center;
   font-size: 1.8rem;
   font-family: 'Gotham-Medium';
@@ -779,6 +799,14 @@ footer.footer-single ul li{
     margin-right: 19px;
   margin-bottom: 19px;
   }
+figure.image-solidario{
+  width: 100%;
+  height: auto;
+}
+figure.image-solidario img{
+  width: 100%;
+
+}
 
   .fecha-post-actual{
     font-size: 1.2rem;
