@@ -10,6 +10,12 @@
                           <?php endif; ?>
       <div class="contenido-articulos">
         <div class="base-categoria-red-social">
+          <aside class="social-share">
+            <i>Compartir</i>
+            <ul>
+              <li><a href="javascript: void(0);" onclick="window.open('http://www.facebook.com/sharer.php?u=<?php the_permalink() ?>','ventanacompartir', 'toolbar=0, status=0, width=650, height=450');">Facebook</a></li>
+              <li><a href="http://www.twitter.com/intent/tweet?url=<?php the_permalink(); ?>&text=<?php the_title(); ?>" onclick="window.open(this.href,'Twitter', 'toolbar=0, status=0, width=550, height=350');return false;">Twitter</a></li>
+          </ul></aside>
           <div class="show-categoria"><?php the_category();?> </div>
         </div>
         <?php the_content();?>
@@ -37,14 +43,23 @@
     </div>
       <?php if( in_category('38')){?>
       <div class="categorias-sidebar">
+        <h2>Más cursos disponibles</h2>
+        <?php $custom_query = new WP_Query('cat=38');
+        while($custom_query->have_posts()) : $custom_query->the_post(); ?>
 
-      <h2>Categorias del blog</h2>
-        <ul>
-          <li>categoria 1</li>
-          <li>categoria 2</li>
-          <li>categoria 3</li>
-          <li>categoria 4</li>
-        </ul>
+        <article class="post-reciente">
+          <figure class="image-reciente">
+            <?php if (has_post_thumbnail()): ?>
+                                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('image-reciente'); ?></a>
+                          <?php else: ?>
+                                   <a href="<?php the_permalink(); ?>"> <img src="<?php bloginfo('stylesheet_directory'); ?>/images/1200X856.jpg" alt="<?php the_title(); ?>"></a>
+                          <?php endif; ?>
+          </figure>
+        <a href="<?php the_permalink(); ?>"> <h3><?php the_title(); ?></h3> </a>
+        </article>
+
+        <?php endwhile; ?>
+        <?php wp_reset_postdata(); // reset the query ?>
       </div>
      <?php }?>
 
