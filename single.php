@@ -55,7 +55,7 @@
                                     <img src="<?php bloginfo('stylesheet_directory'); ?>/images/1200X856.jpg">
                           <?php endif; ?>
           </figure>
-          <h2><?php the_title(); ?></h2>
+        <a href="<?php the_permalink(); ?>">  <h2><?php the_title(); ?></h2> </a>
           <div class="post-actual-fecha-coment">
             <div class="fecha-post-actual">
                <?php the_time('M j, Y') ?>
