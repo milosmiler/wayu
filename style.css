@@ -740,6 +740,39 @@ footer.footer-single ul li{
   color: #7b9bc8;
 }
 
+/* sidebar */
+
+.categorias-sidebar{
+  background-color: #f0f0f0;
+  padding:1rem;
+}
+
+.categorias-sidebar h2{
+  text-align: center;
+}
+
+.categorias-sidebar .image-reciente{
+  display: inline-block;
+  margin: 0;
+  vertical-align: bottom;
+  margin-right: .5rem;
+}
+
+.post-reciente a{
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: 1.8rem;
+  width: 50%;
+}
+
+.post-reciente h3{
+  margin: 0;
+}
+.categorias-sidebar .image-reciente img{
+  display: block;
+  margin: 0;
+}
+
 .tag a{
   text-decoration: none;
   color: #7b9bc8;
