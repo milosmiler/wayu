@@ -160,7 +160,7 @@
         <p><?php echo wp_trim_words(get_the_excerpt(), 20 );?></p>
         <footer class="slider-base">
           <div class="fecha-page2"> <?php the_time('M j, Y') ?> </div>
-          <div class="comentarios2"><fb:comments-count href=<?php the_permalink(); ?>></fb:comments-count> Comment</div>
+          <div class="comentarios3"><fb:comments-count href=<?php the_permalink(); ?>></fb:comments-count> Comment</div>
         </footer>
       </article>
       <?php endwhile; wp_reset_postdata(); else : ?>
@@ -169,34 +169,36 @@
     </div>
             </section>
 
-            <!-- <section id="wayu-corp" class="corp">
+            <section id="wayu-corp" class="corp">
               <div class="wrapper">
               <h2> WAYUU CORP </h2>
-              <p>Nuestra área corporativa ofrece cursos y talleres de capacitación y desarrollo de  habilidades y herramientas profesionales.
-               Tenemos instructores certificados y con registro ante la Secretaría de Educación y la Secretaría del Trabajo.<br>
-                En lo referente a coaching individual y de equipos, contamos con coaches certificados en diferentes metodologías.<br>
-                A través de una entrevista podemos acercarnos a conocer el corazón de tu empresa o tu 
-                equipo y ofrecerte un portafolio de opciones y acciones a tu medida.</p>
+              <p>Nuestra área corporativa ofrece cursos y talleres de capacitación y desarrollo de  habilidades y herramientas profesionales.</p>
 
-            <?php $corp = new WP_Query( array( 'posts_per_page' => 4, 'category_name' => 'wayu_corp')); 
-                        if ( $corp->have_posts() ) : while ( $corp->have_posts() ) : $corp->the_post(); ?>
-                <article class="post-page">
-                  <figure class="imagen-post-page">
-                   <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('image-blog'); ?></a> 
-                   <div class="contenedor-categoria"> <?php the_category(); ?> </div>
-                 </figure>
-                  <h3><?php the_title();?></h3>
-                  <p><?php echo wp_trim_words(get_the_excerpt(), 20 );?></p>
-                  <footer class="slider-base">
-                     <div class="fecha-page2"> <?php the_time('M j, Y') ?> </div>
-                      <div class="comentarios2"><fb:comments-count href=<?php the_permalink(); ?>></fb:comments-count> Comment</div>
-                  </footer>
-                </article>
-             <?php endwhile; wp_reset_postdata(); else : ?>
-                          <p><?php _e( 'lo siento' ); ?></p>
-                        <?php endif; ?>
+                <div class="leyenda-wayu-corp">
+                  Tenemos instructores certificados y con registro ante la Secretaría de Educación y la Secretaría del Trabajo.<br><br>
+                  En lo referente a coaching individual y de equipos, contamos con coaches certificados en diferentes metodologías.<br><br>
+                  A través de una entrevista podemos acercarnos a conocer el corazón de tu empresa o tu equipo y ofrecerte 
+                  un portafolio de opciones y acciones a tu medida.<br><br>
+
+                 <span class="color-azul-fuerte"> COACHING INDIVIDUAL</span>
+                  Business Story Mastery.
+                  EF Coaching. Happiness at Work.
+                  Coaching asistido por caballos.
+                  <br>
+                  <br>
+
+                  <span class="color-verde">COACHING GRUPAL</span>
+                  Lego Serious Play.
+                  EF Coaching. Happiness at Work.
+                  Coaching asistido por caballos.
+                  Orquestado, integración de equipos y liderazgo a través de la música.
+                  <br><br>
+                  <span class="color-rosa">DESARROLLO DE HABILIDADES</span>
+                </div>
+
+          
              </div>
-            </section> -->
+            </section>
 
 
          
