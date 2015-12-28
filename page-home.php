@@ -35,7 +35,7 @@
   <aside class="calendario-newleter">
     <div class="wrapper">
       <div class="calendario">
-        Consulta horario de clases y eventos
+        CONSULTA HORARIOS DE CLASES Y EVENTOS
         <button class="btn-calendario">Calendario de actividades</button>
       </div>
       <div class="newleter">
@@ -99,7 +99,7 @@
                                     <img src="<?php bloginfo('stylesheet_directory'); ?>/images/1200X856.jpg">
                           <?php endif; ?>
                       </figure>
-                            <h2 class="nombre-producto"><?php the_title();?></h2> 
+                           <a href="<?php the_permalink(); ?>"> <h2 class="nombre-producto"><?php the_title();?></h2> </a>
                             <p class="descript-producto">  <?php the_excerpt();?> </p>
                     </div>
                     <?php endwhile; wp_reset_postdata(); else : ?>
@@ -111,7 +111,7 @@
                     <figure class="image-producto">
                        <?php the_post_thumbnail('image-producto'); ?>
                     </figure>
-                      <h2 class="nombre-producto"><?php the_title();?></h2> 
+                     <a href="<?php the_permalink(); ?>"><h2 class="nombre-producto"><?php the_title();?></h2> </a>
                       <p class="descript-producto"> <?php the_excerpt();?> </p>   
                   </div>
             <?php endwhile; wp_reset_postdata(); else : ?>
@@ -125,7 +125,7 @@
                       <figure class="image-producto">
                          <?php the_post_thumbnail('image-producto'); ?>
                     </figure>
-                      <h2 class="nombre-producto"><?php the_title();?></h2> 
+                      <a href="<?php the_permalink(); ?>"> <h2 class="nombre-producto"><?php the_title();?></h2> </a>
                       <p class="descript-producto"> 
                         <?php the_excerpt();?>
                       </p>
@@ -156,7 +156,7 @@
               <img src="<?php bloginfo('stylesheet_directory'); ?>/images/1200X856.jpg">
           <?php endif; ?>
         </figure>
-        <h3><?php the_title();?></h3>
+       <a href="<?php the_permalink(); ?>"> <h3><?php the_title();?></h3></a>
         <p><?php echo wp_trim_words(get_the_excerpt(), 20 );?></p>
         <footer class="slider-base">
           <div class="fecha-page2"> <?php the_time('M j, Y') ?> </div>
