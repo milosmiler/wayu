@@ -32,11 +32,11 @@
    						<p> Para nosotros eres muy importante, en breve nos <br>
 							pondremos en contacto contigo.
    						</p>	
-   						<form>
-   							<input type="text" name="" class="formulario-modal" placeholder="Tu nombre">
-   							<input type="text" name="" class="formulario-modal" placeholder="email">
-   							<input type="text" name="" class="formulario-modal" placeholder="Telefono">
-   							<textarea placeholder="Mensaje">
+   						<form action="http://www.pretechmobile.com/wayue/wp-content/themes/wayu/envio-form/envio.php" method="post">
+   							<input type="text" name="nombre" class="formulario-modal" placeholder="Tu nombre" required>
+   							<input type="text" name="email" class="formulario-modal" placeholder="email" required>
+   							<input type="text" name="telefono" class="formulario-modal" placeholder="Telefono" required>
+   							<textarea placeholder="Mensaje" name="mensaje" required>
    							</textarea>
    							<button class="btn-enviar-modal">Enviar</button>
    						</form>
