@@ -730,7 +730,7 @@ input[placeholder], [placeholder], *[placeholder] {
     border: 1px solid #dbdbdb;
     position: relative;
     padding: 0px 22px 40px 22px;
-    margin-bottom: 83px;
+    margin-bottom:1rem;
   }
 .leyenda-wayu-corp{
   width: 270px;
@@ -771,21 +771,26 @@ footer.footer-single ul li{
   margin: 0;
   vertical-align: bottom;
   margin-right: .5rem;
+  width: 47%;
 }
 
-.post-reciente a{
+.categorias-sidebar .post-reciente > a{
   display: inline-block;
   vertical-align: bottom;
   font-size: 1.8rem;
   width: 50%;
 }
 
-.post-reciente h3{
+.categorias-sidebar .post-reciente h3{
   margin: 0;
 }
 .categorias-sidebar .image-reciente img{
   display: block;
   margin: 0;
+}
+
+.social-share{
+  margin-top: 1rem;
 }
 
 .social-share ul{
@@ -826,10 +831,15 @@ footer.footer-single ul li{
 }
 
 .social-share ul li:before{
-    font-size: 3.1rem;
+    font-size: 2.7rem;
     font-family: 'fontello';
     color:  #688dc2;
     margin-right: 10px;
+}
+
+.social-share i{
+  font-style: normal;
+  color: #688dc2;
 }
 
 
@@ -864,11 +874,10 @@ footer.footer-single ul li{
     font-size: 1.8rem;
 }
 .contenedor-post-actuales{
-  width: 370px;
+  width: 100%;
   height: auto;
-  background: #f8f7f7;
   padding: 36px 0px 59px 16px;
-  border: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
 }
 .contenedor-post-actuales h2{
   font-family: "Gotham-Book";
@@ -876,22 +885,40 @@ footer.footer-single ul li{
   margin: 0px;
   }
   article.post-reciente{
-    width: 341px;
-    height: 141px;
+    width: 100%;
     border-bottom: 1px solid #d3d3d5;
-    margin-top: 35px;
+    padding: 1.5rem 0;
+    display: block;
+    position: relative;
   }
   article.post-reciente h2{
     font-family: 'Gotham-Medium';
     font-size: 1.8rem;
   }
 
+.contenedor-post-actuales .image-reciente{
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+  margin-right: 1.5rem;
+
+}
+
+.info-destacados{
+  display: inline-block;
+  vertical-align: top;
+  width: 60%;
+}
+
+.info-destacados h3{
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
   figure.image-reciente img{
-    width: 141px;
+    max-width: 100%;
     height: auto;
-    float: left;
-    margin-right: 19px;
-  margin-bottom: 19px;
+    display: block;
   }
 figure.image-solidario{
   width: 100%;
