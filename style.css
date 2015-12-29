@@ -737,7 +737,7 @@ input[placeholder], [placeholder], *[placeholder] {
   height: auto;
   float: left;
   font-size: 1.4rem;
-
+  margin-top: 40px;
 }
 footer.footer-single{
   width: 100%;
@@ -1004,6 +1004,15 @@ article.donde-estamos h3:after{
   font-family: 'Gotham-Light';
   line-height: 23px;
   color: #b4b4bc;
+}
+.menu-wayu-corp{
+  width:600px; 
+  height:600px;
+  float: left;
+  background: url(./images/florloto.png);
+  background-size: 95% 95%;
+  background-repeat: no-repeat;
+  margin-left: 260px;
 }
 span.color-azul{
   color: #b7e3e6;
