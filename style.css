@@ -1532,10 +1532,19 @@ section.wayu-nosotros{
   padding-bottom: 100px;
   height: auto;
   overflow: hidden;
-  background: url(./images/fondoser.png);
+  background: url(./images/fondosomos.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
   color: #fff;
   font-size: 18px;
   font-family: 'Gotham-Book';
+  text-shadow: 1px 2px #999;
+}
+
+figure.firma{
+ max-width: 300px;
+  height: auto;
+  float: right;
 }
 
 figure.imagen-aviso{
@@ -1548,6 +1557,14 @@ figure.imagen-aviso img{
   width: 100%;
 }
 
+span.director-nombre{
+  color: #fff;
+  font-size: 1.4rem;
+  font-family: 'Gotham-Light';
+  font-style: italic;
+  margin-left: 50px;
+
+}
 .contendor-nosotros{
   display: block;
   margin: 0 auto;
