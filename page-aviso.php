@@ -5,7 +5,7 @@
 
 		<img src="<?php bloginfo('template_url'); ?>/images/banner-aviso.jpg" alt="Wayuuu" />
 	</figure>
-            <div class="wrapper">
+            <div class="wrapper page-aviso">
               <?php the_content() ?>
 
 
