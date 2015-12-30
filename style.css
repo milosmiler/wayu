@@ -433,6 +433,9 @@ section.blog{
     text-align: center;
     font-family: 'Gotham-Book';
     font-size: 2.0rem;
+    text-rendering:optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing:grayscale;
   }
 section.comunidad{
   width: 100%;
@@ -557,8 +560,11 @@ article.post-page h3{
   text-align: center;
   font-size: 1.8rem;
   font-family: 'Gotham-Medium';
-  padding: 0px 11px;
+  padding: 0px 10px;
   border-bottom: 1px solid #dbdbdb;
+  text-transform: lowercase;
+  max-height: 48px;
+  overflow-y:hidden;
   }
 
   article.post-page-solidario h3{
@@ -573,6 +579,8 @@ article.post-page p{
   font-size: 1.4rem;
   padding: 0px 11px;
   text-align: left;
+  overflow-y:hidden;
+  max-height: 70px; 
 }
 
 footer.slider-base{
@@ -950,6 +958,7 @@ footer{
   height: auto;
   background: #9595a0;
   overflow: hidden;
+  background-image: url(./images/pattern.png);
 }
 
 article.donde-estamos{
@@ -1250,17 +1259,20 @@ p.descript-producto{
 }
 
 .contenedor-categoria{
-    width: 65%;
+    width: 50%;
     height: auto;
     background: #a6ca89;
-    margin: 0 auto;
+    margin: 0 25%;
     position: absolute;
     bottom: -12px;
-    left: 21%;
     text-align: center;
 }
 .contenedor-categoria ul{
   list-style: none;
+}
+
+.contenedor-categoria ul li{
+  padding: 5px 0;
 }
 .contenedor-categoria ul li a{
   color: #fff;
@@ -1352,14 +1364,22 @@ a.close{
   padding-top: 70px;
 
 }
+.boton-funete-energia{
+  max-width: 90px;
+  height: auto;
+  float: left;
+  margin-left: 20px;
+}
+
+.boton-funete-energia img{
+  width: 85%;
+}
 
 
 /* FlexSlider Default Theme
 *********************************/
 .flexslider {
   background: #fff; 
-  border-left: 4px solid #fff;
-  border-right: 4px solid #fff;
   position: relative; 
   -webkit-border-radius: 5px; 
   -moz-border-radius: 5px; 
@@ -1592,9 +1612,10 @@ span.director-nombre{
 #owl-example .item{
  margin-left: 10px;
  margin-right: 10px;
-  color: #FFF;
-  text-align: center;
-  overflow: hidden;
+ color: #FFF;
+ text-align: center;
+ overflow: hidden;
+ border: 1px solid #dbdbdb;
 }
 #owl-example .item p{
   color: #000;

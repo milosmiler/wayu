@@ -38,6 +38,9 @@
         CONSULTA HORARIOS DE CLASES Y EVENTOS
         <button class="btn-calendario">Calendario de actividades</button>
       </div>
+      <div class="boton-funete-energia">
+        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/sello.png">
+      </div>
       <div class="newleter">
         SI FUERA TÚ, DE UNA VEZ ME SUSCRIBO AL NEWSLETTER
         <input type="text" class="input-newleter" placeholder="correo electronico">
