@@ -299,6 +299,9 @@ section.actividades p{
   text-align: center;
   font-family: 'Gotham-Book';
   font-size: 2.0rem;
+  text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .slider-actividades{
@@ -400,6 +403,9 @@ section.construye p{
     text-align: center;
     font-family: 'Gotham-Book';
     font-size: 2.0rem;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
 section.blog{
@@ -480,6 +486,10 @@ section.comunidad p{
   color: #fff;
   max-width: 770px;
   margin: 0 auto;
+  font-family: 'AmericanTypewriter';
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 section.colaboradores{
@@ -561,11 +571,21 @@ article.post-page h3{
   font-size: 1.8rem;
   font-family: 'Gotham-Medium';
   padding: 0px 10px;
-  border-bottom: 1px solid #dbdbdb;
   text-transform: lowercase;
   max-height: 48px;
-  overflow-y:hidden;
+  position: relative;
   }
+
+article.post-page h3:before{
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 4%;
+  background: #dbdbdb;
+  width: 250px;
+  height: 1px;
+
+}
 
   article.post-page-solidario h3{
   text-align: center;
@@ -699,7 +719,7 @@ input[placeholder], [placeholder], *[placeholder] {
   color: #adadad;
   float: left;
   font-family: 'merriweatherlight_italic';
-  margin-left: 8px; 
+  margin-left: 75px;
 }
 .comentarios:before{
     content: '\e80c';
@@ -935,6 +955,12 @@ figure.image-solidario{
 figure.image-solidario img{
   width: 100%;
 
+}
+
+figure.image-ofrecemos{
+  width: 100%;
+  height: auto;
+  position: relative;
 }
 
   .fecha-post-actual{
@@ -1624,6 +1650,8 @@ span.director-nombre{
   font-size: 1.4rem;
   padding-left: 30px;
   padding-right: 20px;
+  margin-top: 29px;
+  margin-bottom: 16px;
 }
 #owl-example .item img{
   width: 100%;
@@ -1636,9 +1664,20 @@ span.director-nombre{
   font-size: 1.8rem;
   color: #383940;
   padding-bottom: 5px;
-  border-bottom: 1px solid #000;
   font-family: 'Gotham-Medium';
+  position: relative;
+  margin-top: 33px;
 }
+#owl-example .item h3:before{
+  content: '';
+  width: 300px;
+  height: 1px;
+  background: #dbdbdb;
+  position: absolute;
+  bottom: 0px;
+  left: 9%;
+}
+
 #owl-example .item h4{
   margin: 5px 0 0;
   font-size: 18px;
