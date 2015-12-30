@@ -299,6 +299,9 @@ section.actividades p{
   text-align: center;
   font-family: 'Gotham-Book';
   font-size: 2.0rem;
+  text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .slider-actividades{
@@ -400,6 +403,9 @@ section.construye p{
     text-align: center;
     font-family: 'Gotham-Book';
     font-size: 2.0rem;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
   }
 
 section.blog{
@@ -433,6 +439,9 @@ section.blog{
     text-align: center;
     font-family: 'Gotham-Book';
     font-size: 2.0rem;
+    text-rendering:optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing:grayscale;
   }
 section.comunidad{
   width: 100%;
@@ -477,6 +486,10 @@ section.comunidad p{
   color: #fff;
   max-width: 770px;
   margin: 0 auto;
+  font-family: 'AmericanTypewriter';
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 section.colaboradores{
@@ -557,9 +570,22 @@ article.post-page h3{
   text-align: center;
   font-size: 1.8rem;
   font-family: 'Gotham-Medium';
-  padding: 0px 11px;
-  border-bottom: 1px solid #dbdbdb;
+  padding: 0px 10px;
+  text-transform: lowercase;
+  max-height: 48px;
+  position: relative;
   }
+
+article.post-page h3:before{
+  content: '';
+  position: absolute;
+  bottom: 0px;
+  left: 4%;
+  background: #dbdbdb;
+  width: 250px;
+  height: 1px;
+
+}
 
   article.post-page-solidario h3{
   text-align: center;
@@ -573,6 +599,8 @@ article.post-page p{
   font-size: 1.4rem;
   padding: 0px 11px;
   text-align: left;
+  overflow-y:hidden;
+  max-height: 70px; 
 }
 
 footer.slider-base{
@@ -691,7 +719,7 @@ input[placeholder], [placeholder], *[placeholder] {
   color: #adadad;
   float: left;
   font-family: 'merriweatherlight_italic';
-  margin-left: 8px; 
+  margin-left: 75px;
 }
 .comentarios:before{
     content: '\e80c';
@@ -929,6 +957,12 @@ figure.image-solidario img{
 
 }
 
+figure.image-ofrecemos{
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
   .fecha-post-actual{
     font-size: 1.2rem;
     color: #9fd293;
@@ -948,8 +982,9 @@ figure.image-solidario img{
 footer{
   width: 100%;
   height: auto;
-  background: #9595a0;
+  background: #9797a1;
   overflow: hidden;
+  background-image: url(./images/pattern.png);
 }
 
 article.donde-estamos{
@@ -1250,17 +1285,20 @@ p.descript-producto{
 }
 
 .contenedor-categoria{
-    width: 65%;
+    width: 50%;
     height: auto;
     background: #a6ca89;
-    margin: 0 auto;
+    margin: 0 25%;
     position: absolute;
     bottom: -12px;
-    left: 21%;
     text-align: center;
 }
 .contenedor-categoria ul{
   list-style: none;
+}
+
+.contenedor-categoria ul li{
+  padding: 5px 0;
 }
 .contenedor-categoria ul li a{
   color: #fff;
@@ -1352,14 +1390,22 @@ a.close{
   padding-top: 70px;
 
 }
+.boton-funete-energia{
+  max-width: 90px;
+  height: auto;
+  float: left;
+  margin-left: 20px;
+}
+
+.boton-funete-energia img{
+  width: 85%;
+}
 
 
 /* FlexSlider Default Theme
 *********************************/
 .flexslider {
   background: #fff; 
-  border-left: 4px solid #fff;
-  border-right: 4px solid #fff;
   position: relative; 
   -webkit-border-radius: 5px; 
   -moz-border-radius: 5px; 
@@ -1592,9 +1638,10 @@ span.director-nombre{
 #owl-example .item{
  margin-left: 10px;
  margin-right: 10px;
-  color: #FFF;
-  text-align: center;
-  overflow: hidden;
+ color: #FFF;
+ text-align: center;
+ overflow: hidden;
+ border: 1px solid #dbdbdb;
 }
 #owl-example .item p{
   color: #000;
@@ -1603,6 +1650,8 @@ span.director-nombre{
   font-size: 1.4rem;
   padding-left: 30px;
   padding-right: 20px;
+  margin-top: 29px;
+  margin-bottom: 16px;
 }
 #owl-example .item img{
   width: 100%;
@@ -1615,9 +1664,20 @@ span.director-nombre{
   font-size: 1.8rem;
   color: #383940;
   padding-bottom: 5px;
-  border-bottom: 1px solid #000;
   font-family: 'Gotham-Medium';
+  position: relative;
+  margin-top: 33px;
 }
+#owl-example .item h3:before{
+  content: '';
+  width: 300px;
+  height: 1px;
+  background: #dbdbdb;
+  position: absolute;
+  bottom: 0px;
+  left: 9%;
+}
+
 #owl-example .item h4{
   margin: 5px 0 0;
   font-size: 18px;

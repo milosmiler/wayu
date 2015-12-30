@@ -38,6 +38,9 @@
         CONSULTA HORARIOS DE CLASES Y EVENTOS
         <button class="btn-calendario">Calendario de actividades</button>
       </div>
+      <div class="boton-funete-energia">
+        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/sello.png">
+      </div>
       <div class="newleter">
         SI FUERA TÚ, DE UNA VEZ ME SUSCRIBO AL NEWSLETTER
         <input type="text" class="input-newleter" placeholder="correo electronico">
@@ -57,11 +60,15 @@
                   <?php $eventos = new WP_Query( array( 'posts_per_page' => 4, 'category_name' => 'ofrecemos')); 
                       if ( $eventos->have_posts() ) : while ( $eventos->have_posts() ) : $eventos->the_post(); ?>
                         <div class="item">
-                          <?php if (has_post_thumbnail()): ?>
-                                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('ofrecemos'); ?></a>
-                          <?php else: ?>
-                                    <img src="<?php bloginfo('stylesheet_directory'); ?>/images/1200X856.jpg">
-                          <?php endif; ?>
+                          <figure class="image-ofrecemos">
+                            <?php if (has_post_thumbnail()): ?>
+                                      <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('ofrecemos'); ?></a>
+                            <?php else: ?>
+                                      <img src="<?php bloginfo('stylesheet_directory'); ?>/images/1200X856.jpg">
+                            <?php endif; ?>
+                              <div class="contenedor-categoria"> <?php the_category(); ?> </div>
+                          </figure>
+
                             <a href="<?php the_permalink(); ?>"><h3><?php the_title();?></h3></a>
                             <p> <?php echo wp_trim_words(get_the_excerpt(), 12 );?></p>
                             <footer class="slider-base">
@@ -218,9 +225,8 @@
                       <?php else: ?>
                                 <img src="<?php bloginfo('stylesheet_directory'); ?>/images/1200X856.jpg">
                       <?php endif; ?>
-                     <div class="contenedor-categoria"> <?php the_category(); ?> </div>
                  </figure>
-                  <h3><?php the_title();?></h3>
+                  <a href="<?php the_permalink(); ?>"> <h3><?php the_title();?></h3></a>
                   <p><?php echo wp_trim_words(get_the_excerpt(), 20 );?></p>
                   <footer class="slider-base">
                      <div class="fecha-page2"> <?php the_time('M j, Y') ?> </div>
@@ -234,10 +240,11 @@
            
   <section class="comunidad">
     <h2>COMUNIDAD WAYUU </h2>
-        <p>Wayuu busca establecer sinergias, para fomentar una cultura de ayuda mutua en la que todos los miembros de nuestra comunidad:<br>
-        empresas, maestros, alumnos y empresas aliadas, tengan mayores oportunidades de desarrollo. Entablamos 
-        relaciones ganar-ganar con profesionales y empresas relacionadas con nuestras tres líneas de acción 
-        (mente, cuerpo y conciencia) para fortalecer la oferta de valor de todos. </p>
+        <p>Wayuu busca establecer sinergias para fomentar una cultura de colaboración en la que todos los miembros de nuestra comunidad: empresas, 
+            maestros, alumnos y aliados tengan mayores oportunidades de desarrollo. Entablamos  relaciones ganar-ganar con profesionales en 
+            nuestras tres líneas de acción (mente, bienestar 
+            y conciencia).  En Wayuu comprobamos que en la unión de dos o más mentes, la creatividad es infinita.
+        </p>
   </section>
   <section class="colaboradores">
     <h2>COLABORADORES Y PATROCINADORES </h2>
