@@ -122,6 +122,19 @@ figure {margin: 0;}
   font-style: normal;
 }
 
+@font-face {
+    font-family: 'francisco';
+    src: url('fonts/kgsueellenfrancisco-webfont.eot');
+    src: url('fonts/kgsueellenfrancisco-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/kgsueellenfrancisco-webfont.woff2') format('woff2'),
+         url('fonts/kgsueellenfrancisco-webfont.woff') format('woff'),
+         url('fonts/kgsueellenfrancisco-webfont.ttf') format('truetype'),
+         url('fonts/kgsueellenfrancisco-webfont.svg#kg_sue_ellen_franciscoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /* Utilities */
 .lst_reset, .lst_reset li { margin: 0; padding: 0; list-style: none; }
 .clear { clear:both; height:1px; margin:0; padding:0; font-size: 1px; line-height: 0; }
