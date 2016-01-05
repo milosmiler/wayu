@@ -61,7 +61,7 @@
 							<li><a href="<?php echo site_url('/nosotros/'); ?>">NOSOTROS</a></li>
 							<li><a href="#actividades1">OFRECEMOS</a></li>
 							<li><a href="#wayu-corp">WAYUU CORP</a></li>
-							<li><a href="#wayu-contruye">WAYU CONSTRUYE</a></li>
+							<li><a href="#wayu-contruye">WAYU SOLIDARIO</a></li>
 							<li><a href="blog">BLOG</a></li>
 							<!-- <li><a href="">TIENDA</a></li> -->
 						</ul>

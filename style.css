@@ -267,7 +267,7 @@ header nav ul{
 header nav ul li{
   display: inline-block;
   font-size: 3rem;
-  font-family: 'hello';
+  font-family: 'francisco';
   margin-right: 36px;
 }
 
@@ -289,7 +289,7 @@ section.actividades{
   background: #fff;
 }
 section.actividades h2{
-  font-family: 'hello';
+  font-family: 'francisco';
   font-size: 4.4rem;
   color: #ee9000;
   text-align: center;
@@ -333,7 +333,7 @@ section.productos-del-mes{
 section.productos-del-mes h2{
   color: #fff;
   font-size: 4.4rem;
-  font-family:'hello';
+  font-family:'francisco';
   padding-bottom: 10px;
   }
 
@@ -347,7 +347,7 @@ section.productos-del-mes h2{
 
   section.corp h2{
     text-align: center;
-    font-family: 'hello';
+    font-family: 'francisco';
     font-size: 4.4rem;
     color: #9dcdcd;
     position: relative;
@@ -371,7 +371,7 @@ section.corp p{
   }
 section.construye h2{
     text-align: center;
-    font-family: 'hello';
+    font-family: 'francisco';
     font-size: 4.4rem;
     color: #ccc;
     position: relative;
@@ -431,7 +431,7 @@ section.blog{
 
   section.blog h2{
     text-align: center;
-    font-family: 'hello';
+    font-family: 'francisco';
     font-size: 4.4rem;
     color: #698bc4;
     position: relative;
@@ -468,7 +468,7 @@ section.comunidad{
 
 section.comunidad h2{
   text-align: center;
-  font-family: 'hello';
+  font-family: 'francisco';
   font-size: 4.4rem;
   position: relative;
   color: #fff;
@@ -515,7 +515,7 @@ section.colaboradores{
 section.colaboradores h2{
   text-align: center;
   font-size: 4.4rem;
-  font-family: 'hello';
+  font-family: 'francisco';
   position: relative;
   padding-bottom: 10px;
 }
@@ -989,7 +989,7 @@ figure.image-ofrecemos{
 .fb-comments,.fb-comments iframe[style] { width: 100% !important;}
 .comentarios-face {width: 100%; overflow:hidden; margin-top: 10px;}
 .comentarios-face .comentarios-container-face{width: 100%; overflow: hidden; background: #688dc2; padding: 5px;}
-.comentarios-face .comentarios-container-face h4{font-size: 22px;  color:#fff; text-align: center; font-family: "hello";}
+.comentarios-face .comentarios-container-face h4{font-size: 22px;  color:#fff; text-align: center; font-family: "francisco";}
 .comentarios-container .nube{font-family: 'entypo'; color: #fff; font-size: 40px;}
 
 footer{
@@ -1012,7 +1012,7 @@ article.donde-estamos{
 }
 article.donde-estamos h3{
   color: #fff;
-  font-family: 'hello';
+  font-family: 'francisco';
   font-size: 30px;
   position: relative;
   padding-bottom: 8px;
@@ -1084,7 +1084,7 @@ article.siguenos-en{
 }
 article.siguenos-en h3{
   color: #fff;
-  font-family: 'hello';
+  font-family: 'francisco';
   font-size: 30px;
   position: relative;
   padding-bottom: 8px;
@@ -1108,7 +1108,7 @@ article.newletter-footer{
 
 article.newletter-footer h3{
   color: #fff;
-  font-family: 'hello';
+  font-family: 'francisco';
   font-size: 30px;
   position: relative;
   padding-bottom: 8px;
@@ -1210,7 +1210,7 @@ iframe{
   top: 11px;
   left: 200px;
   font-size: 4.4rem;
-  font-family: 'hello';
+  font-family: 'francisco';
   color: #fff;
 }
 .imagen-head p{
@@ -1247,7 +1247,6 @@ figure.image-producto{
   color: #000;
   font-size: 2.4rem;
   margin: 52px 0px 28px 0px;
-  float: left;
 }
 p.descript-producto{
   font-family: 'Gotham-Book';
@@ -1445,7 +1444,7 @@ filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#4C000000,endCol
     font-size: 7.2rem;
     line-height: 18px;
     text-align: center;
-    font-family: 'hello';
+    font-family: 'francisco';
 }
 
 button.btn-calendario:before{
