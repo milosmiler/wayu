@@ -995,7 +995,7 @@ figure.image-ofrecemos{
 footer{
   width: 100%;
   height: auto;
-  background: #9797a1;
+  background: #000;
   overflow: hidden;
   background-image: url(./images/pattern.png);
 }
