@@ -182,25 +182,25 @@
               <p>Nuestra área corporativa ofrece cursos y talleres de capacitación y desarrollo de  habilidades y herramientas profesionales.</p>
 
                 <div class="leyenda-wayu-corp">
-                    Tenemos instructores certificados y con registro ante la Secretaría de Educación y la Secretaría del Trabajo.<br><br>
+                    <span>Tenemos instructores certificados y con registro ante la Secretaría de Educación y la Secretaría del Trabajo.<br><br>
                     En lo referente a coaching individual y de equipos, contamos con coaches certificados en diferentes metodologías.<br><br>
                     A través de una entrevista podemos acercarnos a conocer el corazón de tu empresa o tu equipo y ofrecerte 
-                    un portafolio de opciones y acciones a tu medida.<br><br>
+                    un portafolio de opciones y acciones a tu medida.<br><br></span>
 
-                   <span class="color-azul-fuerte"> COACHING INDIVIDUAL</span>
-                    Business Story Mastery.
+                   <span class="color-azul-fuerte"> COACHING INDIVIDUAL</span><br>
+                    <span>Business Story Mastery.
                     EF Coaching. Happiness at Work.
                     Coaching asistido por caballos.
                     <br>
-                    <br>
+                    <br></span>
 
-                    <span class="color-verde">COACHING GRUPAL</span>
-                    Lego Serious Play.
+                    <span class="color-verde">COACHING GRUPAL</span><br>
+                    <span>Lego Serious Play.
                     EF Coaching. Happiness at Work.
                     Coaching asistido por caballos.
                     Orquestado, integración de equipos y liderazgo a través de la música.
-                    <br><br>
-                    <span class="color-rosa">DESARROLLO DE HABILIDADES</span>
+                    <br><br></span>
+                    <span class="color-rosa">DESARROLLO DE HABILIDADES</span><br>
                 </div>
                 <div class="menu-wayu-corp">
                   

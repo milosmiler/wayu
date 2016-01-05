@@ -1,7 +1,43 @@
+
 /*=========================*\
     * Estilos Página Aviso *
 \*=========================*/
 
-.page-aviso ul {
-	list-style-type: decimal;
+.page-aviso{
+	font-family: 'Gotham-Book';
 }
+
+.page-aviso ul {
+	list-style-type: none;
+	counter-reset: lista;
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.page-aviso ul li{
+	position: relative;
+    margin: 3rem 0;
+    min-height: 4rem;
+}
+
+.page-aviso ul li::before{
+	content: counter(lista)'';
+    counter-increment: lista;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #bd8592;
+    text-align: center;
+    color: #ffffff;
+    font-size: 2.3rem;
+    padding: 1rem 1.5rem;
+    font-family: 'AmericanTypewriter';
+    position: absolute;
+    top: 0;
+    left: -50px;
+}
+
+.corp{
+	font-family: 'Gotham-Book';
+}
+
