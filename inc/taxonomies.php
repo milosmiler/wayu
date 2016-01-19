@@ -9,18 +9,18 @@
 	function custom_taxonomies_callback(){
 
 		// AUTORES
-		/*if( ! taxonomy_exists('autores')){
+		if( ! taxonomy_exists('categorias-ofrecemos')){
 
 			$labels = array(
-				'name'              => 'Autores',
-				'singular_name'     => 'Autor',
+				'name'              => 'Categorias Ofrecemos',
+				'singular_name'     => 'Categoria Ofrecemos',
 				'search_items'      => 'Buscar',
 				'all_items'         => 'Todos',
-				'edit_item'         => 'Editar Autor',
-				'update_item'       => 'Actualizar Autor',
-				'add_new_item'      => 'Nuevo Autor',
-				'new_item_name'     => 'Nombre Nuevo Autor',
-				'menu_name'         => 'Autores'
+				'edit_item'         => 'Editar Categoria Ofrecemos',
+				'update_item'       => 'Actualizar Categoria Ofrecemos',
+				'add_new_item'      => 'Nuevo Categoria Ofrecemos',
+				'new_item_name'     => 'Nombre Nuevo Categoria Ofrecemos',
+				'menu_name'         => 'Categorias Ofrecemos'
 			);
 
 			$args = array(
@@ -30,11 +30,77 @@
 				'show_admin_column' => true,
 				'show_in_nav_menus' => true,
 				'query_var'         => true,
-				'rewrite'           => array( 'slug' => 'autores' ),
+				'rewrite'           => array( 'slug' => 'categorias-ofrecemos' ),
 			);
 
-			register_taxonomy( 'autor', 'libro', $args );
-		}*/
+			register_taxonomy( 'categorias-ofrecemos', 'ofrecemos', $args );
+		}
+
+		// sukala
+
+		if( ! taxonomy_exists('producto-del-mes')){
+
+			$labels = array(
+				'name'              => 'Producto del mes',
+				'singular_name'     => 'Producto del mes',
+				'search_items'      => 'Buscar',
+				'all_items'         => 'Todos',
+				'edit_item'         => 'Editar Producto del mes',
+				'update_item'       => 'Actualizar Producto del mes',
+				'add_new_item'      => 'Nuevo Producto del mes',
+				'new_item_name'     => 'Nombre Nuevo Producto del mes',
+				'menu_name'         => 'Producto del mes'
+			);
+
+			$args = array(
+				'hierarchical'      => true,
+				'labels'            => $labels,
+				'show_ui'           => true,
+				'show_admin_column' => true,
+				'show_in_nav_menus' => true,
+				'query_var'         => true,
+				'rewrite'           => array( 'slug' => 'producto-del-mes' ),
+			);
+
+			register_taxonomy( 'producto-del-mes', 'sukala', $args );
+		}
+
+
+
+
+		if ( ! term_exists( 'ofrecemos', 'categorias-ofrecemos' ) ){
+			wp_insert_term( 'Ofrecemos', 'categorias-ofrecemos', array('slug' => 'ofrecemos'));
+		}
+		$ofrecemos = term_exists( 'ofrecemos', 'categorias-ofrecemos' );
+
+		if ( ! term_exists( 'talleres', 'categorias-ofrecemos' ) ){
+			wp_insert_term( 'Talleres', 'categorias-ofrecemos', array('slug' => 'talleres', 'parent'=> $ofrecemos['term_id'] ) );
+		}
+		if ( ! term_exists( 'cursos', 'categorias-ofrecemos' ) ){
+			wp_insert_term( 'Cursos', 'categorias-ofrecemos', array('slug' => 'cursos', 'parent'=> $ofrecemos['term_id'] ) );
+		}
+		if ( ! term_exists( 'terapias', 'categorias-ofrecemos' ) ){
+			wp_insert_term( 'Terapias', 'categorias-ofrecemos', array('slug' => 'terapias', 'parent'=> $ofrecemos['term_id'] ) );
+		}
+		if ( ! term_exists( 'meditaciones', 'categorias-ofrecemos' ) ){
+			wp_insert_term( 'Meditaciones', 'categorias-ofrecemos', array('slug' => 'meditaciones', 'parent'=> $ofrecemos['term_id'] ) );
+		}
+		if ( ! term_exists( 'conferencias', 'categorias-ofrecemos' ) ){
+			wp_insert_term( 'Conferencias', 'categorias-ofrecemos', array('slug' => 'conferencias', 'parent'=> $ofrecemos['term_id'] ) );
+		}
+		if ( ! term_exists( 'renta', 'categorias-ofrecemos' ) ){
+			wp_insert_term( 'Renta', 'categorias-ofrecemos', array('slug' => 'renta', 'parent'=> $ofrecemos['term_id'] ) );
+		}
+		if ( ! term_exists( 'cafeteria', 'categorias-ofrecemos' ) ){
+			wp_insert_term( 'Cafeteria', 'categorias-ofrecemos', array('slug' => 'cafeteria', 'parent'=> $ofrecemos['term_id'] ) );
+		}
+
+
+
+
+
+
+
 		
 		
 		// TERMS
@@ -132,39 +198,11 @@
 			wp_insert_term( 'cambio', 'category', array('slug' => 'cambio'));
 		}
 
-		if ( ! term_exists( 'producto_del_mes', 'category' ) ){
-			wp_insert_term( 'Producto del mes', 'category', array('slug' => 'producto_del_mes'));
-		}
+
 		if ( ! term_exists( 'wayu_solidario', 'category' ) ){
 			wp_insert_term( 'Wayu Solidario', 'category', array('slug' => 'wayu_solidario'));
 		}
 
-		if ( ! term_exists( 'ofrecemos', 'category' ) ){
-			wp_insert_term( 'Ofrecemos', 'category', array('slug' => 'ofrecemos'));
-		}
-		$ofrecemos = term_exists( 'ofrecemos', 'category' );
-
-		if ( ! term_exists( 'talleres', 'category' ) ){
-			wp_insert_term( 'Talleres', 'category', array('slug' => 'talleres', 'parent'=> $ofrecemos['term_id'] ) );
-		}
-		if ( ! term_exists( 'cursos', 'category' ) ){
-			wp_insert_term( 'Cursos', 'category', array('slug' => 'cursos', 'parent'=> $ofrecemos['term_id'] ) );
-		}
-		if ( ! term_exists( 'terapias', 'category' ) ){
-			wp_insert_term( 'Terapias', 'category', array('slug' => 'terapias', 'parent'=> $ofrecemos['term_id'] ) );
-		}
-		if ( ! term_exists( 'meditaciones', 'category' ) ){
-			wp_insert_term( 'Meditaciones', 'category', array('slug' => 'meditaciones', 'parent'=> $ofrecemos['term_id'] ) );
-		}
-		if ( ! term_exists( 'conferencias', 'category' ) ){
-			wp_insert_term( 'Conferencias', 'category', array('slug' => 'conferencias', 'parent'=> $ofrecemos['term_id'] ) );
-		}
-		if ( ! term_exists( 'renta', 'category' ) ){
-			wp_insert_term( 'Renta', 'category', array('slug' => 'renta', 'parent'=> $ofrecemos['term_id'] ) );
-		}
-		if ( ! term_exists( 'cafeteria', 'category' ) ){
-			wp_insert_term( 'Cafeteria', 'category', array('slug' => 'cafeteria', 'parent'=> $ofrecemos['term_id'] ) );
-		}
 
 
 		if ( ! term_exists( 'wayu_corp', 'category' ) ){

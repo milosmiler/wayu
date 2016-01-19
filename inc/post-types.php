@@ -4,71 +4,119 @@
 // CUSTOM POST TYPES /////////////////////////////////////////////////////////////////
 
 
-	// add_action('init', function(){
+	add_action('init', function(){
 
 
-	// 	// NOTICIAS
-	// 	$labels = array(
-	// 		'name'          => 'Portadas',
-	// 		'singular_name' => 'Portada',
-	// 		'add_new'       => 'Nueva Portada',
-	// 		'add_new_item'  => 'Nueva Portada',
-	// 		'edit_item'     => 'Editar Portada',
-	// 		'new_item'      => 'Nueva Portada',
-	// 		'all_items'     => 'Todas',
-	// 		'view_item'     => 'Ver Portada',
-	// 		'search_items'  => 'Buscar Portada',
-	// 		'not_found'     => 'No se encontro',
-	// 		'menu_name'     => 'Portadas'
-	// 	);
+		// NOTICIAS
+		$labels = array(
+			'name'          => 'Ofrecemos',
+			'singular_name' => 'Ofrecemos',
+			'add_new'       => 'Nueva Ofrecemos',
+			'add_new_item'  => 'Nueva Ofrecemos',
+			'edit_item'     => 'Editar Ofrecemos',
+			'new_item'      => 'Nueva Ofrecemos',
+			'all_items'     => 'Todas',
+			'view_item'     => 'Ver Ofrecemos',
+			'search_items'  => 'Buscar Ofrecemos',
+			'not_found'     => 'No se encontro',
+			'menu_name'     => 'Ofrecemos'
+		);
 
-	// 	$args = array(
-	// 		'labels'             => $labels,
-	// 		'public'             => true,
-	// 		'publicly_queryable' => true,
-	// 		'show_ui'            => true,
-	// 		'show_in_menu'       => true,
-	// 		'query_var'          => true,
-	// 		'rewrite'            => array( 'slug' => 'portadas' ),
-	// 		'capability_type'    => 'post',
-	// 		'has_archive'        => true,
-	// 		'hierarchical'       => false,
-	// 		'menu_position'      => 6,
-	// 		'taxonomies'         => array( 'category' ),
-	// 		'supports'           => array( 'title', 'editor', 'thumbnail' )
-	// 	);
-	// 	register_post_type( 'portada', $args );
+		$args = array(
+			'labels'             => $labels,
+			'public'             => true,
+			'publicly_queryable' => true,
+			'show_ui'            => true,
+			'show_in_menu'       => true,
+			'query_var'          => true,
+			'rewrite'            => array( 'slug' => 'ofrecemos' ),
+			'capability_type'    => 'post',
+			'has_archive'        => true,
+			'hierarchical'       => false,
+			'menu_position'      => 6,
+			'supports'           => array( 'title', 'editor', 'thumbnail' )
+		);
+		register_post_type( 'ofrecemos', $args );
 
-	// });
+	});
 
 
-add_action('init', 'portadas');
 
-function portadas() {
+add_action('init', function(){
 
-    $labels = array(
-        'name' => __( 'portadas' ),
-        'singular_name' => __( 'portada' ),
-        'add_new' => __( 'Añadir Nuevo' ),
-        'add_new_item' => __( 'Añadir nuevo portada' ),
-        'edit_item' => __( 'Editar portada' ),
-        'new_item' => __( 'Nuevo portada'),
-        'view_item' => __( 'Ver portada'),
-        'search_items' => __( 'Buscar portada'),
-        'not_found' =>  __('No se encontró nada'),
-        'not_found_in_trash' => __('No se encontró nada en la papelera'),
-        'parent_item_colon' => ''
-    );
 
-    $args = array(
-        'labels' => $labels,
-        'public' => true,
-        'rewrite' => true,
-        'capability_type' => 'post',
-        'hierarchical' => false,
-        'menu_position' => null,
-        'supports' => array('title','thumbnail','editor')
-      );
+		// NOTICIAS
+		$labels = array(
+			'name'          => 'Wayu Solidario',
+			'singular_name' => 'Wayu Solidario',
+			'add_new'       => 'Nueva Wayu Solidario',
+			'add_new_item'  => 'Nueva Wayu Solidario',
+			'edit_item'     => 'Editar Wayu Solidario',
+			'new_item'      => 'Nueva Wayu Solidario',
+			'all_items'     => 'Todas',
+			'view_item'     => 'Ver Wayu Solidario',
+			'search_items'  => 'Buscar Wayu Solidario',
+			'not_found'     => 'No se encontro',
+			'menu_name'     => 'Wayu Solidario'
+		);
 
-    register_post_type( 'portadas' , $args );
-}
+		$args = array(
+			'labels'             => $labels,
+			'public'             => true,
+			'publicly_queryable' => true,
+			'show_ui'            => true,
+			'show_in_menu'       => true,
+			'query_var'          => true,
+			'rewrite'            => array( 'slug' => 'wayu-solidario' ),
+			'capability_type'    => 'post',
+			'has_archive'        => true,
+			'hierarchical'       => false,
+			'menu_position'      => 6,
+			'supports'           => array( 'title', 'editor', 'thumbnail' )
+		);
+		register_post_type( 'Wayu Solidario', $args );
+
+	});
+
+
+
+add_action('init', function(){
+
+
+		// NOTICIAS
+		$labels = array(
+			'name'          => 'Sukala',
+			'singular_name' => 'Sukala',
+			'add_new'       => 'Nueva Sukala',
+			'add_new_item'  => 'Nueva Sukala',
+			'edit_item'     => 'Editar Sukala',
+			'new_item'      => 'Nueva Sukala',
+			'all_items'     => 'Todas',
+			'view_item'     => 'Ver Sukala',
+			'search_items'  => 'Buscar Sukala',
+			'not_found'     => 'No se encontro',
+			'menu_name'     => 'Sukala'
+		);
+
+		$args = array(
+			'labels'             => $labels,
+			'public'             => true,
+			'publicly_queryable' => true,
+			'show_ui'            => true,
+			'show_in_menu'       => true,
+			'query_var'          => true,
+			'rewrite'            => array( 'slug' => 'wayu-solidario' ),
+			'capability_type'    => 'post',
+			'has_archive'        => true,
+			'hierarchical'       => false,
+			'menu_position'      => 6,
+			'supports'           => array( 'title', 'editor', 'thumbnail' )
+		);
+		register_post_type( 'Sukala', $args );
+
+	});
+
+
+
+
+
