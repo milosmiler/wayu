@@ -58,11 +58,11 @@
 					</figure>
 					<nav>
 						<ul>
-							<li><a href="<?php echo site_url('/nosotros/'); ?>">NOSOTROS</a></li>
-							<li><a href="#actividades1">OFRECEMOS</a></li>
-							<li><a href="#wayu-corp">WAYUU CORP</a></li>
-							<li><a href="#wayu-contruye">WAYU SOLIDARIO</a></li>
-							<li><a href="blog">BLOG</a></li>
+							<li><a href="<?php echo site_url('/nosotros/'); ?>">Nosotros</a></li>
+							<li><a href="#actividades1">Ofrecemos</a></li>
+							<li><a href="#wayu-corp">Wayuu Corp</a></li>
+							<li><a href="#wayu-contruye">Wayu Solidario</a></li>
+							<li><a href="<?php echo site_url('/blog/'); ?>">BLOG</a></li>
 							<!-- <li><a href="">TIENDA</a></li> -->
 						</ul>
 					</nav>

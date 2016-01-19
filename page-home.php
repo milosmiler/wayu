@@ -57,7 +57,7 @@
 
           <div class="slider-actividades">
               <div id="owl-example" class="owl-carousel">
-                  <?php $eventos = new WP_Query( array( 'posts_per_page' => 4, 'category_name' => 'ofrecemos')); 
+                  <?php $eventos = new WP_Query( array( 'posts_per_page' => 4, 'post_type'=> 'ofrecemos')); 
                       if ( $eventos->have_posts() ) : while ( $eventos->have_posts() ) : $eventos->the_post(); ?>
                         <div class="item">
                           <figure class="image-ofrecemos">
@@ -66,15 +66,16 @@
                             <?php else: ?>
                                       <img src="<?php bloginfo('stylesheet_directory'); ?>/images/1200X856.jpg">
                             <?php endif; ?>
-                              <div class="contenedor-categoria"> <?php the_category(); ?> </div>
+                            <?php $terms = wp_get_post_terms( $post->ID, 'categorias-ofrecemos'); 
+                                  foreach ($terms as  $categoria) { ?>
+                            <div class="contenedor-categoria">
+                              <a href= "<?php echo site_url('/categorias-ofrecemos/'.$categoria->slug); ?>"><?php echo $categoria->name ?> </a> 
+                              
+                            </div>
+                           <?php  } ?>
                           </figure>
-
                             <a href="<?php the_permalink(); ?>"><h3><?php the_title();?></h3></a>
                             <p> <?php echo wp_trim_words(get_the_excerpt(), 12 );?></p>
-                            <footer class="slider-base">
-                              <div class="fecha-page"> <?php the_time('M j, Y') ?> </div>
-                              <div class="comentarios"><fb:comments-count href=<?php the_permalink(); ?>></fb:comments-count> Comment </div>
-                            </footer>
                         </div>
                         <?php endwhile; wp_reset_postdata(); else : ?>
                           <p><?php _e( 'lo siento' ); ?></p>
@@ -96,7 +97,7 @@
             <label for="tab-3" class="tab-label-3">producto 3</label>
             <div class="clear-shadow"></div>
             <div class="content">
-            <?php $producto = new WP_Query( array( 'posts_per_page' => 1, 'category_name' => 'producto_del_mes')); 
+            <?php $producto = new WP_Query( array( 'posts_per_page' => 1, 'post_type'=> 'Sukala')); 
                 if ( $producto->have_posts() ) : while ( $producto->have_posts() ) : $producto->the_post(); ?>
                     <div class="content-1">
                       <figure class="image-producto">
@@ -112,11 +113,15 @@
                     <?php endwhile; wp_reset_postdata(); else : ?>
                         <p><?php _e( 'lo siento' ); ?></p>
                     <?php endif; ?>
-            <?php $producto = new WP_Query( array( 'posts_per_page' => 1, 'offset' => 1, 'category_name' => 'producto_del_mes')); 
+            <?php $producto = new WP_Query( array( 'posts_per_page' => 1, 'offset' => 1, 'post_type'=> 'Sukala')); 
                   if ( $producto->have_posts() ) : while ( $producto->have_posts() ) : $producto->the_post(); ?>
                   <div class="content-2">
                     <figure class="image-producto">
-                       <?php the_post_thumbnail('image-producto'); ?>
+                       <?php if (has_post_thumbnail()): ?>
+                                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('image-producto'); ?></a>
+                          <?php else: ?>
+                                    <img src="<?php bloginfo('stylesheet_directory'); ?>/images/1200X856.jpg">
+                          <?php endif; ?>
                     </figure>
                      <a href="<?php the_permalink(); ?>"><h2 class="nombre-producto"><?php the_title();?></h2> </a>
                       <p class="descript-producto"> <?php the_excerpt();?> </p>   
@@ -126,11 +131,15 @@
                 <?php endif; ?>
 
 
-            <?php $producto = new WP_Query( array( 'posts_per_page' => 1, 'offset' => 2, 'category_name' => 'producto_del_mes')); 
+            <?php $producto = new WP_Query( array( 'posts_per_page' => 1, 'offset' => 2, 'post_type'=> 'Sukala')); 
                   if ( $producto->have_posts() ) : while ( $producto->have_posts() ) : $producto->the_post(); ?>
                   <div class="content-3">
                       <figure class="image-producto">
-                         <?php the_post_thumbnail('image-producto'); ?>
+                        <?php if (has_post_thumbnail()): ?>
+                                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('image-producto'); ?></a>
+                          <?php else: ?>
+                                    <img src="<?php bloginfo('stylesheet_directory'); ?>/images/1200X856.jpg">
+                          <?php endif; ?>
                     </figure>
                       <a href="<?php the_permalink(); ?>"> <h2 class="nombre-producto"><?php the_title();?></h2> </a>
                       <p class="descript-producto"> 
@@ -153,7 +162,7 @@
       de Wayuu.
       </p>
 
-      <?php $producto = new WP_Query( array( 'posts_per_page' => 3, 'category_name' => 'wayu_solidario')); 
+      <?php $producto = new WP_Query( array( 'posts_per_page' => 3, 'post_type'=> 'Wayu Solidario')); 
           if ( $producto->have_posts() ) : while ( $producto->have_posts() ) : $producto->the_post(); ?>
       <article class="post-page-solidario">
         <figure class="image-solidario">

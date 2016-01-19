@@ -1,6 +1,6 @@
 	<?php get_header(); ?>
 	<!-- Insert content here -->
-<div class="wrapper">
+
 	<figure class="imagen-head">
     <h2>BIENVENIDOS AL BLOG WAYUU</h2>
     <p>Pero un buen dia, una pequeña lñinea de texto simulado,<br>
@@ -9,10 +9,14 @@
     </p>
   		<img src="<?php bloginfo('template_url'); ?>/images/stageBlog.png" alt="cabecera" />
   	</figure>
+<div class="wrapper">
   <div class="main-single">
-   <?php query_posts('cat=-5'); ?>
   	<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-  		<?php the_post_thumbnail('image-single'); ?>
+    <?php if (has_post_thumbnail()): ?>
+              <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('image-single'); ?></a>
+    <?php else: ?>
+            <img src="<?php bloginfo('stylesheet_directory'); ?>/images/1200X856.jpg">
+    <?php endif; ?>
   			<div class="contenido-articulos">
   				<div class="base-categoria-red-social">
         			<h2 class="titulo-blog"><?php the_title(); ?></h2>
@@ -57,7 +61,11 @@
                if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
         <article class="post-reciente">
           <figure class="image-reciente">
-          <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('image-reciente'); ?></a> 
+            <?php if (has_post_thumbnail()): ?>
+                  <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('image-reciente'); ?></a>
+            <?php else: ?>
+                  <img src="<?php bloginfo('stylesheet_directory'); ?>/images/1200X856.jpg">
+            <?php endif; ?>
           </figure>
           <h2><?php the_title(); ?></h2>
           <div class="post-actual-fecha-coment">

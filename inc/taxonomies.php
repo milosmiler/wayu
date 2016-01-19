@@ -36,6 +36,33 @@
 			register_taxonomy( 'categorias-ofrecemos', 'ofrecemos', $args );
 		}
 
+
+		if ( ! term_exists( 'talleres', 'categorias-ofrecemos' ) ){
+			wp_insert_term( 'Talleres', 'categorias-ofrecemos', array('slug' => 'talleres') );
+		}
+		if ( ! term_exists( 'cursos', 'categorias-ofrecemos' ) ){
+			wp_insert_term( 'Cursos', 'categorias-ofrecemos', array('slug' => 'cursos') );
+		}
+		if ( ! term_exists( 'terapias', 'categorias-ofrecemos' ) ){
+			wp_insert_term( 'Terapias', 'categorias-ofrecemos', array('slug' => 'terapias') );
+		}
+		if ( ! term_exists( 'meditaciones', 'categorias-ofrecemos' ) ){
+			wp_insert_term( 'Meditaciones', 'categorias-ofrecemos', array('slug' => 'meditaciones') );
+		}
+		if ( ! term_exists( 'conferencias', 'categorias-ofrecemos' ) ){
+			wp_insert_term( 'Conferencias', 'categorias-ofrecemos', array('slug' => 'conferencias') );
+		}
+		if ( ! term_exists( 'renta', 'categorias-ofrecemos' ) ){
+			wp_insert_term( 'Renta', 'categorias-ofrecemos', array('slug' => 'renta') );
+		}
+		if ( ! term_exists( 'cafeteria', 'categorias-ofrecemos' ) ){
+			wp_insert_term( 'Cafeteria', 'categorias-ofrecemos', array('slug' => 'cafeteria') );
+		}
+
+
+
+
+
 		// sukala
 
 		if( ! taxonomy_exists('producto-del-mes')){
@@ -68,32 +95,10 @@
 
 
 
-		if ( ! term_exists( 'ofrecemos', 'categorias-ofrecemos' ) ){
-			wp_insert_term( 'Ofrecemos', 'categorias-ofrecemos', array('slug' => 'ofrecemos'));
-		}
-		$ofrecemos = term_exists( 'ofrecemos', 'categorias-ofrecemos' );
+		
 
-		if ( ! term_exists( 'talleres', 'categorias-ofrecemos' ) ){
-			wp_insert_term( 'Talleres', 'categorias-ofrecemos', array('slug' => 'talleres', 'parent'=> $ofrecemos['term_id'] ) );
-		}
-		if ( ! term_exists( 'cursos', 'categorias-ofrecemos' ) ){
-			wp_insert_term( 'Cursos', 'categorias-ofrecemos', array('slug' => 'cursos', 'parent'=> $ofrecemos['term_id'] ) );
-		}
-		if ( ! term_exists( 'terapias', 'categorias-ofrecemos' ) ){
-			wp_insert_term( 'Terapias', 'categorias-ofrecemos', array('slug' => 'terapias', 'parent'=> $ofrecemos['term_id'] ) );
-		}
-		if ( ! term_exists( 'meditaciones', 'categorias-ofrecemos' ) ){
-			wp_insert_term( 'Meditaciones', 'categorias-ofrecemos', array('slug' => 'meditaciones', 'parent'=> $ofrecemos['term_id'] ) );
-		}
-		if ( ! term_exists( 'conferencias', 'categorias-ofrecemos' ) ){
-			wp_insert_term( 'Conferencias', 'categorias-ofrecemos', array('slug' => 'conferencias', 'parent'=> $ofrecemos['term_id'] ) );
-		}
-		if ( ! term_exists( 'renta', 'categorias-ofrecemos' ) ){
-			wp_insert_term( 'Renta', 'categorias-ofrecemos', array('slug' => 'renta', 'parent'=> $ofrecemos['term_id'] ) );
-		}
-		if ( ! term_exists( 'cafeteria', 'categorias-ofrecemos' ) ){
-			wp_insert_term( 'Cafeteria', 'categorias-ofrecemos', array('slug' => 'cafeteria', 'parent'=> $ofrecemos['term_id'] ) );
-		}
+
+
 
 
 
@@ -205,22 +210,7 @@
 
 
 
-		if ( ! term_exists( 'wayu_corp', 'category' ) ){
-			wp_insert_term( 'Wayu Corp', 'category', array('slug' => 'wayu_corp'));
-		}
-		$wayu_corp = term_exists( 'wayu_corp', 'category' );
-
-		if ( ! term_exists( 'coaching_individual', 'category' ) ){
-			wp_insert_term( 'Coaching Individual', 'category', array('slug' => 'coaching_individual', 'parent'=> $wayu_corp['term_id'] ) );
-		}
-
-		if ( ! term_exists( 'coaching_grupal', 'category' ) ){
-			wp_insert_term( 'Coaching Grupal', 'category', array('slug' => 'coaching_grupal', 'parent'=> $wayu_corp['term_id'] ) );
-		}
-		if ( ! term_exists( 'desarrollo_de_habilidades', 'category' ) ){
-			wp_insert_term( 'Desarrollo de Habilidades', 'category', array('slug' => 'desarrollo_de_habilidades', 'parent'=> $wayu_corp['term_id'] ) );
-		}
-
+		
 
 		/* // SUB TERMS CREATION
 		if(term_exists('parent-term', 'category')){
