@@ -38,9 +38,7 @@
         CONSULTA HORARIOS DE CLASES Y EVENTOS
         <button class="btn-calendario">Calendario de actividades</button>
       </div>
-      <div class="boton-funete-energia">
-        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/sello.png">
-      </div>
+        <a href="<?php echo site_url('/manifiesto/'); ?>"><div class="boton-funete-energia"></div></a>
       <div class="newleter">
         SI FUERA TÚ, DE UNA VEZ ME SUSCRIBO AL NEWSLETTER
         <input type="text" class="input-newleter" placeholder="correo electronico">
@@ -57,12 +55,21 @@
 
           <div class="slider-actividades">
               <div id="owl-example" class="owl-carousel">
-                  <?php $eventos = new WP_Query( array( 'posts_per_page' => 4, 'post_type'=> 'ofrecemos')); 
+                  <?php $eventos = new WP_query(array('posts_per_page' => 5, 'post_type' => 'ofrecemos', 'meta_key'  => 'post_intro',
+                        'meta_query' => array(
+                            array(
+                              'key'     => 'post_intro',
+                              'value'   => 1,
+                              'compare' => '=',
+                            ),
+                          ), 
+
+                        )); 
                       if ( $eventos->have_posts() ) : while ( $eventos->have_posts() ) : $eventos->the_post(); ?>
                         <div class="item">
                           <figure class="image-ofrecemos">
                             <?php if (has_post_thumbnail()): ?>
-                                      <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('ofrecemos'); ?></a>
+                                  <?php the_post_thumbnail('ofrecemos'); ?>
                             <?php else: ?>
                                       <img src="<?php bloginfo('stylesheet_directory'); ?>/images/1200X856.jpg">
                             <?php endif; ?>
@@ -74,7 +81,7 @@
                             </div>
                            <?php  } ?>
                           </figure>
-                            <a href="<?php the_permalink(); ?>"><h3><?php the_title();?></h3></a>
+                            <h3><?php the_title();?></h3>
                             <p> <?php echo wp_trim_words(get_the_excerpt(), 12 );?></p>
                         </div>
                         <?php endwhile; wp_reset_postdata(); else : ?>
@@ -107,8 +114,9 @@
                                     <img src="<?php bloginfo('stylesheet_directory'); ?>/images/1200X856.jpg">
                           <?php endif; ?>
                       </figure>
-                           <a href="<?php the_permalink(); ?>"> <h2 class="nombre-producto"><?php the_title();?></h2> </a>
-                            <p class="descript-producto">  <?php the_excerpt();?> </p>
+
+                      <a href="<?php the_permalink(); ?>"> <h2 class="nombre-producto"><?php the_title();?></h2> </a>
+                      <p class="descript-producto"> <?php echo wp_trim_words(get_the_excerpt(), 12 );?> </p>
                     </div>
                     <?php endwhile; wp_reset_postdata(); else : ?>
                         <p><?php _e( 'lo siento' ); ?></p>
@@ -124,7 +132,7 @@
                           <?php endif; ?>
                     </figure>
                      <a href="<?php the_permalink(); ?>"><h2 class="nombre-producto"><?php the_title();?></h2> </a>
-                      <p class="descript-producto"> <?php the_excerpt();?> </p>   
+                      <p class="descript-producto"> <?php echo wp_trim_words(get_the_excerpt(), 12 );?> </p>   
                   </div>
             <?php endwhile; wp_reset_postdata(); else : ?>
                   <p><?php _e( 'lo siento' ); ?></p>
@@ -143,7 +151,7 @@
                     </figure>
                       <a href="<?php the_permalink(); ?>"> <h2 class="nombre-producto"><?php the_title();?></h2> </a>
                       <p class="descript-producto"> 
-                        <?php the_excerpt();?>
+                        <?php echo wp_trim_words(get_the_excerpt(), 12 );?>
                       </p>
                   </div>
              <?php endwhile; wp_reset_postdata(); else : ?>
@@ -173,7 +181,7 @@
           <?php endif; ?>
         </figure>
        <a href="<?php the_permalink(); ?>"> <h3><?php the_title();?></h3></a>
-        <p><?php echo wp_trim_words(get_the_excerpt(), 20 );?></p>
+        <p class="solidario"><?php echo wp_trim_words(get_the_excerpt(), 20 );?></p>
         <footer class="slider-base">
           <div class="fecha-page2"> <?php the_time('M j, Y') ?> </div>
           <div class="comentarios3"><fb:comments-count href=<?php the_permalink(); ?>></fb:comments-count> Comment</div>
@@ -256,7 +264,15 @@
         </p>
   </section>
   <section class="colaboradores">
-    <h2>COLABORADORES Y PATROCINADORES </h2>
+    <h2>Sinergias </h2>
+    <ul class="imagenes-logotipos">
+      <li><img src="<?php bloginfo('stylesheet_directory'); ?>/images/emt.png"></li>
+      <li><img src="<?php bloginfo('stylesheet_directory'); ?>/images/ef-coaching.png"></li>
+      <li><img src="<?php bloginfo('stylesheet_directory'); ?>/images/todo-bebe.png"></li>
+      <li><img src="<?php bloginfo('stylesheet_directory'); ?>/images/clic.png"></li>
+      <li><img src="<?php bloginfo('stylesheet_directory'); ?>/images/filguid.png"></li>
+      <li><img src="<?php bloginfo('stylesheet_directory'); ?>/images/techba.png"></li>
+    </ul>
   </section>
   <div class="wrapper">
 	<?php get_footer(); ?>

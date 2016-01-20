@@ -102,7 +102,10 @@ $("a").on("click",function(){
         //Cancel the link behavior
         e.preventDefault();
         $('.modalwindow').fadeOut(500);
-    });             
+    }); 
+
+
+                
 
 	});
 })(jQuery);

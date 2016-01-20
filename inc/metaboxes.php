@@ -14,6 +14,9 @@
 	add_action('add_meta_boxes', function(){
               add_meta_box( 'destacar_catalogo', 'Post Destacados', 'funcion_destacado_catalogo', 'post');
        });
+	add_action('add_meta_boxes', function(){
+              add_meta_box( 'destacar_introduccion', 'Destacar Introducción', 'funcion_destacado_intro', 'ofrecemos');
+       });
 
 
 
@@ -33,7 +36,16 @@ function funcion_destacado_catalogo($post){
 		$checked = $post_destacado ? 'checked' : '';
 		wp_nonce_field(__FILE__, 'productos_post_destacado');
 		?>
-		<input type="checkbox" name="post_destacado" id="post_destacado" value="1"  <?php echo $checked; ?> /> Destacado post
+		<input type="checkbox" name="post_destacado" id="post_destacado" value="1"  <?php echo $checked; ?> /> Intro Destacado
+
+	<?php }
+
+function funcion_destacado_intro($post){
+		$post_intro = get_post_meta( $post->ID, 'post_intro', true );
+		$checked = $post_intro ? 'checked' : '';
+		wp_nonce_field(__FILE__, 'productos_post_intro');
+		?>
+		<input type="checkbox" name="post_intro" id="post_intro" value="1"  <?php echo $checked; ?> /> Destacar Intro
 
 	<?php }
 
@@ -74,6 +86,12 @@ function funcion_destacado_catalogo($post){
 			update_post_meta($post_id, 'post_destacado', $_POST['post_destacado']);
 		}else if ( ! defined('DOING_AJAX') ){
 			delete_post_meta($post_id, 'post_destacado');//descatacdo post
+		}
+
+		if ( isset($_POST['post_intro'])){
+			update_post_meta($post_id, 'post_intro', $_POST['post_intro']);
+		}else if ( ! defined('DOING_AJAX') ){
+			delete_post_meta($post_id, 'post_intro');//descatacdo post
 		}
 
 

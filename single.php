@@ -28,7 +28,7 @@
           </ul>
         </footer>
       </div>
-     <div class="contenedor-post-actuales">
+    <!-- <div class="contenedor-post-actuales">
       <?php $temp_query = $wp_query;
                   query_posts('showposts=4'); 
                if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
@@ -48,7 +48,7 @@
         </article>
         <?php  endwhile; ?>
         <?php wp_reset_postdata(); ?>
-    </div> 
+    </div> -->
       <div class='comentarios-face'>
         <div class='comentarios-container-face'> <h4> <span class='nube'> </span> Comentarios</h4> </div>
         <div class="fb-comments" data-href="<?php the_permalink();?>" data-width="100%" data-numposts="5" data-colorscheme="light"></div>

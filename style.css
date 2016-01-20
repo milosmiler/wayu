@@ -6,6 +6,7 @@ Author URI: http://pretech.mx
 Description: Tema de WordPress Personalizado para wayuuue
 Version: 1.0
 */
+@import url("animacion.css");
 
 @charset 'utf-8';
 
@@ -237,6 +238,11 @@ html[xmlns] .slides {display: block;}
   color: #fff;
 }
 
+.contacto-social ul.contacto li a:hover{
+  text-decoration: none;
+    color:#688dc2;
+}
+
 .contacto-social ul.social{
   float: right;
   margin: 0px;
@@ -244,6 +250,9 @@ html[xmlns] .slides {display: block;}
 .contacto-social ul.social li{
   display: inline-block;
   }
+.contacto-social ul.social li a:hover{
+  color:#688dc2;
+}
 
 header{
   width: 100%;
@@ -275,6 +284,12 @@ header nav ul li a{
   text-decoration: none;
   color: #fff;
 }
+
+header nav ul li a:hover{
+  color: #ff9a00;
+}
+
+
 aside.calendario-newleter{
   width: 100%;
   height: auto;
@@ -461,7 +476,7 @@ section.comunidad{
   height: auto;
   padding-top: 87px;
   clear: both;
-  background: url(images/wayu.jpg);
+  background: url('images/Wayuu-BienvenidaST.jpg') no-repeat center center fixed;;
   background-size: cover;
   padding-bottom: 150px;
 }
@@ -623,6 +638,26 @@ footer.slider-base{
   background: #f8f7f7;
   border-top: 1px solid #dbdbdb;
   border-bottom: 1px solid #dbdbdb;
+}
+
+ul.imagenes-logotipos{
+  width: 100%;
+  list-style: none;
+  overflow: hidden;
+  padding: 10px 0px 10px 0px;
+}
+
+ul.imagenes-logotipos li{
+  float: left;
+  margin-left:1%;
+  margin-right: 1%;
+  max-width: 190px;
+ 
+}
+
+ul.imagenes-logotipos li img{
+   width: 95%;
+
 }
 
 .calendario{
@@ -794,6 +829,10 @@ footer.footer-single ul li{
   margin-right: 30px;
   list-style: none;
   color: #7b9bc8;
+}
+
+p.solidario{
+  font-size: 1.8rem;
 }
 
 /* sidebar */
@@ -1247,11 +1286,18 @@ figure.image-producto{
   color: #000;
   font-size: 2.4rem;
   margin: 52px 0px 28px 0px;
+    position: absolute;
+    left: 450px;
+    width: 300px;
 }
 p.descript-producto{
   font-family: 'Gotham-Book';
   font-size: 1.4rem;
   color: #000;
+  position: absolute;
+    left: 450px;
+    top: 100px;
+    width: 250px;
 }
 .siguenos-en ul{
   overflow: hidden;
@@ -1308,6 +1354,12 @@ p.descript-producto{
     font-size: 1.8rem;
     padding-top: 5px;
     padding-bottom: 5px;
+    transition:.25s;
+}
+
+.contenedor-categoria:hover{
+  background: #bd8592;
+  color:#fff;
 }
 .contenedor-categoria ul{
   list-style: none;
@@ -1407,15 +1459,98 @@ a.close{
 
 }
 .boton-funete-energia{
-  max-width: 90px;
+  max-width: 100px;
   height: auto;
   float: left;
   margin-left: 20px;
+  background-position: 1px 1px;
+  display: inline-block;
+    vertical-align: middle;
+    padding: 1rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background: url("images/logo_fuente.png") no-repeat center top;
+    background-size: 100%;
+    overflow: hidden;
+    color: transparent;
+    margin: .5rem;
+    width: 75px;
+    height: 75px;
+    border: #ff9a00;
 }
 
-.boton-funete-energia img{
-  width: 85%;
+.boton-funete-energia:hover{
+  background-position: bottom center;
 }
+
+.page__manifiesto{
+ background:#ff5000;
+ color: #fff;
+padding: 1.5rem;
+
+}
+.fuente__logo {
+  width: 1200px;
+  height: auto;
+  display: block;
+  margin: 15px auto;
+}
+
+.man{
+  margin: 0 auto;
+  display: block;
+}
+
+.man-1{
+   max-width: 500px;
+
+}
+.man-2{
+  max-width: 600px;
+
+}
+.man-3{
+  max-width: 550px;
+
+}
+
+.man-4{
+  max-width: 550px;
+
+}
+
+.man-12{
+  max-width: 500px;
+}
+
+.man-13{
+  max-width: 200px;
+  float: left;
+  margin-top: -272px;
+}
+.man-14{
+  max-width: 200px;
+  float: right;
+  margin-top: -272px;
+}
+
+
+.man-17{
+  max-width: 400px;
+}
+
+.man-18{
+   max-width: 500px;
+
+}
+.man-19{
+   max-width: 600px;
+
+}
+
+
+
 
 
 /* FlexSlider Default Theme
@@ -1553,6 +1688,11 @@ ul.social li.facebook:before{
     font-family: 'fontello';
     color: #fff;
     margin-right: 10px;
+    transition:.25s;
+}
+
+ul.social li.facebook:hover{
+  color: #688dc2;
 }
 
 ul.social li.twitter:before{
@@ -1561,6 +1701,7 @@ ul.social li.twitter:before{
     font-family: 'fontello';
     color: #fff;
     margin-right: 10px;
+     transition:.25s;
 }
 ul.social li.camara:before{
    content: '\e801'; 
@@ -1568,6 +1709,7 @@ ul.social li.camara:before{
     font-family: 'fontello';
     color: #fff;
     margin-right: 10px;
+     transition:.25s;
 }
 
 ul.social li.youtube:before{
@@ -1576,6 +1718,7 @@ ul.social li.youtube:before{
     font-family: 'fontello';
     color: #fff;
     margin-right: 10px;
+     transition:.25s;
 
 }
 ul.social li.pinters:before{
@@ -1584,8 +1727,7 @@ ul.social li.pinters:before{
     font-family: 'fontello';
     color: #fff;
     margin-right: 10px;
-
-
+     transition:.25s;
 }
 
 section.wayu-nosotros{

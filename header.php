@@ -62,7 +62,7 @@
 							<li><a href="#actividades1">Ofrecemos</a></li>
 							<li><a href="#wayu-corp">Wayuu Corp</a></li>
 							<li><a href="#wayu-contruye">Wayu Solidario</a></li>
-							<li><a href="<?php echo site_url('/blog/'); ?>">BLOG</a></li>
+							<li><a href="<?php echo site_url('/blog/'); ?>">Blog</a></li>
 							<!-- <li><a href="">TIENDA</a></li> -->
 						</ul>
 					</nav>
