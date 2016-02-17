@@ -21,7 +21,7 @@
         <?php the_content();?>
         <footer class="footer-single">
           <ul>
-          <li><div class="footer-datos"> <?php echo $autor = get_post_meta($post->ID, 'autor', true); ?> </div></li>
+          <li><div class="footer-datos">  <?php the_author(); ?> </div></li>
           <li><div class="tag"><?php the_tags( 'Tags: ', ', ', '<br />' ); ?> </div></li>
           <li><div class="calendario-blog"> <?php the_time('F j') ?></div></li>
           <li><div class="comentario-blog"><fb:comments-count href=<?php the_permalink(); ?>></fb:comments-count> Comentarios</div></li>
@@ -43,10 +43,9 @@
     </div>
 
     <div class="contenedor-post-actuales">
-      <h2> POSTS RECIENTES </h2>
-      <?php $temp_query = $wp_query;
-                  query_posts('showposts=4'); 
-               if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+      <h2> Productos Sukala </h2>
+      <?php $producto = new WP_Query( array( 'posts_per_page' => 5, 'post_type'=> 'sukala')); 
+          if ( $producto->have_posts() ) : while ( $producto->have_posts() ) : $producto->the_post(); ?>
         <article class="post-reciente">
           <figure class="image-reciente">
             <?php if (has_post_thumbnail()): ?>
@@ -63,14 +62,10 @@
             <div class="comentarios">// <fb:comments-count href=<?php the_permalink(); ?>></fb:comments-count> Comment </div>
         </div>
         </article>
-        <?php  endwhile; ?>
+        <?php endwhile; wp_reset_postdata(); else : ?>
+        <p><?php _e( 'lo siento' ); ?></p>
+      <?php endif; ?>
     </div>
-
-
-
-
-
-
   </section>
 
     <?php get_footer(); ?>

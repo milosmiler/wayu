@@ -2,26 +2,25 @@
 	<!-- Insert content here -->
  <div class="flexslider">
       <ul class="slides">
-        <?php $post_destacado = new WP_query(array('posts_per_page' => 5, 'post_type' => 'post', 'meta_key'  => 'post_destacado',
-                      'meta_query' => array(
+        <?php $post_destacado = new WP_query(array('posts_per_page' => 5, 'post_type' => 'ofrecemos', 'meta_key'  => 'post_destacado',
+          'meta_query' => array(
                         array(
                           'key'     => 'post_destacado',
                           'value'   => 1,
                           'compare' => '=',
                         ),
                       ), 
-
                     )); ?>
 
         <?php if ( $post_destacado->have_posts() ) : ?>
             <?php while ( $post_destacado->have_posts() ) : $post_destacado->the_post(); ?>
           <li>
             <?php if (has_post_thumbnail()): ?>
-                <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('full-size'); ?></a>
+                <?php the_post_thumbnail('full-size'); ?>
             <?php else: ?>
-                <img src="<?php bloginfo('stylesheet_directory'); ?>/images/1200X856.jpg">
+               <a href="<?php the_permalink(); ?>"> <img src="<?php bloginfo('stylesheet_directory'); ?>/images/1200X856.jpg"> </a>
             <?php endif; ?>
-           <a href="<?php the_permalink(); ?>"> <p class="flex-caption"><?php the_title();?></p></a>
+            <a href="<?php the_permalink(); ?>"><p class="flex-caption"><?php the_title();?></p></a>
          </li>
         <?php endwhile; ?>
             <?php wp_reset_postdata(); ?>
@@ -36,13 +35,21 @@
     <div class="wrapper">
       <div class="calendario">
         CONSULTA HORARIOS DE CLASES Y EVENTOS
-        <button class="btn-calendario">Calendario de actividades</button>
+        <button class="btn-calendario"><a href="<?php echo site_url('/eventos/'); ?>">Calendario de actividades</a></button>
       </div>
         <a href="<?php echo site_url('/manifiesto/'); ?>"><div class="boton-funete-energia"></div></a>
       <div class="newleter">
         SI FUERA TÚ, DE UNA VEZ ME SUSCRIBO AL NEWSLETTER
-        <input type="text" class="input-newleter" placeholder="correo electronico">
-        <button class="btn-enviar">Enviar</button>
+        <form action="//wayuume.us11.list-manage.com/subscribe/post?u=7581db473f269e146f532d7a1&amp;id=7040c8b246" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <input type="text" class="input-newleter" placeholder="correo electronico" id="mce-EMAIL">
+            <button class="btn-enviar" id="mc-embedded-subscribe">Enviar</button>
+            <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7581db473f269e146f532d7a1_7040c8b246" tabindex="-1" value=""></div>
+                <div class="clear"></div>
+        </form>
       </div>
     </div>
   </aside>
@@ -94,14 +101,14 @@
      
   <section class="productos-del-mes">
     <div class="wrapper">
-        <h2> Suukala, Tienda y Cafeteria </h2>
+        <h2> Suukala, Tienda y Cafetería </h2>
           <section class="tabs">
             <input id="tab-1" type="radio" name="radio-set" class="tab-selector-1" checked="checked" />
-            <label for="tab-1" class="tab-label-1">Producto 1</label>
+            <label for="tab-1" class="tab-label-1">Favoritos</label>
             <input id="tab-2" type="radio" name="radio-set" class="tab-selector-2" />
-            <label for="tab-2" class="tab-label-2">producto 2</label>
+            <label for="tab-2" class="tab-label-2">Favoritos</label>
             <input id="tab-3" type="radio" name="radio-set" class="tab-selector-3" />
-            <label for="tab-3" class="tab-label-3">producto 3</label>
+            <label for="tab-3" class="tab-label-3">Favoritos</label>
             <div class="clear-shadow"></div>
             <div class="content">
             <?php $producto = new WP_Query( array( 'posts_per_page' => 1, 'post_type'=> 'Sukala')); 
@@ -170,7 +177,7 @@
       de Wayuu.
       </p>
 
-      <?php $producto = new WP_Query( array( 'posts_per_page' => 3, 'post_type'=> 'Wayu Solidario')); 
+      <?php $producto = new WP_Query( array( 'posts_per_page' => 3, 'post_type'=> 'wayu-solidario')); 
           if ( $producto->have_posts() ) : while ( $producto->have_posts() ) : $producto->the_post(); ?>
       <article class="post-page-solidario">
         <figure class="image-solidario">
@@ -219,14 +226,31 @@
                     <br><br></span>
                     <span class="color-rosa">DESARROLLO DE HABILIDADES</span><br>
                 </div>
-                <div class="menu-wayu-corp">
-                  
-                </div>
-             </div>
+               
+
+            <div class="contenedor__corp">
+                <div class="icon__circle uno">
+                      <img src="<?php bloginfo('template_directory'); ?>/images/iconos/icono-lego.svg" alt="">
+                    </div>
+                    
+                    <div class="icon__circle dos"><img src="<?php bloginfo('template_directory'); ?>/images/iconos/icono-caballo.svg" alt="Wayuu"></div>
+                    
+                    <div class="icon__circle tres"><img src="<?php bloginfo('template_directory'); ?>/images/iconos/icono-individual.svg" alt="Wayuu"></div>
+                    
+                    <div class="icon__circle cuatro"><img src="<?php bloginfo('template_directory'); ?>/images/iconos/icono-felicidad.svg" alt="Wayuu"></div>
+                    
+                    <div class="icon__circle cinco"><img src="<?php bloginfo('template_directory'); ?>/images/iconos/icono-grupal.svg" alt="Wayuu"></div>
+                    
+                    <div class="icon__circle seis"><img src="<?php bloginfo('template_directory'); ?>/images/iconos/icono-storytelling.svg" alt="Wayuu"></div>
+                    
+                    <div class="icon__circle siete"><img src="<?php bloginfo('template_directory'); ?>/images/iconos/icono-corporativo.svg" alt="Wayuu"></div>
+                    
+                    <div class="icon__circle ocho"><img src="<?php bloginfo('template_directory'); ?>/images/iconos/icono-desarrollo.svg" alt="Wayuu"></div>
+              </div>
+              <div class="clearfix"></div>
+            </div>
             </section>
 
-
-         
   <section class="blog">
     <div class="wrapper">
         <h2> WAYUU BLOG </h2>
@@ -266,12 +290,13 @@
   <section class="colaboradores">
     <h2>Sinergias </h2>
     <ul class="imagenes-logotipos">
-      <li><img src="<?php bloginfo('stylesheet_directory'); ?>/images/emt.png"></li>
-      <li><img src="<?php bloginfo('stylesheet_directory'); ?>/images/ef-coaching.png"></li>
-      <li><img src="<?php bloginfo('stylesheet_directory'); ?>/images/todo-bebe.png"></li>
-      <li><img src="<?php bloginfo('stylesheet_directory'); ?>/images/clic.png"></li>
-      <li><img src="<?php bloginfo('stylesheet_directory'); ?>/images/filguid.png"></li>
-      <li><img src="<?php bloginfo('stylesheet_directory'); ?>/images/techba.png"></li>
+      
+      <li><a href="http://escueladete.mx" target="_blank"> <img src="<?php bloginfo('stylesheet_directory'); ?>/images/emt.png"> </a></li>
+      <li><a href="http://efcoaching.com" target="_blank"> <img src="<?php bloginfo('stylesheet_directory'); ?>/images/ef-coaching.png"></a></li>
+      <li><a href="http://todobebe.com" target="_blank"> <img src="<?php bloginfo('stylesheet_directory'); ?>/images/todo-bebe.png"></a></li>
+      <li><a href="http://cursosytalleres.org" target="_blank"> <img src="<?php bloginfo('stylesheet_directory'); ?>/images/clic.png"></a></li>
+      <li><a href="http://filgud.com" target="_blank"> <img src="<?php bloginfo('stylesheet_directory'); ?>/images/filguid.png"></a></li>
+      <li><a href="http://techba.org" target="_blank"> <img src="<?php bloginfo('stylesheet_directory'); ?>/images/techba.png"></a></li>
     </ul>
   </section>
   <div class="wrapper">

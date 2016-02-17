@@ -10,8 +10,8 @@
 
 				<div class="leyenda-direcion">
 				<p>
-					Prolongacion Paseo de la reforma 215,
-					Col. Paseo de las lomas Delegacion
+					Prolongacion Paseo de la Reforma 215,
+					Col. Paseo de las Lomas Delegacion
 					Cuajimalpa. Mexico D.F.
 				</p>
 			</div>
@@ -45,11 +45,6 @@
 			<p class="titulo-input">SI FUERA TÚ, DE UNA VEZ ME SUSCRIBO AL NEWSLETTER</p>
 			<input type="text" class="input-newleter-footer" placeholder="correo electronico">
 			<button class="btn-enviar-footer">Enviar</button>
-			<p class="slogan">
-				Muy lejos, mas alla de las monstañas de palabras alejados de 
-				los paises de las vocales y las consonantes que viven
-				los textos simulados
-			</p>
 			<figure class="logo-footer">
 				<a href="<?php echo SITEURL; ?>"><img src="<?php bloginfo('template_url'); ?>/images/wayuu-logoBlanco.png" alt="Wayuuu" /></a>
 			</figure>

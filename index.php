@@ -26,7 +26,7 @@
             <a href="<?php the_permalink(); ?>"><button class="btn-leyendo">Seguir leyendo</button></a>
         		<footer class="footer-single">
           			<ul>
-	         		 <li><div class="footer-datos">  <?php the_author(); ?> </div></li>
+	         		 <li><div class="footer-datos">  <?php echo $autor = get_post_meta($post->ID, 'autor', true); ?> </div></li>
 	          		 <li><div class="tag"><?php the_tags( '', ', ', '<br />' ); ?> </div></li>
 	          		 <li> <div class="calendario-blog"> <?php the_time('F j') ?> </div> </li>
 	          		 <li><div class="comentario-blog"><fb:comments-count href=<?php the_permalink(); ?>></fb:comments-count> Comentarios</div></li>
@@ -49,10 +49,10 @@
     </div>
     <h2>Categorias del blog</h2>
     <ul>
-      <li>categoria 1</li>
-      <li>categoria 2</li>
-      <li>categoria 3</li>
-      <li>categoria 4</li>
+      <li><a href="<?php echo site_url('/category/Actitud//'); ?>">Actitud</a></li>
+      <li><a href="<?php echo site_url('/category/conciencia/'); ?>">Conciencia</a></li>
+      <li><a href="<?php echo site_url('/category/sicologia/'); ?>">Sicología</a></li>
+      <li><a href="<?php echo site_url('/category/bienestar/'); ?>">Bienestar</a></li>
     </ul>
     <div class="contenedor-post-actuales">
       <h2> POSTS RECIENTES </h2>

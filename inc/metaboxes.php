@@ -8,11 +8,12 @@
 	add_action('add_meta_boxes', function(){
 
 		// add_meta_box( id, title, name_meta_callback, post_type, context, priority );
+		add_meta_box( 'nombre_autor', 'Autor', 'funcion_nombre_autor', 'post');
 
 	});
 
 	add_action('add_meta_boxes', function(){
-              add_meta_box( 'destacar_catalogo', 'Post Destacados', 'funcion_destacado_catalogo', 'post');
+              add_meta_box( 'destacar_catalogo', 'Post Destacados', 'funcion_destacado_catalogo', 'ofrecemos');
        });
 	add_action('add_meta_boxes', function(){
               add_meta_box( 'destacar_introduccion', 'Destacar Introducción', 'funcion_destacado_intro', 'ofrecemos');
@@ -30,13 +31,20 @@
 		// echo "<input type='text' class='widefat' id='name' name='_name_meta' value='$name'/>";
 	}
 
+	function funcion_nombre_autor($post){
+		echo "<label>Autor</label>";
+		$autor = get_post_meta($post->ID, 'autor', true);
+		echo "<input type='text' class='widefat' id='name' name='autor' value='$autor'/>";
+
+	}
+
 
 function funcion_destacado_catalogo($post){
 		$post_destacado = get_post_meta( $post->ID, 'post_destacado', true );
 		$checked = $post_destacado ? 'checked' : '';
 		wp_nonce_field(__FILE__, 'productos_post_destacado');
 		?>
-		<input type="checkbox" name="post_destacado" id="post_destacado" value="1"  <?php echo $checked; ?> /> Intro Destacado
+		<input type="checkbox" name="post_destacado" id="post_destacado" value="1"  <?php echo $checked; ?> /> Post Destacado
 
 	<?php }
 
@@ -64,6 +72,8 @@ function funcion_destacado_intro($post){
 
 		if ( defined('DOING_AUTOSAVE') and DOING_AUTOSAVE ) 
 			return $post_id;
+
+
 		
 		
 		if ( wp_is_post_revision($post_id) OR wp_is_post_autosave($post_id) ) 
@@ -72,6 +82,10 @@ function funcion_destacado_intro($post){
 
 		if ( isset($_POST['_name_meta']) and check_admin_referer(__FILE__, '_name_meta_nonce') ){
 			update_post_meta($post_id, '_name_meta', $_POST['_name_meta']);
+		}
+
+		if ( isset($_POST['autor'])){
+			update_post_meta($post_id, 'autor', $_POST['autor']);
 		}
 
 

@@ -40,13 +40,15 @@
 
 		$(window).load(function(){
 			$('.flexslider').flexslider({
-				animation: "slide"
+				animation: "slide",
+				controlNav: false
 			});
 		});
 
 		$(document).ready(function($) {
       		$("#owl-example").owlCarousel({
 	      		items : 3,
+	      		navigation : true,
 	      	 	itemsDesktop : [1199,3],
 	      		itemsDesktopSmall : [979,3]
       		});
@@ -77,6 +79,69 @@ $("a").on("click",function(){
 });
 
 
+
+$('.contenedor-acordeon').hide();   
+	$('.acordeon').on('click',function(){
+		if($(this).next().is(':visible')){
+			$(this).next().slideUp();
+		}
+
+		if($(this).next().is(':hidden')){
+			$('.acordeon').next().slideUp();
+			$(this).next().slideDown();
+	}
+});
+
+
+$('.btn-enviar-modal').click(function(event){
+	event.preventDefault();
+
+	var nombre = $("input[name='nombre']").val();
+	var email = $("input[name='email']").val();
+	var telefono = $("input[name='telefono']").val();
+	var mensaje = $("textarea[name='mensaje']").val();
+
+	if(nombre===''){
+		$("input[name='nombre']").focus();
+		alert("por favor escribe un nombre o escribe un nombre valido")
+		return false;
+
+	}if(email===''){
+		$("input[name='email']").focus();
+		alert("por favor escribe un email");
+		return false;
+
+	}if(telefono===''){
+		$("input[name='telefono']").focus();
+		alert("por favor escribe tu telefono");
+		return false;
+
+	}if(mensaje===''){
+		$("textarea[name='mensaje']").focus();
+		alert("por favor escribe un nombre o escribe un mensaje");
+		return false;
+	} 
+
+	$.ajax({
+                type: "POST",
+                url: "../../envio-form/envio.php",
+            	dataType: 'json',
+                data: {'nombre': nombre, 'email': email, 'telefono': telefono, 'mensaje': mensaje},
+                success: function() {
+
+            	 $('.modalwindow').fadeOut(500);
+                      
+                }
+            });
+});
+
+
+
+
+
+
+
+
  
     //select all the a tag with name equal to modal
     $('a[name=modal]').click(function(e) {
@@ -103,6 +168,29 @@ $("a").on("click",function(){
         e.preventDefault();
         $('.modalwindow').fadeOut(500);
     }); 
+
+
+
+$(window).scroll(function() {
+    if($(this).scrollTop() >= 189) {
+        $(".man-1").addClass('fadeIn');
+        console.log($(this).scrollTop());
+    }
+
+    if($(this).scrollTop() >= 731) {
+        $(".man-2").addClass('expandOpen');
+        //console.log($('section.paso1').offset().top);
+    }
+
+    if($(this).scrollTop() >= 189) {
+        $(".man-3").addClass('fadeIn');
+        // console.log($('section.paso1').offset().top);
+    }
+    if($(this).scrollTop() >= 189) {
+        $(".man-4").addClass('fadeIn');
+        //console.log($('section.paso1').offset().top);
+    }
+});
 
 
                 

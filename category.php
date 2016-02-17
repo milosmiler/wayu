@@ -1,6 +1,9 @@
 <?php get_header(); ?>
+<figure class="banner-taxonomias">
+        <img src="<?php bloginfo('stylesheet_directory'); ?>/images/banner-blog.jpg">
+        <h2 class="categoria-titulo"><?php single_cat_title( '', true ) ?> </h2>
+    </figure>
 	<div class="wrapper">
-		<h2 class="categoria-titulo"><?php single_cat_title( '', true ) ?> </h2>
 			<?php  if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
                 <article class="post-page-categoria">
                    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('image-blog'); ?></a> 

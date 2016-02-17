@@ -1,4 +1,4 @@
-<!doctype html>
+		<!doctype html>
 	<head>
 		<meta charset="utf-8">
 		<title><?php print_title(); ?></title>
@@ -32,7 +32,7 @@
    						<p> Para nosotros eres muy importante, en breve nos <br>
 							pondremos en contacto contigo.
    						</p>	
-   						<form action="http://www.pretechmobile.com/wayue/wp-content/themes/wayu/envio-form/envio.php" method="post">
+   						<form class="envio-form">
    							<input type="text" name="nombre" class="formulario-modal" placeholder="Tu nombre" required>
    							<input type="text" name="email" class="formulario-modal" placeholder="email" required>
    							<input type="text" name="telefono" class="formulario-modal" placeholder="Telefono" required>
@@ -56,6 +56,22 @@
 					<figure class="logo">
 						<h1><a href="<?php echo SITEURL; ?>"><img src="<?php bloginfo('template_url'); ?>/images/logo.png" alt="Wayuuu" /></a></h1>
 					</figure>
+				<?php if( is_front_page()){ ?>
+
+					<input type="checkbox" id="nav-button" name="nav-button" class="nav-button" />
+						<label for="nav-button" name="nav-button-lbl"></label>
+							<nav class="menu slide-menu-izq">
+							  <ul>
+							      <li><a href="<?php echo site_url('/nosotros/'); ?>">Nosotros</a></li>
+							      <li><a href="#actividades1">Ofrecemos</a></li>
+							      <li><a href="#wayu-corp">Wayuu Corp</a></li>
+							      <li><a href="#wayu-contruye">Wayu Solidario</a></li>
+							      <li><a href="<?php echo site_url('/blog/'); ?>">Blog</a></li>
+							  </ul>
+							</nav>
+
+
+
 					<nav>
 						<ul>
 							<li><a href="<?php echo site_url('/nosotros/'); ?>">Nosotros</a></li>
@@ -66,6 +82,18 @@
 							<!-- <li><a href="">TIENDA</a></li> -->
 						</ul>
 					</nav>
+			<?php	}else{  ?>
+					<nav>
+						<ul>
+							<li><a href="<?php echo site_url('/nosotros/'); ?>">Nosotros</a></li>
+							<li><a href="<?php echo site_url('categorias-ofrecemos/talleres/'); ?>">Ofrecemos</a></li>
+							<li><a href="<?php echo site_url('/home/'); ?>">Wayuu Corp</a></li>
+							<li><a href="<?php echo site_url('/wayu-solidario/'); ?>">Wayu Solidario</a></li>
+							<li><a href="<?php echo site_url('/blog/'); ?>">Blog</a></li>
+							<!-- <li><a href="">TIENDA</a></li> -->
+						</ul>
+					</nav>
+			<?php } ?>
 				</div>
 			</header>
 		

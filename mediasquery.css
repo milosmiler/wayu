@@ -1,0 +1,218 @@
+@media screen and (max-width: 930px) {
+
+  .contacto-social ul.contacto {
+    margin: 0 auto!important;
+    float: none!important; }
+
+  .contacto-social ul.social{
+    float: none!important;
+    margin: 0 auto!important;
+    width: 176px; }
+  .flex-caption {
+    font-size: 5.8rem!important; }
+  .newleter {
+    display: block;
+    margin: 10px auto;
+    float: none!important;
+    width: 64%!important;}
+  .calendario {
+    display: block;
+    margin: 10px auto;
+    overflow: hidden;
+    float: none!important;
+    width: 80%!important;
+    text-align: center;}
+    .boton-funete-energia {
+      margin: 0 auto!important;
+      display: block!important;
+      width: 8.2%!important;
+    }
+}
+
+
+@media screen and (max-width: 815px) {
+  nav{display: none!important;}
+   .flex-caption {
+    font-size: 5.3rem!important;}
+
+}
+
+
+
+
+@media screen and (max-width: 680px) {
+   .flex-caption {
+    font-size: 4.5rem!important;
+        bottom: 10%;} 
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+  .contacto-social ul.social {
+    float: right;
+    margin: 0px;
+    width: 250px;}
+
+article.donde-estamos {
+  width: 100%!important;
+}
+.leyenda-direcion {
+  width: 285px!important;
+  height: 122px!important;}
+
+article.newletter-footer {
+    width: 99.5%!important;
+  }
+
+  input.input-newleter-footer {
+    width: 67%!important;
+}
+
+.flex-caption {
+    font-size: 2.8rem!important;
+     bottom: 10%;}
+
+article.siguenos-en{
+  display: none;}
+
+article.post-page-solidario{
+  width: 95%!important;
+  margin: 0px 0px 10px 0px!important;}
+
+.fecha-page2 {
+  margin-left: 1px!important;}
+
+.contenedor__corp{
+  display: none;}
+
+.leyenda-wayu-corp {
+  float: none!important; 
+  font-size: 1.4rem;
+  margin-top: 40px;
+  margin: 0 auto;}
+
+  .boton-funete-energia {
+    margin: 0 auto!important;
+    display: block!important;
+    width: 75px!important;
+  }
+
+  .newleter {
+    width: 92%!important;
+  }
+
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 320px) {
+  .contacto-social ul.social {
+    float: right;
+    margin: 0px;
+    width: 250px;}
+
+.flex-caption {
+    font-size: 1.8rem!important;
+     bottom: 15%;}
+
+.owl-buttons {
+     position:relative; 
+     right: none!important; 
+     top: none!important;}
+
+label[name="nav-button-lbl"] {
+  display: block!important;}
+
+.contacto-social ul.contacto{
+  display: none;}
+
+.menu {
+  display: block!important;}
+
+figure.logo {
+  margin: 0 auto;
+    width: 100px;
+    display: block;
+    height: auto;}
+
+header h1 {
+   margin: 0px;}
+
+header nav {
+  display: none!important;}
+
+section.actividades p {
+    font-size: 1.6rem;
+}
+
+section.blog p {
+    font-size: 1.6rem;
+}
+
+section.construye p {
+    font-size: 1.6rem;
+}
+
+section.corp p {
+
+    font-size: 1.6rem;
+}
+
+.calendario {
+    width: 300px;
+    height: auto;
+    float: left;
+    font-size: 1.6rem;
+    color: #688dc2;
+    font-family: 'Gotham-Light';
+    text-align: center;}
+
+.boton-funete-energia {
+  margin: 10px auto;
+  display: block;
+  float: none;
+} 
+
+.newleter {
+    width: 298px!important;
+    font-size: 1.3rem; 
+}
+.input-newleter {
+    width: 63%!important;
+    }
+section.productos-del-mes {
+  display: none;
+}
+
+section.construye h2 {
+  font-size: 3.4rem!important;
+}
+
+article.post-page-solidario {
+    width: 100%!important;
+    margin-bottom: 8px!important;
+    }
+
+article.donde-estamos {
+    width: 100%!important;
+}
+.leyenda-direcion {
+    width: 285px!important;
+    height: 122px!important;
+    }
+
+article.newletter-footer {
+    width: 99.5%!important;
+  }
+
+  input.input-newleter-footer {
+    width: 67%!important;
+}
+
+}

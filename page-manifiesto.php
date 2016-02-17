@@ -4,16 +4,24 @@
 	<div class="page__manifiesto">
 
   <section class="texto__manifiesto">
+
+    <section class="paso1">
     <div class="fuente__logo">
-      <img src="<?php bloginfo('template_directory'); ?>/images/fuente/logo.svg" alt="Fuente de energía" class="man man-1 fadeIn">
+      <img src="<?php bloginfo('template_directory'); ?>/images/fuente/logo.svg" alt="Fuente de energía" class="man man-1">
       <div class="fuente__titulo">
-        <img src="<?php bloginfo('template_directory'); ?>/images/fuente/fuente-1.svg" alt="Fuente de energía" class="man man-2 expandOpen">
-        <img src="<?php bloginfo('template_directory'); ?>/images/fuente/fuente-2.svg" alt="Live each day as if your life had a just begun" class="man man-3 expandOpen">
+      <section class="paso2">
+        <img src="<?php bloginfo('template_directory'); ?>/images/fuente/fuente-1.svg" alt="Fuente de energía" class="man man-2 ">
+      </section>
+      <section class="paso3">
+        <img src="<?php bloginfo('template_directory'); ?>/images/fuente/fuente-2.svg" alt="Live each day as if your life had a just begun" class="man man-3 ">
+      </section>
       </div>
     </div>
-
+    </section>
+    <section class="paso4">
       <img src="<?php bloginfo('template_directory'); ?>/images/fuente/fuente-3.svg" alt="Haz lo que amas y ama lo que haces" class="man man-4">
-      <img src="<?php bloginfo('template_directory'); ?>/images/fuente/fuente-4.svg" alt="La vida empieza fuera de tu zona de comfort, lo que das te lo das" class="man man-5 slideLeft">
+    </section>
+      <img src="<?php bloginfo('template_directory'); ?>/images/fuente/fuente-4.svg" alt="La vida empieza fuera de tu zona de comfort, lo que das te lo das" class="man man-5 pulse">
       
       <div class="par">
         <img src="<?php bloginfo('template_directory'); ?>/images/fuente/fuente-5.svg" alt="Todo empieza por ti" class="man man-6 slideRight">
@@ -27,10 +35,10 @@
       <img src="<?php bloginfo('template_directory'); ?>/images/fuente/fuente-10.svg" alt="La creatividad es la inteligencia divirtiéndose" class="man man-11">
       <div class="par">     
 
-        <img src="<?php bloginfo('template_directory'); ?>/images/fuente/fuente-11.svg" alt="Siéntete cómodo con el cambio" class="man man-12">
+        <img src="<?php bloginfo('template_directory'); ?>/images/fuente/fuente-11.svg" alt="Siéntete cómodo con el cambio" class="man man-12  pullUp">
         <div class="mandalas">
-          <img src="<?php bloginfo('template_directory'); ?>/images/fuente/fuente-12.svg" alt="Mandala - Wayuu" class="man man-13 rotateMe">
-          <img src="<?php bloginfo('template_directory'); ?>/images/fuente/fuente-13.svg" alt="Mandala - Wayuu" class="man man-14 rotateMe">
+          <img src="<?php bloginfo('template_directory'); ?>/images/fuente/fuente-12.svg" alt="Mandala - Wayuu" class="man man-13 animate-spin">
+          <img src="<?php bloginfo('template_directory'); ?>/images/fuente/fuente-13.svg" alt="Mandala - Wayuu" class="man man-14 animate-spin">
         </div>
 
       </div>
